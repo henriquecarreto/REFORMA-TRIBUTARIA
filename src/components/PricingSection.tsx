@@ -40,19 +40,19 @@ export const PricingSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* IMAGEM DO PLANO BÁSICO (VISUAL HORIZONTAL) */}
-              <div className="w-full h-44 sm:h-48 bg-slate-100 rounded-xl border border-slate-200 overflow-hidden mb-6 relative shadow-xs">
+              {/* IMAGEM DO PLANO BÁSICO (COMPLETA E SEM CORTES) */}
+              <div className="w-full bg-[#FAF7F2] rounded-xl border border-slate-200/90 overflow-hidden mb-6 p-1.5 sm:p-2 flex items-center justify-center shadow-xs">
                 {!basicImgError ? (
                   <img
                     src="/plans/plano-basico.jpg"
                     alt="Coleção de Materiais do Plano Básico - Guia Visual"
                     onError={() => setBasicImgError(true)}
-                    className="w-full h-full object-cover object-top rounded-xl transition-transform duration-300 hover:scale-[1.02]"
+                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
                     loading="lazy"
                   />
                 ) : (
                   /* PLACEHOLDER ELEGANTE */
-                  <div className="flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-slate-50 to-amber-50/40 w-full h-full">
+                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/40 w-full h-48">
                     <div className="p-3 rounded-full bg-white border border-slate-200 shadow-xs mb-2">
                       <BookOpen className="w-6 h-6 text-[#0A8FF0]" />
                     </div>
@@ -145,19 +145,19 @@ export const PricingSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* IMAGEM DO PLANO COMPLETO (VISUAL HORIZONTAL) */}
-              <div className="w-full h-44 sm:h-48 bg-slate-100 rounded-xl border border-slate-200 overflow-hidden mb-6 relative shadow-xs">
+              {/* IMAGEM DO PLANO COMPLETO (COMPLETA E SEM CORTES) */}
+              <div className="w-full bg-[#FAF7F2] rounded-xl border border-slate-200/90 overflow-hidden mb-6 p-1.5 sm:p-2 flex items-center justify-center shadow-xs">
                 {!completeImgError ? (
                   <img
                     src="/plans/complete-plan.webp"
                     alt="Coleção Completa de Materiais + Bônus do Fiscal Simplificado"
                     onError={() => setCompleteImgError(true)}
-                    className="w-full h-full object-cover object-top rounded-xl transition-transform duration-300 hover:scale-[1.02]"
+                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
                     loading="lazy"
                   />
                 ) : (
                   /* PLACEHOLDER ELEGANTE */
-                  <div className="flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-slate-50 to-amber-50/50 w-full h-full">
+                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/50 w-full h-48">
                     <div className="p-3.5 rounded-full bg-white border border-amber-200 shadow-xs mb-2">
                       <Star className="w-7 h-7 text-[#F5B700] fill-[#F5B700]" />
                     </div>
