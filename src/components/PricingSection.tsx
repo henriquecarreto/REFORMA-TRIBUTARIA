@@ -40,14 +40,14 @@ export const PricingSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* IMAGEM DO PLANO BÁSICO (GRANDE) */}
-              <div className="w-full h-48 sm:h-56 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden mb-6 relative flex items-center justify-center p-2">
+              {/* IMAGEM DO PLANO BÁSICO (VISUAL HORIZONTAL) */}
+              <div className="w-full h-44 sm:h-48 bg-slate-100 rounded-xl border border-slate-200 overflow-hidden mb-6 relative shadow-xs">
                 {!basicImgError ? (
                   <img
                     src="/plans/plano-basico.jpg"
                     alt="Coleção de Materiais do Plano Básico - Guia Visual"
                     onError={() => setBasicImgError(true)}
-                    className="w-full h-full object-contain rounded-lg drop-shadow-sm"
+                    className="w-full h-full object-cover object-top rounded-xl transition-transform duration-300 hover:scale-[1.02]"
                     loading="lazy"
                   />
                 ) : (
@@ -145,14 +145,14 @@ export const PricingSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* IMAGEM DO PLANO COMPLETO (GRANDE) */}
-              <div className="w-full h-48 sm:h-56 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden mb-6 relative flex items-center justify-center">
+              {/* IMAGEM DO PLANO COMPLETO (VISUAL HORIZONTAL) */}
+              <div className="w-full h-44 sm:h-48 bg-slate-100 rounded-xl border border-slate-200 overflow-hidden mb-6 relative shadow-xs">
                 {!completeImgError ? (
                   <img
                     src="/plans/complete-plan.webp"
                     alt="Coleção Completa de Materiais + Bônus do Fiscal Simplificado"
                     onError={() => setCompleteImgError(true)}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top rounded-xl transition-transform duration-300 hover:scale-[1.02]"
                     loading="lazy"
                   />
                 ) : (
@@ -163,9 +163,6 @@ export const PricingSection: React.FC = () => {
                     </div>
                     <span className="text-xs font-extrabold text-[#0B1F3A] uppercase tracking-wide">
                       PLANO COMPLETO (TODOS OS MATERIAIS + 4 BÔNUS)
-                    </span>
-                    <span className="text-[10px] text-slate-400 font-medium mt-1">
-                      [Imagem da Coleção Completa]
                     </span>
                   </div>
                 )}
