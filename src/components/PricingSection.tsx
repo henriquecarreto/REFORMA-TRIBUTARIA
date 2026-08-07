@@ -41,13 +41,13 @@ export const PricingSection: React.FC = () => {
               </div>
 
               {/* IMAGEM DO PLANO BÁSICO (GRANDE) */}
-              <div className="w-full h-44 sm:h-52 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden mb-6 relative flex items-center justify-center">
+              <div className="w-full h-48 sm:h-56 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden mb-6 relative flex items-center justify-center p-2">
                 {!basicImgError ? (
                   <img
-                    src="/plans/basic-plan.webp"
-                    alt="Coleção de Materiais do Plano Básico"
+                    src="/plans/plano-basico.jpg"
+                    alt="Coleção de Materiais do Plano Básico - Guia Visual"
                     onError={() => setBasicImgError(true)}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain rounded-lg drop-shadow-sm"
                     loading="lazy"
                   />
                 ) : (
@@ -58,9 +58,6 @@ export const PricingSection: React.FC = () => {
                     </div>
                     <span className="text-xs font-extrabold text-[#0B1F3A] uppercase tracking-wide">
                       PLANO BÁSICO
-                    </span>
-                    <span className="text-[10px] text-slate-400 font-medium mt-1">
-                      [Imagem dos Materiais Básicos]
                     </span>
                   </div>
                 )}
@@ -253,25 +250,25 @@ export const PricingSection: React.FC = () => {
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    BÔNUS 01 — Quadro Antes x Depois da Reforma
+                    BÔNUS 01 — Pessoa Física na Reforma
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    BÔNUS 02 — Linha do Tempo Visual da Reforma Tributária
+                    BÔNUS 02 — Nanoempreendedor
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    BÔNUS 03 — Checklist: O Que Entender Primeiro
+                    BÔNUS 03 — Cashback do IBS e da CBS
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    BÔNUS 04 — Glossário Visual da Reforma Tributária
+                    BÔNUS 04 — Créditos do IBS e da CBS
                   </span>
                 </div>
               </div>
