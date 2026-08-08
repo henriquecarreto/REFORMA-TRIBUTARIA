@@ -26,8 +26,8 @@ export const HeroSection: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
             {/* 1. BADGE AUDIÊNCIA */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#FEF2F2] border-2 border-[#DC2626] text-[#991B1B] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-sm shadow-red-500/10">
-              <Users className="w-4 h-4 text-[#DC2626] shrink-0" />
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-xs">
+              <Users className="w-4 h-4 text-[#D97706] shrink-0" />
               <span>PARA CONTADORES, SERVIDORES PÚBLICOS, ASSISTENTES, ESTUDANTES E EMPRESÁRIOS</span>
             </div>
 
