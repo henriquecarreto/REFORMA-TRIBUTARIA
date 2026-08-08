@@ -31,7 +31,7 @@ export const siteConfig = {
 
   // Analytics & Tracking Placeholders
   analytics: {
-    metaPixelId: "",
+    metaPixelId: "904141958942511",
     ga4MeasurementId: "",
     gtmId: "",
     utmifyKey: "",
