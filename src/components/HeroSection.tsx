@@ -80,7 +80,7 @@ export const HeroSection: React.FC = () => {
               <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100">
                 <img
                   src="/hero/mapas-conectados.jpg"
-                  alt="Mapa Fácil da Reforma Tributária - Visão dos Materiais"
+                  alt="Guia Visual da Reforma Tributária - Visão dos Materiais"
                   className="w-full h-auto object-cover rounded-xl"
                   loading="eager"
                 />

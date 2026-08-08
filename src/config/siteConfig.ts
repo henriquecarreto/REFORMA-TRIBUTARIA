@@ -1,6 +1,6 @@
 export const siteConfig = {
   brandName: "Fiscal Simplificado",
-  productName: "Mapa Fácil da Reforma Tributária",
+  productName: "Guia Visual da Reforma Tributária",
   tagline: "Coleção digital educativa sobre a Reforma Tributária. Desenvolvido para auxílio no estudo, consulta rápida e aplicação prática.",
   heroBadge: "GUIA VISUAL DA REFORMA TRIBUTÁRIA",
   heroTitle: "Entenda a Reforma Tributária de um jeito mais simples, visual e organizado.",

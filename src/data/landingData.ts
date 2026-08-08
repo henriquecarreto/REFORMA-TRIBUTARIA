@@ -217,7 +217,7 @@ export const targetAudience: AudienceCard[] = [
 ];
 
 export const bundleItems = [
-  "Mapa Fácil da Reforma Tributária",
+  "Guia Visual da Reforma Tributária",
   "Visão geral da Reforma",
   "IBS explicado visualmente",
   "CBS explicado visualmente",

@@ -86,7 +86,7 @@ export const PricingSection: React.FC = () => {
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    Mapa Fácil da Reforma Tributária
+                    Guia Visual da Reforma Tributária
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
@@ -189,7 +189,7 @@ export const PricingSection: React.FC = () => {
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    Mapa Fácil da Reforma Tributária
+                    Guia Visual da Reforma Tributária
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
