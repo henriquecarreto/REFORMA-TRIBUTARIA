@@ -14,10 +14,10 @@ export const siteConfig = {
   COMPLETE_CHECKOUT_URL: "#",
 
   // Pricing
-  basicPrice: "27,90",
-  basicOldPrice: "57,90",
-  completePrice: "37,90",
-  completeOldPrice: "77,90",
+  basicPrice: "17,90",
+  basicOldPrice: "29,90",
+  completePrice: "27,90",
+  completeOldPrice: "37,90",
   currency: "R$",
 
   // Support & Contact

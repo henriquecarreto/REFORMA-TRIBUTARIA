@@ -170,8 +170,11 @@ export const PricingSection: React.FC = () => {
 
               {/* BLOCO DE PREÇO DO PLANO COMPLETO */}
               <div className="mb-6 pb-6 border-b border-slate-100">
+                <span className="text-xs text-slate-400 line-through font-semibold block mb-0.5">
+                  De R$ {siteConfig.completeOldPrice}
+                </span>
                 <div className="flex items-baseline gap-1.5">
-                  <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR APENAS</span>
+                  <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR</span>
                   <span className="text-4xl sm:text-5xl font-extrabold text-[#00A878] tracking-tight">R$ {siteConfig.completePrice}</span>
                   <span className="text-xs text-[#475569] font-medium">/ pagamento único</span>
                 </div>
