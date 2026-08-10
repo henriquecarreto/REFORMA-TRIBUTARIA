@@ -1,7 +1,7 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { heroBenefits } from '../data/landingData';
-import { Check, ArrowRight, ShieldCheck, Users } from 'lucide-react';
+import { Check, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const scrollToPricing = () => {
@@ -25,10 +25,10 @@ export const HeroSection: React.FC = () => {
           {/* LADO ESQUERDO — INFORMAÇÕES E CTA */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
-            {/* 1. BADGE AUDIÊNCIA */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-xs sm:text-sm font-bold uppercase tracking-wider mb-6 shadow-xs">
-              <Users className="w-4 h-4 text-[#D97706] shrink-0" />
-              <span>PARA CONTADORES, SERVIDORES PÚBLICOS, ASSISTENTES, ESTUDANTES E EMPRESÁRIOS</span>
+            {/* 1. BADGE TOPO */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-xs">
+              <Sparkles className="w-4 h-4 text-[#D97706] shrink-0" />
+              <span>GUIA VISUAL DA REFORMA TRIBUTÁRIA</span>
             </div>
 
             {/* 2. TÍTULO PRINCIPAL */}
