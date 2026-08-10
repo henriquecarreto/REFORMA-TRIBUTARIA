@@ -27,8 +27,8 @@ export const PricingSection: React.FC = () => {
         {/* 2 PLANOS LADO A LADO (DESKTOP) / EMPILHADOS (MOBILE) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start max-w-5xl mx-auto">
           
-          {/* 1. PLANO BÁSICO (COL 5 - LIGEIRAMENTE MENOR) */}
-          <div className="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-[#0B1F3A]/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full">
+          {/* 1. PLANO BÁSICO (COL 5 - MAIS COMPACTO E DIRETO) */}
+          <div className="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-[#0B1F3A]/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-start h-fit self-start">
             <div>
               {/* NOME E DESCRIÇÃO DO PLANO */}
               <div className="mb-4">
@@ -76,7 +76,7 @@ export const PricingSection: React.FC = () => {
               </div>
 
               {/* LISTA DE CONTEÚDOS DO PLANO BÁSICO */}
-              <div className="space-y-3 mb-8">
+              <div className="space-y-3 mb-2">
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
@@ -111,7 +111,7 @@ export const PricingSection: React.FC = () => {
             </div>
 
             {/* BOTÃO E MICROCOPY */}
-            <div className="mt-auto pt-4">
+            <div className="mt-6 pt-2">
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
                 className="btn-cta-primary w-full text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-2xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg hover:scale-[1.01]"
