@@ -3,15 +3,6 @@ import { siteConfig } from '../config/siteConfig';
 import { ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export const GuaranteeSection: React.FC = () => {
-  const scrollToPricing = () => {
-    const el = document.getElementById('precos');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = siteConfig.COMPLETE_CHECKOUT_URL;
-    }
-  };
-
   return (
     <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,13 +42,13 @@ export const GuaranteeSection: React.FC = () => {
 
             {/* DIREITA: BOTÃO CTA HORIZONTAL */}
             <div className="lg:col-span-3 flex justify-center lg:justify-end">
-              <button
-                onClick={scrollToPricing}
+              <a
+                href={siteConfig.COMPLETE_CHECKOUT_URL}
                 className="btn-cta-primary w-full sm:w-auto text-white font-extrabold text-xs sm:text-sm py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 cursor-pointer shadow-xl hover:scale-[1.02] transition-transform text-center"
               >
                 <span>QUERO ACESSAR SEM RISCO</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />
-              </button>
+              </a>
             </div>
 
           </div>
