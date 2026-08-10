@@ -9,8 +9,7 @@ export const siteConfig = {
   announcementText: "⚡ CONDIÇÃO ESPECIAL PARA ACESSAR O MATERIAL",
 
   // Centralized Checkout URLs (Seção 18 & 30)
-  // Substituir pelos links oficiais do checkout antes da publicação
-  BASIC_CHECKOUT_URL: "#",
+  BASIC_CHECKOUT_URL: "https://pay.wiapy.com/T38NZG2QVKLs",
   COMPLETE_CHECKOUT_URL: "#",
 
   // Pricing
