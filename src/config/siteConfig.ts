@@ -10,7 +10,7 @@ export const siteConfig = {
 
   // Centralized Checkout URLs (Seção 18 & 30)
   BASIC_CHECKOUT_URL: "https://pay.wiapy.com/T38NZG2QVKLs",
-  COMPLETE_CHECKOUT_URL: "#",
+  COMPLETE_CHECKOUT_URL: "https://pay.wiapy.com/OtY4nyjOAQNN",
 
   // Pricing
   basicPrice: "17,90",
