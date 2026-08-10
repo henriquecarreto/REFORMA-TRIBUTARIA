@@ -1,6 +1,5 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
-import { BookOpen } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -12,13 +11,12 @@ export const Footer: React.FC = () => {
           
           {/* LADO ESQUERDO — LOGO E DESCRIÇÃO DO ACERVO */}
           <div className="max-w-xl flex flex-col items-start">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-full border-2 border-[#D97706]/80 bg-[#0A0A0A] flex items-center justify-center text-[#F5B700] shrink-0 shadow-md shadow-amber-950/20">
-                <BookOpen className="w-5 h-5 stroke-[2.2]" />
-              </div>
-              <span className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
-                {siteConfig.brandName}
-              </span>
+            <div className="flex items-center mb-4">
+              <img
+                src="/brand/logo.png"
+                alt={siteConfig.brandName}
+                className="h-11 sm:h-13 w-auto object-contain bg-white px-3 py-1.5 rounded-xl shadow-md"
+              />
             </div>
             <p className="text-sm text-slate-400 font-normal leading-relaxed">
               {siteConfig.tagline}
