@@ -53,7 +53,7 @@ export const GuaranteeSection: React.FC = () => {
             <div className="lg:col-span-3 flex justify-center lg:justify-end">
               <button
                 onClick={scrollToPricing}
-                className="btn-cta-primary w-full sm:w-auto bg-[#00A878] hover:bg-[#008F66] text-white font-extrabold text-xs sm:text-sm py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 cursor-pointer shadow-xl hover:scale-[1.02] transition-transform text-center"
+                className="btn-cta-primary w-full sm:w-auto text-white font-extrabold text-xs sm:text-sm py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 cursor-pointer shadow-xl hover:scale-[1.02] transition-transform text-center"
               >
                 <span>QUERO ACESSAR SEM RISCO</span>
                 <ArrowRight className="w-4 h-4 shrink-0" />

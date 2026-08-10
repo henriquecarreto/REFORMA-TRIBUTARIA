@@ -114,7 +114,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-auto pt-4">
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
-                className="w-full bg-[#0B1F3A] hover:bg-[#132A55] text-white font-extrabold text-sm sm:text-base py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer text-center shadow-md"
+                className="btn-cta-primary w-full text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-2xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg hover:scale-[1.01]"
               >
                 <span>QUERO COMEÇAR PELO BÁSICO</span>
               </a>
@@ -293,7 +293,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-auto pt-4">
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
-                className="btn-cta-primary w-full bg-[#00A878] hover:bg-[#008F66] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl flex items-center justify-center gap-3 transition-transform hover:scale-[1.01] cursor-pointer text-center shadow-xl"
+                className="btn-cta-primary w-full text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-xl hover:scale-[1.01]"
               >
                 <span>QUERO ACESSAR O PLANO COMPLETO</span>
                 <ArrowRight className="w-5 h-5" />

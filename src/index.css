@@ -114,15 +114,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Touch & Button Hover Effects */
 .btn-cta-primary {
-  background: linear-gradient(135deg, #00A878 0%, #008F66 100%);
-  box-shadow: 0 4px 14px 0 rgba(0, 168, 120, 0.35);
+  background: linear-gradient(135deg, #00C853 0%, #00B248 100%);
+  box-shadow: 0 4px 18px 0 rgba(0, 200, 83, 0.4);
   transition: all 0.2s ease-in-out;
 }
 
 .btn-cta-primary:hover {
-  background: linear-gradient(135deg, #008F66 0%, #007553 100%);
+  background: linear-gradient(135deg, #00E65C 0%, #00C853 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(0, 168, 120, 0.45);
+  box-shadow: 0 6px 24px 0 rgba(0, 230, 92, 0.5);
 }
 
 .btn-cta-primary:active {
