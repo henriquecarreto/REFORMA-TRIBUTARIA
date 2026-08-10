@@ -20,10 +20,10 @@ export const HeroSection: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50/50 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
           {/* LADO ESQUERDO — INFORMAÇÕES E CTA */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
+          <div className="lg:col-span-6 flex flex-col items-start text-left">
             
             {/* 1. BADGE TOPO */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-xs">
@@ -38,18 +38,18 @@ export const HeroSection: React.FC = () => {
             </h1>
 
             {/* 3. SUBTÍTULO */}
-            <p className="text-base sm:text-lg text-slate-700 font-medium leading-relaxed mb-6 max-w-2xl">
+            <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6 font-normal max-w-2xl">
               IBS, CBS, Imposto Seletivo, transição e as principais mudanças organizados visualmente para você enxergar como tudo se conecta sem se perder em explicações excessivamente técnicas.
             </p>
 
-            {/* 4. LISTA DE BENEFÍCIOS COM CHECKMARKS EM COLUNA */}
-            <ul className="space-y-3 mb-8 w-full max-w-xl">
-              {heroBenefits.map((benefit, idx) => (
-                <li key={idx} className="flex items-center gap-3">
+            {/* 4. LISTA DE BENEFÍCIOS */}
+            <ul className="space-y-3 mb-8 w-full">
+              {heroBenefits.map((benefit, index) => (
+                <li key={index} className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                    <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </div>
-                  <span className="text-sm sm:text-base font-semibold text-slate-800 leading-snug">
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     {benefit}
                   </span>
                 </li>
@@ -74,14 +74,14 @@ export const HeroSection: React.FC = () => {
 
           </div>
 
-          {/* LADO DIREITO — MOCKUP / IMAGEM DO MATERIAL */}
-          <div className="lg:col-span-5 w-full">
-            <div className="relative bg-white p-3 sm:p-4 rounded-3xl border border-amber-200/80 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
+          {/* LADO DIREITO — MOCKUP / IMAGEM DO MATERIAL (AMPLIADA) */}
+          <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
+            <div className="relative w-full bg-white p-1.5 sm:p-2.5 rounded-3xl border border-amber-200/80 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
               <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100">
                 <img
                   src="/hero/mapas-conectados.jpg"
                   alt="Guia Visual da Reforma Tributária - Visão dos Materiais"
-                  className="w-full h-auto object-cover rounded-xl"
+                  className="w-full h-auto object-contain rounded-xl"
                   loading="eager"
                 />
               </div>
