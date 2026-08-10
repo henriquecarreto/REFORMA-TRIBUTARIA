@@ -118,9 +118,24 @@ export const PricingSection: React.FC = () => {
               >
                 <span>QUERO COMEÇAR PELO BÁSICO</span>
               </a>
-              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-3">
+              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#00A878]" />
                 <span>🔒 PAGAMENTO 100% SEGURO</span>
+              </div>
+              
+              {/* MÉTODOS DE PAGAMENTO */}
+              <div className="flex items-center justify-center gap-2 sm:gap-2.5 mt-2.5 pt-1">
+                <span className="text-[10px] font-bold text-[#32BCAD] bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60 flex items-center gap-1">
+                  <span className="font-extrabold text-xs">◆</span> PIX
+                </span>
+                <span className="text-[10px] font-extrabold text-slate-600 bg-slate-100/90 px-2 py-0.5 rounded border border-slate-200 tracking-wider uppercase">
+                  VISA
+                </span>
+                <div className="flex items-center gap-0.5 bg-slate-100/90 px-2 py-0.5 rounded border border-slate-200">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#EB001B] inline-block -mr-1"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#F79E1B] inline-block"></span>
+                  <span className="text-[10px] font-bold text-slate-600 ml-1">Mastercard</span>
+                </div>
               </div>
             </div>
           </div>
@@ -283,14 +298,44 @@ export const PricingSection: React.FC = () => {
                 <span>QUERO ACESSAR O PLANO COMPLETO</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-3">
+              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#00A878]" />
                 <span>🔒 PAGAMENTO 100% SEGURO</span>
+              </div>
+
+              {/* MÉTODOS DE PAGAMENTO */}
+              <div className="flex items-center justify-center gap-2 sm:gap-2.5 mt-2.5 pt-1">
+                <span className="text-[10px] font-bold text-[#32BCAD] bg-teal-50 px-2 py-0.5 rounded border border-teal-200/60 flex items-center gap-1">
+                  <span className="font-extrabold text-xs">◆</span> PIX
+                </span>
+                <span className="text-[10px] font-extrabold text-slate-600 bg-slate-100/90 px-2 py-0.5 rounded border border-slate-200 tracking-wider uppercase">
+                  VISA
+                </span>
+                <div className="flex items-center gap-0.5 bg-slate-100/90 px-2 py-0.5 rounded border border-slate-200">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#EB001B] inline-block -mr-1"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#F79E1B] inline-block"></span>
+                  <span className="text-[10px] font-bold text-slate-600 ml-1">Mastercard</span>
+                </div>
               </div>
             </div>
 
           </div>
 
+        </div>
+
+        {/* QUADRANTE PERSUASIVO ABAIXO DA OFERTA COMPLETA */}
+        <div className="mt-10 max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-md flex items-start gap-4 sm:gap-5">
+          <div className="p-2.5 sm:p-3 rounded-2xl bg-[#E6F4EA] border border-[#00A878]/30 shrink-0 text-[#00A878]">
+            <CheckCircle2 className="w-6 h-6 sm:w-8 sm:h-8" />
+          </div>
+          <div className="space-y-1.5 text-left">
+            <h4 className="text-sm sm:text-base font-extrabold text-[#0B1F3A] uppercase tracking-wide leading-snug">
+              UM ÚNICO GUIA VISUAL PODE ECONOMIZAR DEZENAS DE HORAS TENTANDO DECODIFICAR A REFORMA POR CONTEÚDOS SOLTOS.
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              Todo o excesso de teoria vira clareza imediata para estudar com foco, revisar pontos-chave com rapidez e acompanhar a evolução tributária com total segurança.
+            </p>
+          </div>
         </div>
 
       </div>
