@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
               <img
                 src="/brand/logo.png"
                 alt={siteConfig.brandName}
-                className="h-11 sm:h-13 w-auto object-contain bg-white px-3 py-1.5 rounded-xl shadow-md"
+                className="h-14 sm:h-16 w-auto object-contain bg-white px-3.5 py-2 rounded-xl shadow-md"
               />
             </div>
             <p className="text-sm text-slate-400 font-normal leading-relaxed">
