@@ -149,7 +149,7 @@ export const PricingSection: React.FC = () => {
               <div className="w-full bg-[#FAF7F2] rounded-xl border border-slate-200/90 overflow-hidden mb-6 p-1.5 sm:p-2 flex items-center justify-center shadow-xs">
                 {!completeImgError ? (
                   <img
-                    src="/plans/complete-plan.webp"
+                    src="/plans/plano-completo.jpg"
                     alt="Coleção Completa de Materiais + Bônus do Fiscal Simplificado"
                     onError={() => setCompleteImgError(true)}
                     className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
