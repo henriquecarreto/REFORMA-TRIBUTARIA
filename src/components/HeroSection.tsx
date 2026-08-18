@@ -1,15 +1,16 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { trackInitiateCheckoutAndNavigate } from '../utils/pixel';
 import { heroBenefits } from '../data/landingData';
 import { Check, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
-  const scrollToPricing = () => {
+  const scrollToPricing = (e?: React.MouseEvent<Element>) => {
     const el = document.getElementById('precos');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = siteConfig.COMPLETE_CHECKOUT_URL;
+      trackInitiateCheckoutAndNavigate(e || null, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo');
     }
   };
 

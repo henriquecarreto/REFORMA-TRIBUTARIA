@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { trackInitiateCheckoutAndNavigate } from '../utils/pixel';
 import { ArrowRight, X } from 'lucide-react';
 
 export const MobileStickyCTA: React.FC = () => {
@@ -33,12 +34,12 @@ export const MobileStickyCTA: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isDismissed]);
 
-  const scrollToPricing = () => {
+  const scrollToPricing = (e?: React.MouseEvent<Element>) => {
     const el = document.getElementById('precos');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = siteConfig.COMPLETE_CHECKOUT_URL;
+      trackInitiateCheckoutAndNavigate(e || null, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo');
     }
   };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { trackInitiateCheckoutAndNavigate } from '../utils/pixel';
 import { ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export const GuaranteeSection: React.FC = () => {
@@ -44,6 +45,7 @@ export const GuaranteeSection: React.FC = () => {
             <div className="lg:col-span-3 flex justify-center lg:justify-end">
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo')}
                 className="btn-cta-primary w-full sm:w-auto text-white font-extrabold text-xs sm:text-sm py-3.5 px-6 rounded-xl inline-flex items-center justify-center gap-2 cursor-pointer shadow-xl hover:scale-[1.02] transition-transform text-center"
               >
                 <span>QUERO ACESSAR SEM RISCO</span>

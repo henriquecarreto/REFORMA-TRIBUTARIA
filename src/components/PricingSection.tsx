@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { trackInitiateCheckoutAndNavigate } from '../utils/pixel';
 import { CheckCircle2, Star, ArrowRight, ShieldCheck, Zap, BookOpen } from 'lucide-react';
 
 export const PricingSection: React.FC = () => {
@@ -114,6 +115,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-6 pt-2">
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 17.90, 'Plano Básico')}
                 className="btn-cta-primary w-full text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-2xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg hover:scale-[1.01]"
               >
                 <span>QUERO COMEÇAR PELO BÁSICO</span>
@@ -293,6 +295,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-auto pt-4">
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo')}
                 className="btn-cta-primary w-full text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-xl hover:scale-[1.01]"
               >
                 <span>QUERO ACESSAR O PLANO COMPLETO</span>
