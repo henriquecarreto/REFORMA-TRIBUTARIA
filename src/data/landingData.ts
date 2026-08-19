@@ -228,7 +228,7 @@ export const bundleItems = [
   "Obrigações relacionadas à Reforma",
   "Simples Nacional",
   "MEI",
-  "Regimes tributários",
+  "SINTER, CIB, SINIR e CNM",
   "Termos técnicos traduzidos",
   "Mapas organizados por assunto",
   "Materiais complementares"
