@@ -229,6 +229,7 @@ export const bundleItems = [
   "Simples Nacional",
   "MEI",
   "SINTER, CIB, SINIR e CNM",
+  "Guia Visual para Municípios",
   "Termos técnicos traduzidos",
   "Mapas organizados por assunto",
   "Materiais complementares"
