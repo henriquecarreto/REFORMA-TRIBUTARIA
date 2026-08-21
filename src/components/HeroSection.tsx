@@ -21,22 +21,22 @@ export const HeroSection: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         
-        {/* 1. IDENTIFICAÇÃO DO PRODUTO */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-xs">
+        {/* 1. IDENTIFICAÇÃO DO PRODUTO (13px Mobile, 14px Desktop) */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-[13px] sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-xs">
           <Sparkles className="w-4 h-4 text-[#D97706] shrink-0" />
           <span>GUIA VISUAL DA REFORMA TRIBUTÁRIA</span>
         </div>
 
-        {/* 2. HEADLINE PRINCIPAL */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1F3A] leading-[1.18] tracking-tight mb-5 max-w-3xl">
+        {/* 2. HEADLINE PRINCIPAL (36px -> 40px -> 42px -> 48px -> 56px Responsivo) */}
+        <h1 className="text-[36px] min-[375px]:text-[40px] min-[430px]:text-[42px] sm:text-[48px] lg:text-[56px] font-extrabold text-[#0B1F3A] leading-[1.1] sm:leading-[1.12] tracking-tight mb-5 max-w-3xl">
           <span className="text-[#0B1F3A]">Entenda a </span>
           <span className="text-[#0A8FF0]">Reforma Tributária </span> <br className="hidden sm:inline" />
           <span className="text-[#0B1F3A]">de forma </span>
           <span className="text-[#00A878]">simples e visual.</span>
         </h1>
 
-        {/* 3. SUBTÍTULO */}
-        <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-8 font-normal max-w-2xl text-center">
+        {/* 3. SUBTÍTULO (16px Mobile, 18px Desktop) */}
+        <p className="text-base sm:text-lg text-[#475569] leading-relaxed mb-8 font-normal max-w-2xl text-center">
           <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
         </p>
 
@@ -54,14 +54,14 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        {/* 5. LISTA DE BENEFÍCIOS (ALINHADA À ESQUERDA DENTRO DO BLOCO CENTRALIZADO) */}
+        {/* 5. LISTA DE BENEFÍCIOS (15px Mobile, 16px Desktop) */}
         <div className="w-full max-w-xl mb-10">
           <ul className="space-y-3.5 text-left">
             <li className="flex items-center gap-3">
               <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
                 <Check className="w-3.5 h-3.5 stroke-[2.5]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+              <span className="text-[15px] sm:text-base font-semibold text-slate-800 leading-snug">
                 <span className="text-[#0A8FF0] font-bold">IBS, CBS e Imposto Seletivo</span> explicados com clareza.
               </span>
             </li>
@@ -70,7 +70,7 @@ export const HeroSection: React.FC = () => {
               <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
                 <Check className="w-3.5 h-3.5 stroke-[2.5]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+              <span className="text-[15px] sm:text-base font-semibold text-slate-800 leading-snug">
                 <span className="text-[#00A878] font-bold">Mapas visuais</span> para estudar, revisar e consultar.
               </span>
             </li>
@@ -79,7 +79,7 @@ export const HeroSection: React.FC = () => {
               <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
                 <Check className="w-3.5 h-3.5 stroke-[2.5]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+              <span className="text-[15px] sm:text-base font-semibold text-slate-800 leading-snug">
                 Principais mudanças <span className="text-[#0A8FF0] font-bold">organizadas por assunto.</span>
               </span>
             </li>
@@ -88,7 +88,7 @@ export const HeroSection: React.FC = () => {
               <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
                 <Check className="w-3.5 h-3.5 stroke-[2.5]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+              <span className="text-[15px] sm:text-base font-semibold text-slate-800 leading-snug">
                 <span className="text-[#00A878] font-bold">Explicações simples</span>, sem excesso de linguagem técnica.
               </span>
             </li>
@@ -97,24 +97,24 @@ export const HeroSection: React.FC = () => {
               <div className="w-5 h-5 rounded-full bg-[#00A878]/15 text-[#00A878] flex items-center justify-center shrink-0">
                 <Check className="w-3.5 h-3.5 stroke-[2.5]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+              <span className="text-[15px] sm:text-base font-semibold text-slate-800 leading-snug">
                 <span className="text-[#0A8FF0] font-bold">Glossários, checklists</span> e materiais complementares.
               </span>
             </li>
           </ul>
         </div>
 
-        {/* 6. BOTÃO DE COMPRA & 7. INFORMAÇÕES DE ACESSO E GARANTIA */}
+        {/* 6. BOTÃO DE COMPRA (17px Mobile, 18-19px Desktop) & 7. INFORMAÇÕES DE ACESSO E GARANTIA (13px Mobile, 14px Desktop) */}
         <div className="flex flex-col items-center gap-3 w-full max-w-md">
           <button
             onClick={scrollToPricing}
-            className="btn-cta-primary w-full text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-full flex items-center justify-center gap-3 cursor-pointer group shadow-xl hover:scale-[1.02] transition-all"
+            className="btn-cta-primary w-full text-white font-extrabold text-[17px] sm:text-lg lg:text-[19px] py-4 px-8 rounded-full flex items-center justify-center gap-3 cursor-pointer group shadow-xl hover:scale-[1.02] transition-all"
           >
             <span>QUERO ENTENDER A REFORMA</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-slate-600 pt-1 text-center">
+          <div className="flex items-center justify-center gap-2 text-[13px] sm:text-sm font-semibold text-slate-600 pt-1 text-center">
             <ShieldCheck className="w-4 h-4 text-[#00A878] shrink-0" />
             <span>
               Material digital <span className="text-slate-400">•</span> Acesso online <span className="text-slate-400">•</span> <span className="text-[#00A878] font-bold">7 dias de garantia</span>
