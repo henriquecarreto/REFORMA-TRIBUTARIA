@@ -230,6 +230,7 @@ export const bundleItems = [
   "MEI",
   "SINTER, CIB, SINIR e CNM",
   "Guia Visual para Municípios",
+  "Guia Visual das Licitações Públicas",
   "Guia Visual do CNPJ Técnico",
   "Termos técnicos traduzidos",
   "Mapas organizados por assunto",
