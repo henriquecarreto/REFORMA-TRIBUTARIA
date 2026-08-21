@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
 
             {/* 3. SUBTÍTULO COM HIERARQUIA DE CORES E ESPAÇAMENTO EXATO */}
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed mb-6 font-normal max-w-2xl">
-              <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#D97706] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
+              <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
             </p>
 
             {/* 4. LISTA DE BENEFÍCIOS REFINADA COM UM DESTAQUE PRINCIPAL POR LINHA */}
