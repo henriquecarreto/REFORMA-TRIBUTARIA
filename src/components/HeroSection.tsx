@@ -40,16 +40,16 @@ export const HeroSection: React.FC = () => {
           <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
         </p>
 
-        {/* 4. QUADRO ÚNICO DO MATERIAL COM MOSAICO 100% IDÊNTICO À IMAGEM DE REFERÊNCIA */}
+        {/* 4. QUADRO ÚNICO DO MATERIAL COM MOSAICO 100% IDÊNTICO À FOTO DE REFERÊNCIA */}
         <div className="w-full max-w-3xl mb-10">
           <div className="relative w-full bg-white p-2 sm:p-3 rounded-3xl border border-amber-200/80 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
-            <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-3 sm:p-6 border border-amber-200/60 relative">
+            <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-3 sm:p-5 border border-amber-200/60 relative">
               
-              {/* LAYOUT DE 3 COLUNAS COM REBAIXAMENTO DA CAPA CENTRAL */}
-              <div className="grid grid-cols-12 gap-2.5 sm:gap-4 items-start pt-1 pb-3">
+              {/* DISPOSIÇÃO DE 3 COLUNAS: ESQUERDA (2 CAPAS), CENTRO (1 CAPA CENTRALIZADA VERTICALMENTE NO MEIO DO QUADRO), DIREITA (2 CAPAS) */}
+              <div className="flex items-center justify-between gap-2.5 sm:gap-4">
                 
                 {/* COLUNA ESQUERDA: 2 CAPAS EMPILHADAS */}
-                <div className="col-span-4 flex flex-col gap-2.5 sm:gap-4">
+                <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
                   {/* Topo Esquerda */}
                   <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
                     <img
@@ -70,8 +70,8 @@ export const HeroSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* COLUNA CENTRAL: REFORMA TRIBUTÁRIA DO CONSUMO (REBAIXADA LEVEMENTE PARA O CENTRO DO MOSAICO) */}
-                <div className="col-span-4 transform translate-y-3 sm:translate-y-5 shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 bg-white p-0.5 sm:p-1 z-10 transition-transform hover:scale-[1.03]">
+                {/* COLUNA CENTRAL: CAPA DA REFORMA TRIBUTÁRIA DO CONSUMO (CENTRALIZADA NO MEIO DA ALTURA) */}
+                <div className="w-[36%] shrink-0 shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 bg-white p-0.5 sm:p-1 z-10 my-auto transition-transform hover:scale-[1.03]">
                   <img
                     src="/hero/capas/capa-05-consumo.jpg"
                     alt="Reforma Tributária do Consumo - Guia Principal"
@@ -81,7 +81,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* COLUNA DIREITA: 2 CAPAS EMPILHADAS */}
-                <div className="col-span-4 flex flex-col gap-2.5 sm:gap-4">
+                <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
                   {/* Topo Direita */}
                   <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
                     <img
