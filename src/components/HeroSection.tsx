@@ -19,7 +19,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-amber-100/50 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50/50 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         
         {/* 1. IDENTIFICAÇÃO DO PRODUTO */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#F5B700] text-[#0B1F3A] text-[13px] sm:text-sm font-extrabold uppercase tracking-wider mb-6 shadow-xs">
@@ -40,129 +40,71 @@ export const HeroSection: React.FC = () => {
           <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
         </p>
 
-        {/* 4. COMPOSIÇÃO DAS 5 CAPAS (COM A CAPA DO CONSUMO AO CENTRO) */}
-        <div className="w-full max-w-4xl mb-12 px-2">
-          {/* Desktop & Tablet Showcase (5 Capas Lado a Lado / Leque 3D) */}
-          <div className="hidden md:flex items-center justify-center gap-3 lg:gap-4 relative py-4">
-            
-            {/* Capa Esquerda Externa (Licitações) */}
-            <div className="w-1/5 transform -rotate-6 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:z-40 shadow-xl rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-              <img
-                src="/hero/capas/capa-03-licitacoes.jpg"
-                alt="Reforma Tributária nas Licitações Públicas"
-                className="w-full h-auto rounded-lg object-cover"
-                loading="eager"
-              />
-            </div>
+        {/* 4. QUADRO ÚNICO DO MATERIAL (UNIFIED SINGLE CARD FRAME CONTAINING ALL 5 COVERS WITH CONSUMO IN CENTER) */}
+        <div className="w-full max-w-3xl mb-10">
+          <div className="relative w-full bg-white p-2 sm:p-3 rounded-3xl border border-amber-200/80 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
+            <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-2.5 sm:p-4 border border-amber-200/60 relative">
+              
+              {/* COMPOSIÇÃO ÚNICA DAS 5 CAPAS LADO A LADO */}
+              <div className="flex items-center justify-center gap-1.5 sm:gap-3 py-1 sm:py-2">
+                
+                {/* 1. Licitações Públicas (Esquerda Externa) */}
+                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
+                  <img
+                    src="/hero/capas/capa-03-licitacoes.jpg"
+                    alt="Reforma Tributária nas Licitações Públicas"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
 
-            {/* Capa Esquerda Interna (CBS & IBS) */}
-            <div className="w-1/5 transform -rotate-3 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:z-40 shadow-xl rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-              <img
-                src="/hero/capas/capa-01-cbs-ibs.jpg"
-                alt="Guia Visual CBS & IBS - O Novo IVA Dual"
-                className="w-full h-auto rounded-lg object-cover"
-                loading="eager"
-              />
-            </div>
+                {/* 2. CBS & IBS (Esquerda Interna) */}
+                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
+                  <img
+                    src="/hero/capas/capa-01-cbs-ibs.jpg"
+                    alt="Guia Visual CBS & IBS"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
 
-            {/* CAPA CENTRAL EM DESTAQUE (REFORMA TRIBUTÁRIA DO CONSUMO) */}
-            <div className="w-1/4 z-30 transform scale-110 shadow-2xl rounded-2xl overflow-hidden bg-white p-1.5 border-2 border-amber-400 ring-4 ring-amber-400/20 transition-all duration-300 hover:scale-115">
-              <div className="absolute top-2 right-2 bg-amber-400 text-slate-950 font-black text-[10px] uppercase px-2 py-0.5 rounded-full shadow-md z-10">
-                Principal
+                {/* 3. REFORMA TRIBUTÁRIA DO CONSUMO (CAPA CENTRAL EM DESTAQUE) */}
+                <div className="w-[26%] shrink-0 shadow-xl rounded-lg sm:rounded-xl overflow-hidden border-2 border-amber-400 bg-white transform scale-105 z-10">
+                  <img
+                    src="/hero/capas/capa-05-consumo.jpg"
+                    alt="Reforma Tributária do Consumo - Guia Principal"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
+
+                {/* 4. Municípios (Direita Interna) */}
+                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
+                  <img
+                    src="/hero/capas/capa-02-municipios.jpg"
+                    alt="Reforma Tributária para Municípios"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
+
+                {/* 5. Trilha Fiscal (Direita Externa) */}
+                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
+                  <img
+                    src="/hero/capas/capa-04-trilha-fiscal.jpg"
+                    alt="Trilha Fiscal"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                  />
+                </div>
+
               </div>
-              <img
-                src="/hero/capas/capa-05-consumo.jpg"
-                alt="Reforma Tributária do Consumo - Guia Principal"
-                className="w-full h-auto rounded-xl object-cover"
-                loading="eager"
-              />
-            </div>
 
-            {/* Capa Direita Interna (Municípios) */}
-            <div className="w-1/5 transform rotate-3 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:z-40 shadow-xl rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-              <img
-                src="/hero/capas/capa-02-municipios.jpg"
-                alt="Reforma Tributária para Municípios"
-                className="w-full h-auto rounded-lg object-cover"
-                loading="eager"
-              />
             </div>
-
-            {/* Capa Direita Externa (Trilha Fiscal) */}
-            <div className="w-1/5 transform rotate-6 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:z-40 shadow-xl rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-              <img
-                src="/hero/capas/capa-04-trilha-fiscal.jpg"
-                alt="Trilha Fiscal - Fundamentos da Área Fiscal"
-                className="w-full h-auto rounded-lg object-cover"
-                loading="eager"
-              />
-            </div>
-
           </div>
-
-          {/* Mobile Showcase (Capa Central em Destaque + 4 Capas em Grid 2x2) */}
-          <div className="flex md:hidden flex-col items-center gap-4">
-            
-            {/* CAPA CENTRAL EM DESTAQUE NO MOBILE */}
-            <div className="w-56 sm:w-64 shadow-2xl rounded-2xl overflow-hidden bg-white p-1.5 border-2 border-amber-400 relative">
-              <div className="absolute top-2 right-2 bg-amber-400 text-slate-950 font-black text-[10px] uppercase px-2.5 py-0.5 rounded-full shadow-md z-10">
-                Principal
-              </div>
-              <img
-                src="/hero/capas/capa-05-consumo.jpg"
-                alt="Reforma Tributária do Consumo - Guia Principal"
-                className="w-full h-auto rounded-xl object-cover"
-                loading="eager"
-              />
-            </div>
-
-            {/* AS OUTRAS 4 CAPAS EM GRID 2X2 NO MOBILE */}
-            <div className="grid grid-cols-2 gap-3 w-full max-w-sm">
-              <div className="shadow-lg rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-                <img
-                  src="/hero/capas/capa-01-cbs-ibs.jpg"
-                  alt="Guia Visual CBS & IBS"
-                  className="w-full h-auto rounded-lg object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="shadow-lg rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-                <img
-                  src="/hero/capas/capa-02-municipios.jpg"
-                  alt="Reforma Tributária para Municípios"
-                  className="w-full h-auto rounded-lg object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="shadow-lg rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-                <img
-                  src="/hero/capas/capa-03-licitacoes.jpg"
-                  alt="Licitações Públicas"
-                  className="w-full h-auto rounded-lg object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="shadow-lg rounded-xl overflow-hidden bg-white p-1 border border-amber-200/80">
-                <img
-                  src="/hero/capas/capa-04-trilha-fiscal.jpg"
-                  alt="Trilha Fiscal"
-                  className="w-full h-auto rounded-lg object-cover"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-          </div>
-
-          <p className="text-xs font-semibold text-slate-500 mt-4 text-center">
-            Veja por dentro os materiais que você vai receber.
-          </p>
         </div>
 
-        {/* 5. LISTA DE BENEFÍCIOS (ALINHADA À ESQUERDA DENTRO DO BLOCO CENTRALIZADO) */}
+        {/* 5. LISTA DE BENEFÍCIOS */}
         <div className="w-full max-w-xl mb-10">
           <ul className="space-y-3.5 text-left">
             <li className="flex items-center gap-3">
