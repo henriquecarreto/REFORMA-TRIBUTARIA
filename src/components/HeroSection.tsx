@@ -40,36 +40,36 @@ export const HeroSection: React.FC = () => {
           <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto — sem leis extensas, vídeos longos ou explicações difíceis.
         </p>
 
-        {/* 4. QUADRO ÚNICO DO MATERIAL (UNIFIED SINGLE CARD FRAME CONTAINING ALL 5 COVERS WITH CONSUMO IN CENTER) */}
+        {/* 4. QUADRO ÚNICO DO MATERIAL COM LAYOUT DE 3 COLUNAS (IDÊNTICO À DISPOSIÇÃO DA IMAGEM ORIGINAL) */}
         <div className="w-full max-w-3xl mb-10">
           <div className="relative w-full bg-white p-2 sm:p-3 rounded-3xl border border-amber-200/80 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
             <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-2.5 sm:p-4 border border-amber-200/60 relative">
               
-              {/* COMPOSIÇÃO ÚNICA DAS 5 CAPAS LADO A LADO */}
-              <div className="flex items-center justify-center gap-1.5 sm:gap-3 py-1 sm:py-2">
+              {/* DISPOSIÇÃO DE 3 COLUNAS: 2 À ESQUERDA (EMPILHADAS), 1 CENTRAL PRINCIPAL, 2 À DIREITA (EMPILHADAS) */}
+              <div className="grid grid-cols-12 gap-2 sm:gap-3.5 items-center">
                 
-                {/* 1. Licitações Públicas (Esquerda Externa) */}
-                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
-                  <img
-                    src="/hero/capas/capa-03-licitacoes.jpg"
-                    alt="Reforma Tributária nas Licitações Públicas"
-                    className="w-full h-auto object-cover"
-                    loading="eager"
-                  />
+                {/* COLUNA ESQUERDA: 2 CAPAS EMPILHADAS */}
+                <div className="col-span-3 flex flex-col gap-2 sm:gap-3">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/80 bg-white">
+                    <img
+                      src="/hero/capas/capa-01-cbs-ibs.jpg"
+                      alt="Guia Visual CBS & IBS"
+                      className="w-full h-auto object-cover"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/80 bg-white">
+                    <img
+                      src="/hero/capas/capa-03-licitacoes.jpg"
+                      alt="Reforma Tributária nas Licitações Públicas"
+                      className="w-full h-auto object-cover"
+                      loading="eager"
+                    />
+                  </div>
                 </div>
 
-                {/* 2. CBS & IBS (Esquerda Interna) */}
-                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
-                  <img
-                    src="/hero/capas/capa-01-cbs-ibs.jpg"
-                    alt="Guia Visual CBS & IBS"
-                    className="w-full h-auto object-cover"
-                    loading="eager"
-                  />
-                </div>
-
-                {/* 3. REFORMA TRIBUTÁRIA DO CONSUMO (CAPA CENTRAL EM DESTAQUE) */}
-                <div className="w-[26%] shrink-0 shadow-xl rounded-lg sm:rounded-xl overflow-hidden border-2 border-amber-400 bg-white transform scale-105 z-10">
+                {/* COLUNA CENTRAL: CAPA PRINCIPAL EM DESTAQUE (REFORMA TRIBUTÁRIA DO CONSUMO) */}
+                <div className="col-span-6 shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400 bg-white z-10">
                   <img
                     src="/hero/capas/capa-05-consumo.jpg"
                     alt="Reforma Tributária do Consumo - Guia Principal"
@@ -78,24 +78,24 @@ export const HeroSection: React.FC = () => {
                   />
                 </div>
 
-                {/* 4. Municípios (Direita Interna) */}
-                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
-                  <img
-                    src="/hero/capas/capa-02-municipios.jpg"
-                    alt="Reforma Tributária para Municípios"
-                    className="w-full h-auto object-cover"
-                    loading="eager"
-                  />
-                </div>
-
-                {/* 5. Trilha Fiscal (Direita Externa) */}
-                <div className="w-1/5 shrink-0 shadow-md rounded-md sm:rounded-lg overflow-hidden border border-slate-200/80 bg-white">
-                  <img
-                    src="/hero/capas/capa-04-trilha-fiscal.jpg"
-                    alt="Trilha Fiscal"
-                    className="w-full h-auto object-cover"
-                    loading="eager"
-                  />
+                {/* COLUNA DIREITA: 2 CAPAS EMPILHADAS */}
+                <div className="col-span-3 flex flex-col gap-2 sm:gap-3">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/80 bg-white">
+                    <img
+                      src="/hero/capas/capa-02-municipios.jpg"
+                      alt="Reforma Tributária para Municípios"
+                      className="w-full h-auto object-cover"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/80 bg-white">
+                    <img
+                      src="/hero/capas/capa-04-trilha-fiscal.jpg"
+                      alt="Trilha Fiscal"
+                      className="w-full h-auto object-cover"
+                      loading="eager"
+                    />
+                  </div>
                 </div>
 
               </div>
