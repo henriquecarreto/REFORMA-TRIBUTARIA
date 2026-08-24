@@ -36,8 +36,8 @@ export const HeroSection: React.FC = () => {
         </h1>
 
         {/* 3. SUBTÍTULO */}
-        <p className="text-base sm:text-lg text-[#475569] leading-relaxed mb-8 font-normal max-w-2xl text-center">
-          <span className="text-[#0A8FF0] font-semibold">IBS, CBS</span> e <span className="text-[#C7463E] font-semibold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-semibold">guia visual</span>, organizado e direto ao ponto, sem leis extensas, vídeos longos ou explicações difíceis.
+        <p className="text-base sm:text-lg text-[#263142] leading-relaxed mb-8 font-medium max-w-2xl text-center">
+          <span className="text-[#0A8FF0] font-bold">IBS, CBS</span> e <span className="text-[#C7463E] font-bold">Imposto Seletivo</span> explicados em um <span className="text-[#00A878] font-bold">guia visual</span>, organizado e direto ao ponto, sem leis extensas, vídeos longos ou explicações difíceis.
         </p>
 
         {/* 4. QUADRO ÚNICO DO MATERIAL COM MOSAICO 100% IDÊNTICO À FOTO DE REFERÊNCIA */}
