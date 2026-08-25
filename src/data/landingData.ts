@@ -181,14 +181,6 @@ export const benefitsList: BenefitDetail[] = [
   {
     title: "CONSTRUA UMA BASE MAIS SÓLIDA",
     description: "Entenda primeiro o essencial para depois avançar aos conteúdos mais técnicos."
-  },
-  {
-    title: "CONSULTE SEMPRE QUE PRECISAR",
-    description: "Use os mapas como apoio para revisar conceitos e recuperar informações rapidamente."
-  },
-  {
-    title: "APRENDA NO SEU RITMO",
-    description: "Estude, revise e volte aos assuntos quantas vezes precisar."
   }
 ];
 
@@ -197,15 +189,15 @@ export const collection16Materials: DigitalMaterial[] = [
   { id: "mat-2", number: 2, title: "Guia Visual da Reforma Tributária", category: "Fundamentos da Reforma", description: "Visão geral completa e linha do tempo do novo modelo tributário.", iconName: "Map" },
   { id: "mat-3", number: 3, title: "Guia Visual do IBS", category: "Tributos e Mecanismos", description: "Imposto sobre Bens e Serviços (estados e municípios) detalhado.", iconName: "Layers" },
   { id: "mat-4", number: 4, title: "Guia Visual da CBS", category: "Tributos e Mecanismos", description: "Contribuição sobre Bens e Serviços (federal) em mapa explicativo.", iconName: "PieChart" },
-  { id: "mat-5", number: 5, title: "Guia Visual do Imposto Seletivo", category: "Tributos e Mecanismos", description: "O 'Imposto do Pecado', incidência, alíquotas e regras tributárias.", iconName: "AlertTriangle" },
+  { id: "mat-5", number: 5, title: "Guia Visual do Imposto Seletivo", category: "Tributos e Mecanismos", description: "Finalidade, bens e serviços alcançados, incidência e principais regras do Imposto Seletivo.", iconName: "AlertTriangle" },
   { id: "mat-6", number: 6, title: "Guia Visual do Simples Nacional", category: "Pequenos Negócios e Pessoas Físicas", description: "Regras de opção, aproveitamento de créditos e cálculo no Simples.", iconName: "Store" },
   { id: "mat-7", number: 7, title: "Guia Visual do MEI", category: "Pequenos Negócios e Pessoas Físicas", description: "Impactos da reforma para o Microempreendedor Individual.", iconName: "UserCheck" },
   { id: "mat-8", number: 8, title: "Guia Visual do Split Payment", category: "Tributos e Mecanismos", description: "Segregação e recolhimento automático no momento do pagamento.", iconName: "Zap" },
   { id: "mat-9", number: 9, title: "Guia Visual do SINTER, CIB, SINIR e CNM", category: "Administração Pública e Municípios", description: "Cadastros nacionais, integração de dados e novos registros fiscais.", iconName: "Database" },
   { id: "mat-10", number: 10, title: "Guia Visual para Municípios", category: "Administração Pública e Municípios", description: "Transição do ISS para o IBS, retenções e gestão de receitas.", iconName: "Building2" },
   { id: "mat-11", number: 11, title: "Guia Visual das Licitações Públicas", category: "Licitações e Temas Práticos", description: "Formação de preços, reequilíbrio econômico e novos editais.", iconName: "FileText" },
-  { id: "mat-12", number: 12, title: "Guia Visual do CNPJ Técnico", category: "Pequenos Negócios e Pessoas Físicas", description: "Adequação operacional de prestadores de serviços e PJ.", iconName: "Briefcase" },
-  { id: "mat-13", number: 13, title: "Pessoa Física na Reforma", category: "Pequenos Negócios e Pessoas Físicas", description: "Impactos no consumo, tributação de renda e patrimônio.", iconName: "User" },
+  { id: "mat-12", number: 12, title: "Guia Visual do CNPJ Técnico", category: "Pequenos Negócios e Pessoas Físicas", description: "Inscrição de pessoas físicas no CNPJ para fins cadastrais e fiscais, sem transformação automática em pessoa jurídica.", iconName: "Briefcase" },
+  { id: "mat-13", number: 13, title: "Pessoa Física na Reforma", category: "Pequenos Negócios e Pessoas Físicas", description: "Situações em que pessoas físicas podem ser alcançadas pelas regras do IBS e da CBS e pela inscrição cadastral no CNPJ.", iconName: "User" },
   { id: "mat-14", number: 14, title: "Nanoempreendedor", category: "Pequenos Negócios e Pessoas Físicas", description: "Nova figura tributária e limites de enquadramento.", iconName: "Sparkles" },
   { id: "mat-15", number: 15, title: "Cashback do IBS e da CBS", category: "Tributos e Mecanismos", description: "Mecanismo de devolução de tributos para famílias de baixa renda.", iconName: "RefreshCw" },
   { id: "mat-16", number: 16, title: "Créditos do IBS e da CBS", category: "Tributos e Mecanismos", description: "Regra da não-cumulatividade plena e apropriação de créditos.", iconName: "CreditCard" }
@@ -215,7 +207,7 @@ export const targetAudience: AudienceCard[] = [
   {
     id: "aud-1",
     title: "Para Profissionais Contábeis e Fiscais",
-    description: "Compreenda a estrutura do IBS, CBS, créditos acumulados, Split Payment e adaptações no Simples Nacional para atender clientes com total segurança."
+    description: "Compreenda a estrutura do IBS, CBS, créditos acumulados, Split Payment e adaptações no Simples Nacional para acompanhar as mudanças e orientar seus estudos com mais clareza."
   },
   {
     id: "aud-2",
@@ -256,75 +248,39 @@ export const bundleItems = [
 export const bonusList: BonusItem[] = [
   {
     number: "01",
-    title: "Glossário Visual da Reforma Tributária",
-    description: "Material de consulta rápida para compreender termos frequentemente utilizados nas discussões sobre a Reforma.",
-    benefits: ["IBS", "CBS", "Imposto Seletivo", "Termos técnicos traduzidos", "Consulta rápida"],
+    title: "Pessoa Física na Reforma",
+    description: "Material educativo sobre situações em que pessoas físicas podem ser alcançadas pelas regras do IBS e da CBS.",
+    benefits: ["Entendimento do consumo", "Tributação de patrimônio", "Critérios cadastrais"],
     imageSrc: "/material/amostra-01.jpg",
     tagText: "BÔNUS 01",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
+    planInclusion: "INCLUSO NO PLANO COMPLETO (E PARTE DOS 16 MATERIAIS)"
   },
   {
     number: "02",
-    title: "Tabelas de códigos fiscais",
-    description: "Material prático e explicativo para rápida consulta aos principais códigos e campos fiscais aplicados ao novo modelo.",
-    benefits: ["Consulta CST", "Regras cClassTrib", "Identificação cIndOp", "Orientação cCredPres"],
+    title: "Nanoempreendedor",
+    description: "Análise da nova figura fiscal criada na reforma para atividades de menor porte.",
+    benefits: ["Limites operacionais", "Regras de apuração", "Conceito didático"],
     imageSrc: "/material/amostra-02.jpg",
     tagText: "BÔNUS 02",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
+    planInclusion: "INCLUSO NO PLANO COMPLETO (E PARTE DOS 16 MATERIAIS)"
   },
   {
     number: "03",
-    title: "Checklist — O que estudar primeiro",
-    description: "Uma sequência prática para ajudar quem ainda não sabe por onde começar seus estudos sobre a nova legislação.",
-    benefits: ["Trilha de aprendizagem", "Passo a passo por prioridade", "Checklist de conceitos fundamentais"],
+    title: "Cashback do IBS e da CBS",
+    description: "Como funciona o mecanismo de devolução de tributos para famílias de baixa renda.",
+    benefits: ["Devolução social", "Cálculo simplificado", "Regras operacionais"],
     imageSrc: "/material/amostra-03.jpg",
     tagText: "BÔNUS 03",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
+    planInclusion: "INCLUSO NO PLANO COMPLETO (E PARTE DOS 16 MATERIAIS)"
   },
   {
     number: "04",
-    title: "Calculadora de IBS e CBS",
-    description: "Planilha de apoio destinada a facilitar simulações e conferências relacionadas aos novos tributos do IVA Dual.",
-    benefits: ["Simulação visual", "Crédito vs Débito", "Estimativa por alíquota", "Apoio didático"],
+    title: "Créditos do IBS e da CBS",
+    description: "Guia visual sobre o funcionamento da não-cumulatividade plena e apropriação de créditos.",
+    benefits: ["Aproveitamento amplo", "Regras de creditamento", "Comparativo didático"],
     imageSrc: "/material/amostra-05.jpg",
     tagText: "BÔNUS 04",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
-  },
-  {
-    number: "05",
-    title: "Linha do Tempo da Reforma",
-    description: "Visualize as principais etapas da implantação do novo sistema tributário de 2026 até 2033.",
-    benefits: ["Marcos 2026-2033", "Extinção gradativa", "Fases de testes", "Acompanhamento anual"],
-    imageSrc: "/material/amostra-08.jpg",
-    tagText: "BÔNUS 05",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
-  },
-  {
-    number: "06",
-    title: "Guia de preenchimento IBS/CBS",
-    description: "Material de apoio visual para identificar campos e informações relacionadas ao preenchimento de documentos fiscais.",
-    benefits: ["Orientação visual de campos", "Destaque de IBS e CBS", "Evita dúvidas operacionais"],
-    imageSrc: "/material/amostra-06.jpg",
-    tagText: "BÔNUS 06",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
-  },
-  {
-    number: "07",
-    title: "Antes e Depois da Reforma",
-    description: "Quadro comparativo para visualizar algumas das principais diferenças entre o sistema anterior e o novo modelo unificado.",
-    benefits: ["PIS/COFINS vs CBS", "ICMS/ISS vs IBS", "Não-cumulatividade ampla", "Tabela comparativa"],
-    imageSrc: "/material/amostra-07.jpg",
-    tagText: "BÔNUS 07",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
-  },
-  {
-    number: "08",
-    title: "Guia de Documentos Fiscais",
-    description: "Material organizado para facilitar o entendimento das alterações relacionadas aos documentos fiscais eletrônicos.",
-    benefits: ["Mudanças na NF-e", "Impacto no NFC-e", "Alterações no CT-e", "Padronização da NFS-e"],
-    imageSrc: "/material/amostra-04.jpg",
-    tagText: "BÔNUS 08",
-    planInclusion: "INCLUSO NO PLANO COMPLETO"
+    planInclusion: "INCLUSO NO PLANO COMPLETO (E PARTE DOS 16 MATERIAIS)"
   }
 ];
 
@@ -397,7 +353,7 @@ export const faqsData: FAQItem[] = [
   },
   {
     question: "Como recebo o acesso?",
-    answer: "Assim que o pagamento for confirmado pela plataforma de checkout, as instruções de acesso à área de membros exclusiva são enviadas automaticamente para o e-mail cadastrado."
+    answer: "Assim que o pagamento for confirmed pela plataforma de checkout, as instruções de acesso à área de membros exclusiva são enviadas automaticamente para o e-mail cadastrado."
   },
   {
     question: "Quais formas de pagamento estão disponíveis?",

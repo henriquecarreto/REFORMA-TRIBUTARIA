@@ -132,7 +132,7 @@ export const PricingSection: React.FC = () => {
             {/* BADGE DE MAIOR VALOR DA OFERTA */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F5B700] text-[#0B1F3A] font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full shadow-md flex items-center gap-1.5 whitespace-nowrap">
               <Star className="w-3.5 h-3.5 fill-[#0B1F3A]" />
-              <span>COLEÇÃO COMPLETA DE 16 MATERIAIS</span>
+              <span>12 GUIAS + 4 BÔNUS = 16 MATERIAIS DIGITAIS</span>
             </div>
 
             <div>
@@ -142,7 +142,7 @@ export const PricingSection: React.FC = () => {
                   COLEÇÃO COMPLETA
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  A coleção inteira com todos os 16 materiais visuais abrangendo Simples Nacional, MEI, Split Payment, Municípios, Licitações, CNPJ Técnico e Bônus.
+                  A coleção inteira reunindo os 12 guias principais e 4 bônus (total de 16 materiais digitais) abrangendo Simples Nacional, MEI, Split Payment, Municípios, Licitações e CNPJ Técnico.
                 </p>
               </div>
 
@@ -151,7 +151,7 @@ export const PricingSection: React.FC = () => {
                 {!completeImgError ? (
                   <img
                     src="/plans/plano-completo.jpg"
-                    alt="Coleção Completa de Materiais + Bônus do Fiscal Simplificado"
+                    alt="Coleção Completa de Materiais do Fiscal Simplificado"
                     onError={() => setCompleteImgError(true)}
                     className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
                     loading="lazy"
@@ -184,7 +184,7 @@ export const PricingSection: React.FC = () => {
               <div className="space-y-2.5 mb-6">
                 <div className="flex items-center gap-2 text-xs font-extrabold text-amber-900 bg-amber-50 p-2 rounded-lg border border-amber-200">
                   <Layers className="w-4 h-4 text-amber-700 shrink-0" />
-                  <span>INCLUI TODOS OS 16 MATERIAIS DIGITAIS DA COLEÇÃO:</span>
+                  <span>12 GUIAS PRINCIPAIS + 4 BÔNUS = 16 MATERIAIS DIGITAIS:</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-slate-800 pt-1">

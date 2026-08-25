@@ -105,18 +105,17 @@ export const BonusSection: React.FC = () => {
 
           {/* TÍTULO PRINCIPAL */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-extrabold text-[#0B1F3A] leading-tight tracking-tight mb-4">
-            E AINDA TEM MAIS: <br className="hidden sm:inline" />
-            VOCÊ RECEBE <span className="text-[#F5B700]">4 BÔNUS</span> PARA COMPLETAR SEUS ESTUDOS.
+            A COLEÇÃO INCLUI <span className="text-[#00A878]">4 BÔNUS</span> PARA COMPLETAR SEUS ESTUDOS.
           </h2>
 
           {/* SUBTÍTULO */}
           <p className="text-sm sm:text-base md:text-lg text-[#1F2937] font-normal leading-relaxed max-w-3xl mx-auto mb-5">
-            Materiais complementares pensados para ajudar você a revisar, organizar e visualizar os principais pontos da Reforma Tributária com ainda mais facilidade.
+            Materiais complementares integrados à coleção para ajudar você a revisar, organizar e visualizar os principais pontos da Reforma Tributária com facilidade.
           </p>
 
           {/* MICROCOPY INDICADOR */}
           <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0A8FF0] tracking-wider uppercase pt-1">
-            <span>ELES JÁ FAZEM PARTE DO PLANO COMPLETO</span>
+            <span>(OS 4 BÔNUS FAZEM PARTE DOS 16 MATERIAIS DIGITAIS DA COLEÇÃO COMPLETA)</span>
             <ArrowDown className="w-3.5 h-3.5" />
           </div>
         </div>

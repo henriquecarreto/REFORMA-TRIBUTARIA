@@ -15,7 +15,7 @@ export const ProductBundle: React.FC = () => {
         <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00A878]/15 border border-[#00A878]/40 text-[#00A878] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-4 shadow-xs">
             <Layers className="w-4 h-4 text-[#00A878]" />
-            <span>COLEÇÃO COMPLETA DE MATERIAIS DIGITAIS</span>
+            <span>12 GUIAS PRINCIPAIS + 4 BÔNUS = 16 MATERIAIS DIGITAIS</span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight mb-4">
@@ -23,7 +23,7 @@ export const ProductBundle: React.FC = () => {
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-slate-200/90 font-medium leading-relaxed max-w-3xl mx-auto">
-            Uma acervo digital organizado por temas essenciais para você consultar, estudar e aplicar o conhecimento sobre a Reforma Tributária com facilidade.
+            Um acervo digital organizado por temas essenciais para você consultar, estudar e aplicar o conhecimento sobre a Reforma Tributária com facilidade.
           </p>
         </div>
 
@@ -55,15 +55,15 @@ export const ProductBundle: React.FC = () => {
 
               <div className="mt-4 pt-2.5 border-t border-white/10 flex items-center justify-between text-[11px] font-semibold text-slate-400">
                 <span className="flex items-center gap-1 text-emerald-400">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Incluído no PDF
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Material digital em PDF
                 </span>
-                <span className="text-amber-300">Formato Digital</span>
+                <span className="text-amber-300">Acesso Digital</span>
               </div>
             </div>
           ))}
         </div>
 
-        {/* BOTTOM BANNER WITH MOCKUP & ACTION */}
+        {/* BOTTOM BANNER WITH ACTION */}
         <div className="bg-gradient-to-r from-amber-500/15 via-blue-600/20 to-emerald-500/15 p-6 sm:p-8 rounded-3xl border border-white/20 shadow-2xl backdrop-blur-md flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-400 text-slate-950 font-black text-xs uppercase mb-2">
@@ -92,3 +92,5 @@ export const ProductBundle: React.FC = () => {
     </section>
   );
 };
+
+export default ProductBundle;
