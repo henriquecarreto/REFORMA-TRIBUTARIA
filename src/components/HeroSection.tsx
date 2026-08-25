@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ArrowRight, BookOpen } from 'lucide-react';
+import { ArrowRight, BookOpen, BarChart3, Building, Landmark, Eye, FileText, Smartphone, Zap } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const scrollToMaterials = (e?: React.MouseEvent<Element>) => {
@@ -26,15 +26,15 @@ export const HeroSection: React.FC = () => {
           <span>COLEÇÃO VISUAL DA REFORMA TRIBUTÁRIA</span>
         </div>
 
-        {/* 2. TÍTULO PRINCIPAL RESTAURADO COM DISTRIBUIÇÃO DE CORES DA MARCA */}
+        {/* 2. TÍTULO PRINCIPAL RESTAURADO */}
         <h1 className="text-[28px] min-[375px]:text-[32px] min-[430px]:text-[35px] sm:text-[44px] lg:text-[50px] font-extrabold text-[#0B1F3A] leading-[1.14] tracking-tight mb-4 max-w-3xl">
           Entenda a Reforma Tributária <br className="hidden sm:inline" />
-          <span className="text-[#176BAA]">sem se perder em leis</span> e <span className="text-[#138A60]">explicações complicadas</span>
+          <span className="text-[#1769D1]">sem se perder em leis</span> e <span className="text-[#138A60]">explicações complicadas</span>
         </h1>
 
-        {/* 3. SUBTÍTULO OTIMIZADO (#14233B PRINCIPAL, #D72638 VERMELHO INTENSO, #1465B0 AZUL INTENSO) */}
+        {/* 3. SUBTÍTULO OTIMIZADO */}
         <p className="text-[17px] min-[375px]:text-[18px] sm:text-[20px] lg:text-[21px] text-[#14233B] leading-[1.6] mb-3.5 font-semibold max-w-3xl text-center">
-          Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1465B0] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
+          Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
         </p>
 
         {/* PÚBLICO ALVO EM VERMELHO INTENSO #D72638 */}
@@ -42,7 +42,7 @@ export const HeroSection: React.FC = () => {
           Para profissionais fiscais, contadores, servidores públicos, estudantes e empreendedores.
         </p>
 
-        {/* 4. COMPOSIÇÃO ORIGINAL DE CAPAS RESTAURADA IGUAL AO PADRÃO INICIAL */}
+        {/* 4. COMPOSIÇÃO ORIGINAL DE CAPAS */}
         <div className="w-full max-w-2xl sm:max-w-3xl mb-8">
           <div className="relative w-full bg-white p-2.5 sm:p-4 rounded-3xl border border-amber-200/90 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
             <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-3 sm:p-5 border border-amber-200/60 relative">
@@ -50,7 +50,7 @@ export const HeroSection: React.FC = () => {
               {/* DISPOSIÇÃO DE 3 COLUNAS PADRÃO */}
               <div className="flex items-center justify-between gap-2.5 sm:gap-4">
                 
-                {/* COLUNA ESQUERDA: 2 CAPAS */}
+                {/* COLUNA ESQUERDA */}
                 <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
                   <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
                     <img
@@ -70,7 +70,7 @@ export const HeroSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* COLUNA CENTRAL: CAPA REFORMA TRIBUTÁRIA DO CONSUMO COM BORDA DOURADA */}
+                {/* COLUNA CENTRAL */}
                 <div className="w-[36%] shrink-0 shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 bg-white p-0.5 sm:p-1 z-10 my-auto transition-transform hover:scale-[1.03]">
                   <img
                     src="/hero/capas/capa-05-consumo.jpg"
@@ -80,7 +80,7 @@ export const HeroSection: React.FC = () => {
                   />
                 </div>
 
-                {/* COLUNA DIREITA: 2 CAPAS */}
+                {/* COLUNA DIREITA */}
                 <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
                   <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
                     <img
@@ -105,28 +105,29 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-3 text-center">
+          {/* LEGENDA REESCRITA COM SÍMBOLOS E DESTAQUES ESPECÍFICOS (#D72638 E #E87511) */}
+          <div className="mt-3.5 text-center">
             <span className="text-xs sm:text-sm font-extrabold text-[#14233B] tracking-wide">
-              <strong className="text-[#D72638] font-black">12 GUIAS PRINCIPAIS</strong> E <strong className="text-[#D72638] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR.
+              📚 <strong className="text-[#D72638] font-black">12 GUIAS PRINCIPAIS</strong> + 🎁 <strong className="text-[#E87511] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR
             </span>
           </div>
         </div>
 
-        {/* 5. BENEFÍCIOS INTEGRADOS DIRETO AO FUNDO BEGE COM CORES SOLICITADAS */}
+        {/* 5. BENEFÍCIOS REORGANIZADOS COM ÍCONES E CORES ESPECÍFICAS (#1769D1 AZUL, #138A60 VERDE, #D72638 VERMELHO) */}
         <div className="w-full max-w-2xl mb-7 px-2">
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left">
             <li className="flex items-center gap-3">
-              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-4 h-4 stroke-[2.8]" />
+              <div className="w-6 h-6 rounded-lg bg-[#1769D1]/15 text-[#1769D1] flex items-center justify-center shrink-0">
+                <BarChart3 className="w-4 h-4" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
-                <strong className="text-[#1465B0] font-extrabold">IBS e CBS</strong> explicados com clareza.
+                <strong className="text-[#1769D1] font-extrabold">IBS e CBS</strong> explicados com clareza.
               </span>
             </li>
 
             <li className="flex items-center gap-3">
-              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-4 h-4 stroke-[2.8]" />
+              <div className="w-6 h-6 rounded-lg bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
+                <Building className="w-4 h-4" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
                 Entenda o <strong className="text-[#138A60] font-extrabold">Simples Nacional e o MEI</strong>.
@@ -134,8 +135,8 @@ export const HeroSection: React.FC = () => {
             </li>
 
             <li className="flex items-center gap-3">
-              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-4 h-4 stroke-[2.8]" />
+              <div className="w-6 h-6 rounded-lg bg-[#D72638]/15 text-[#D72638] flex items-center justify-center shrink-0">
+                <Landmark className="w-4 h-4" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
                 Veja os impactos para <strong className="text-[#D72638] font-extrabold">municípios e licitações</strong>.
@@ -143,8 +144,8 @@ export const HeroSection: React.FC = () => {
             </li>
 
             <li className="flex items-center gap-3">
-              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-4 h-4 stroke-[2.8]" />
+              <div className="w-6 h-6 rounded-lg bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
+                <Eye className="w-4 h-4" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
                 Consulte os principais temas de <strong className="text-[#138A60] font-extrabold">forma visual</strong>.
@@ -154,7 +155,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* 6. BOTÃO PRINCIPAL "CONHECER OS 16 MATERIAIS" */}
-        <div className="flex flex-col items-center gap-2.5 w-full max-w-md">
+        <div className="flex flex-col items-center gap-3 w-full max-w-md">
           <a
             href="#materiais"
             onClick={scrollToMaterials}
@@ -164,13 +165,20 @@ export const HeroSection: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />
           </a>
 
-          {/* INFORMAÇÃO COMPLEMENTAR DISCRETA */}
-          <div className="flex items-center justify-center gap-2 text-[11px] sm:text-xs font-semibold text-slate-600 text-center">
-            <span>Material digital</span>
-            <span className="text-slate-300">•</span>
-            <span>Consulta pelo celular</span>
-            <span className="text-slate-300">•</span>
-            <span>Acesso imediato</span>
+          {/* INFORMAÇÃO COMPLEMENTAR REORGANIZADA ABAIXO DO BOTÃO */}
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-semibold text-[#14233B] text-center pt-1">
+            <span className="flex items-center gap-1.5">
+              <FileText className="w-4 h-4 text-[#1769D1] shrink-0" />
+              Material digital
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Smartphone className="w-4 h-4 text-[#138A60] shrink-0" />
+              Consulta pelo celular
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Zap className="w-4 h-4 text-[#D72638] fill-[#D72638] shrink-0" />
+              <strong className="text-[#D72638] font-extrabold">Acesso imediato</strong>
+            </span>
           </div>
         </div>
 
