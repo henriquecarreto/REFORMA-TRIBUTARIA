@@ -32,13 +32,13 @@ export const HeroSection: React.FC = () => {
           <span className="text-[#176BAA]">sem se perder em leis</span> e <span className="text-[#138A60]">explicações complicadas</span>
         </h1>
 
-        {/* 3. SUBTÍTULO OTIMIZADO (17-19px CELULAR, 18-20px TABLET, 19-22px DESKTOP) */}
-        <p className="text-[17px] min-[375px]:text-[18px] sm:text-[20px] lg:text-[21px] text-[#1F3550] leading-[1.6] mb-4 font-semibold max-w-3xl text-center">
-          Descubra uma coleção com <strong className="text-[#0B1F3A] font-extrabold">16 materiais visuais</strong> que explicam <strong className="text-[#176BAA] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
+        {/* 3. SUBTÍTULO OTIMIZADO COM CORES ESPECÍFICAS (#14233B PRINCIPAL, #D96B18 LARANJA QUEIMADO, #1465B0 AZUL INTENSO) */}
+        <p className="text-[17px] min-[375px]:text-[18px] sm:text-[20px] lg:text-[21px] text-[#14233B] leading-[1.6] mb-3.5 font-semibold max-w-3xl text-center">
+          Descubra uma coleção com <strong className="text-[#D96B18] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1465B0] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
         </p>
 
-        {/* PÚBLICO ALVO EM TEXTO DIRETO */}
-        <p className="text-xs sm:text-sm font-semibold text-amber-900/90 mb-6 text-center max-w-xl">
+        {/* PÚBLICO ALVO EM LARANJA ESCURO #C85C1C */}
+        <p className="text-sm sm:text-base font-bold text-[#C85C1C] mb-6 text-center max-w-2xl">
           Para profissionais fiscais, contadores, servidores públicos, estudantes e empreendedores.
         </p>
 
