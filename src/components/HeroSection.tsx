@@ -34,7 +34,7 @@ export const HeroSection: React.FC = () => {
 
         {/* 3. SUBTÍTULO OTIMIZADO */}
         <p className="text-[17px] min-[375px]:text-[18px] sm:text-[20px] lg:text-[21px] text-[#14233B] leading-[1.6] mb-3.5 font-semibold max-w-3xl text-center">
-          Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
+          Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI e os impactos nos municípios e licitações</strong> de forma clara e organizada.
         </p>
 
         {/* PÚBLICO ALVO EM TEXTO PRETO (#0B1F3A) COM EMOJI 👥 */}
