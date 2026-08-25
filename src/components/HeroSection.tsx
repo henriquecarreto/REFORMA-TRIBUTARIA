@@ -26,15 +26,15 @@ export const HeroSection: React.FC = () => {
           <span>COLEÇÃO VISUAL DA REFORMA TRIBUTÁRIA</span>
         </div>
 
-        {/* 2. TÍTULO PRINCIPAL */}
-        <h1 className="text-[30px] min-[375px]:text-[34px] min-[430px]:text-[38px] sm:text-[44px] lg:text-[50px] font-extrabold text-[#0B1F3A] leading-[1.12] tracking-tight mb-3.5 max-w-3xl">
-          A Reforma Tributária ficou <br className="hidden sm:inline" />
-          <span className="text-[#138A60]">mais fácil de entender.</span>
+        {/* 2. TÍTULO PRINCIPAL RESTAURADO COM DISTRIBUIÇÃO DE CORES DA MARCA */}
+        <h1 className="text-[28px] min-[375px]:text-[32px] min-[430px]:text-[35px] sm:text-[44px] lg:text-[50px] font-extrabold text-[#0B1F3A] leading-[1.14] tracking-tight mb-4 max-w-3xl">
+          Entenda a Reforma Tributária <br className="hidden sm:inline" />
+          <span className="text-[#176BAA]">sem se perder em leis</span> e <span className="text-[#138A60]">explicações complicadas</span>
         </h1>
 
-        {/* 3. SUBTÍTULO */}
-        <p className="text-[15px] sm:text-lg text-slate-700 leading-relaxed mb-4 font-medium max-w-2xl text-center">
-          Descubra uma coleção com 16 materiais visuais que explicam IBS, CBS, Simples Nacional, MEI, municípios e licitações de forma clara e organizada.
+        {/* 3. SUBTÍTULO OTIMIZADO (17-19px CELULAR, 18-20px TABLET, 19-22px DESKTOP) */}
+        <p className="text-[17px] min-[375px]:text-[18px] sm:text-[20px] lg:text-[21px] text-[#1F3550] leading-[1.6] mb-4 font-semibold max-w-3xl text-center">
+          Descubra uma coleção com <strong className="text-[#0B1F3A] font-extrabold">16 materiais visuais</strong> que explicam <strong className="text-[#176BAA] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
         </p>
 
         {/* PÚBLICO ALVO EM TEXTO DIRETO */}
