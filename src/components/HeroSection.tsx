@@ -165,21 +165,21 @@ export const HeroSection: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />
           </a>
 
-          {/* INFORMAÇÃO VISUAL DE PAGAMENTO SEGURO, PIX E CARTÃO */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-bold text-[#0B1F3A] text-center pt-2">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-950 shadow-2xs">
+          {/* INFORMAÇÃO VISUAL DE PAGAMENTO SEGURO, PIX E CARTÃO (PADRONIZADA EM 1 LINHA SEQUENCIAL NO CELULAR E DESKTOP) */}
+          <div className="flex flex-nowrap items-center justify-center gap-1.5 sm:gap-3 text-[11px] min-[375px]:text-xs sm:text-sm font-bold text-[#0B1F3A] text-center pt-2 max-w-full overflow-x-auto no-scrollbar">
+            <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2 py-1 min-[375px]:px-2.5 sm:px-3 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-950 shadow-2xs whitespace-nowrap shrink-0">
               <Lock className="w-3.5 h-3.5 text-[#00A859] shrink-0" />
               <span>Pagamento Seguro</span>
             </span>
 
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-950 shadow-2xs">
+            <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2 py-1 min-[375px]:px-2.5 sm:px-3 rounded-full bg-teal-50 border border-teal-200 text-teal-950 shadow-2xs whitespace-nowrap shrink-0">
               <QrCode className="w-3.5 h-3.5 text-[#32BCAD] shrink-0" />
               <span>Pix</span>
             </span>
 
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-950 shadow-2xs">
+            <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2 py-1 min-[375px]:px-2.5 sm:px-3 rounded-full bg-blue-50 border border-blue-200 text-blue-950 shadow-2xs whitespace-nowrap shrink-0">
               <CreditCard className="w-3.5 h-3.5 text-[#1769D1] shrink-0" />
-              <span>Cartão de Crédito</span>
+              <span>Cartão <span className="hidden min-[400px]:inline">de Crédito</span></span>
             </span>
           </div>
         </div>
