@@ -1,18 +1,18 @@
 export const siteConfig = {
   brandName: "Fiscal Simplificado",
-  productName: "Guia Visual da Reforma Tributária",
-  tagline: "Coleção digital educativa sobre a Reforma Tributária. Desenvolvido para auxílio no estudo, consulta rápida e aplicação prática.",
-  heroBadge: "GUIA VISUAL DA REFORMA TRIBUTÁRIA",
-  heroTitle: "Entenda a Reforma Tributária de um jeito mais simples, visual e organizado.",
-  heroSubtitle: "Um conjunto de materiais visuais criado para ajudar você a compreender IBS, CBS, Imposto Seletivo, transição e outros pontos importantes sem começar por conteúdos extremamente técnicos.",
+  productName: "Coleção Completa da Reforma Tributária",
+  tagline: "Coleção digital educativa de 16 materiais visuais sobre a Reforma Tributária. Desenvolvido para consulta rápida, estudo e aplicação prática.",
+  heroBadge: "COLEÇÃO COMPLETA PARA ENTENDER A REFORMA TRIBUTÁRIA",
+  heroTitle: "Entenda a Reforma Tributária sem se perder em leis e explicações complicadas",
+  heroSubtitle: "Receba uma coleção completa com materiais visuais sobre IBS, CBS, Simples Nacional, MEI, municípios, licitações e outras mudanças essenciais. Ideal para contadores, profissionais fiscais, servidores públicos, estudantes e empreendedores.",
   
-  announcementText: "⚡ CONDIÇÃO ESPECIAL PARA ACESSAR O MATERIAL",
+  announcementText: "COLEÇÃO COMPLETA DE 16 MATERIAIS VISUAIS SOBRE A REFORMA TRIBUTÁRIA",
 
-  // Centralized Checkout URLs (Seção 18 & 30)
+  // Centralized Checkout URLs (Seção 18 & 30) - EXACT AND PRESERVED
   BASIC_CHECKOUT_URL: "https://pay.wiapy.com/T38NZG2QVKLs",
   COMPLETE_CHECKOUT_URL: "https://pay.wiapy.com/OtY4nyjOAQNN",
 
-  // Pricing
+  // Pricing - EXACT AND PRESERVED
   basicPrice: "17,90",
   basicOldPrice: "29,90",
   completePrice: "27,90",

@@ -6,6 +6,15 @@ export interface CarouselImage {
   alt: string;
 }
 
+export interface DigitalMaterial {
+  id: string;
+  number: number;
+  title: string;
+  category: string;
+  description: string;
+  iconName: string;
+}
+
 export interface DifferentialCard {
   id: string;
   title: string;
@@ -183,58 +192,65 @@ export const benefitsList: BenefitDetail[] = [
   }
 ];
 
+export const collection16Materials: DigitalMaterial[] = [
+  { id: "mat-1", number: 1, title: "Trilha Fiscal — Fundamentos da Área Fiscal", category: "Fundamentos da Reforma", description: "Bases conceituais do sistema tributário e premissas da reforma.", iconName: "BookOpen" },
+  { id: "mat-2", number: 2, title: "Guia Visual da Reforma Tributária", category: "Fundamentos da Reforma", description: "Visão geral completa e linha do tempo do novo modelo tributário.", iconName: "Map" },
+  { id: "mat-3", number: 3, title: "Guia Visual do IBS", category: "Tributos e Mecanismos", description: "Imposto sobre Bens e Serviços (estados e municípios) detalhado.", iconName: "Layers" },
+  { id: "mat-4", number: 4, title: "Guia Visual da CBS", category: "Tributos e Mecanismos", description: "Contribuição sobre Bens e Serviços (federal) em mapa explicativo.", iconName: "PieChart" },
+  { id: "mat-5", number: 5, title: "Guia Visual do Imposto Seletivo", category: "Tributos e Mecanismos", description: "O 'Imposto do Pecado', incidência, alíquotas e regras tributárias.", iconName: "AlertTriangle" },
+  { id: "mat-6", number: 6, title: "Guia Visual do Simples Nacional", category: "Pequenos Negócios e Pessoas Físicas", description: "Regras de opção, aproveitamento de créditos e cálculo no Simples.", iconName: "Store" },
+  { id: "mat-7", number: 7, title: "Guia Visual do MEI", category: "Pequenos Negócios e Pessoas Físicas", description: "Impactos da reforma para o Microempreendedor Individual.", iconName: "UserCheck" },
+  { id: "mat-8", number: 8, title: "Guia Visual do Split Payment", category: "Tributos e Mecanismos", description: "Segregação e recolhimento automático no momento do pagamento.", iconName: "Zap" },
+  { id: "mat-9", number: 9, title: "Guia Visual do SINTER, CIB, SINIR e CNM", category: "Administração Pública e Municípios", description: "Cadastros nacionais, integração de dados e novos registros fiscais.", iconName: "Database" },
+  { id: "mat-10", number: 10, title: "Guia Visual para Municípios", category: "Administração Pública e Municípios", description: "Transição do ISS para o IBS, retenções e gestão de receitas.", iconName: "Building2" },
+  { id: "mat-11", number: 11, title: "Guia Visual das Licitações Públicas", category: "Licitações e Temas Práticos", description: "Formação de preços, reequilíbrio econômico e novos editais.", iconName: "FileText" },
+  { id: "mat-12", number: 12, title: "Guia Visual do CNPJ Técnico", category: "Pequenos Negócios e Pessoas Físicas", description: "Adequação operacional de prestadores de serviços e PJ.", iconName: "Briefcase" },
+  { id: "mat-13", number: 13, title: "Pessoa Física na Reforma", category: "Pequenos Negócios e Pessoas Físicas", description: "Impactos no consumo, tributação de renda e patrimônio.", iconName: "User" },
+  { id: "mat-14", number: 14, title: "Nanoempreendedor", category: "Pequenos Negócios e Pessoas Físicas", description: "Nova figura tributária e limites de enquadramento.", iconName: "Sparkles" },
+  { id: "mat-15", number: 15, title: "Cashback do IBS e da CBS", category: "Tributos e Mecanismos", description: "Mecanismo de devolução de tributos para famílias de baixa renda.", iconName: "RefreshCw" },
+  { id: "mat-16", number: 16, title: "Créditos do IBS e da CBS", category: "Tributos e Mecanismos", description: "Regra da não-cumulatividade plena e apropriação de créditos.", iconName: "CreditCard" }
+];
+
 export const targetAudience: AudienceCard[] = [
   {
     id: "aud-1",
-    title: "COMECE PELO QUE REALMENTE IMPORTA",
-    description: "Construa uma base clara da Reforma antes de avançar para leis, detalhes técnicos e conteúdos mais complexos."
+    title: "Para Profissionais Contábeis e Fiscais",
+    description: "Compreenda a estrutura do IBS, CBS, créditos acumulados, Split Payment e adaptações no Simples Nacional para atender clientes com total segurança."
   },
   {
     id: "aud-2",
-    title: "TRANSFORME INFORMAÇÃO SOLTA EM UMA VISÃO CLARA",
-    description: "Entenda onde IBS, CBS, Imposto Seletivo, transição e outros temas se encaixam dentro da Reforma."
+    title: "Para Servidores Públicos e Municípios",
+    description: "Entenda os impactos municipais na arrecadação, a transição do ISS para o IBS e a aplicação prática do SINTER, CIB, SINIR e CNM."
   },
   {
     id: "aud-3",
-    title: "APRENDA SEM DEPENDER DE HORAS DE CONTEÚDO",
-    description: "Use mapas visuais para estudar, revisar e consultar os principais assuntos de forma muito mais prática."
+    title: "Para Quem Trabalha com Licitações",
+    description: "Saiba como o novo modelo afeta a composição de custos em propostas, a revisão de contratos públicos e as regras de julgamento em editais."
   },
   {
     id: "aud-4",
-    title: "SAIBA EXATAMENTE O QUE ESTUDAR DEPOIS",
-    description: "Siga uma sequência lógica e pare de perder tempo tentando descobrir sozinho qual assunto vem primeiro."
-  },
-  {
-    id: "aud-5",
-    title: "FALE SOBRE A REFORMA COM MAIS SEGURANÇA",
-    description: "Construa uma base que ajude você a acompanhar notícias, reuniões, aulas e conversas profissionais com muito mais clareza."
-  },
-  {
-    id: "aud-6",
-    title: "TRADUZA O “FISCALÊS” SEM COMPLICAÇÃO",
-    description: "Consulte termos e conceitos técnicos em uma linguagem mais simples sempre que surgir uma dúvida."
+    title: "Para MEIs, Autônomos e Empreendedores",
+    description: "Acompanhe as mudanças diretas no MEI, a figura do Nanoempreendedor, o CNPJ Técnico e os reflexos tributários para pessoas físicas."
   }
 ];
 
 export const bundleItems = [
+  "Trilha Fiscal — Fundamentos da Área Fiscal",
   "Guia Visual da Reforma Tributária",
-  "Visão geral da Reforma",
-  "IBS explicado visualmente",
-  "CBS explicado visualmente",
-  "Imposto Seletivo",
-  "Cronograma de transição",
-  "Impactos fiscais e contábeis",
-  "Documentos fiscais",
-  "Obrigações relacionadas à Reforma",
-  "Simples Nacional",
-  "MEI",
-  "SINTER, CIB, SINIR e CNM",
+  "Guia Visual do IBS",
+  "Guia Visual da CBS",
+  "Guia Visual do Imposto Seletivo",
+  "Guia Visual do Simples Nacional",
+  "Guia Visual do MEI",
+  "Guia Visual do Split Payment",
+  "Guia Visual do SINTER, CIB, SINIR e CNM",
   "Guia Visual para Municípios",
   "Guia Visual das Licitações Públicas",
   "Guia Visual do CNPJ Técnico",
-  "Termos técnicos traduzidos",
-  "Mapas organizados por assunto",
-  "Materiais complementares"
+  "Pessoa Física na Reforma",
+  "Nanoempreendedor",
+  "Cashback do IBS e da CBS",
+  "Créditos do IBS e da CBS"
 ];
 
 export const bonusList: BonusItem[] = [
@@ -342,61 +358,57 @@ export const testimonialsData: TestimonialItem[] = [
 export const accessSteps: AccessStepItem[] = [
   {
     number: "01",
-    title: "FINALIZE SUA COMPRA",
-    description: "O pagamento é processado pela plataforma de checkout segura com criptografia.",
+    title: "1. Escolha sua opção",
+    description: "Selecione o plano ideal para suas necessidades (Plano Básico ou Coleção Completa).",
     iconName: "CreditCard"
   },
   {
     number: "02",
-    title: "RECEBA SEU ACESSO",
-    description: "Após a confirmação, as informações necessárias para acessar o conteúdo serão enviadas para seu e-mail.",
-    iconName: "MailCheck"
+    title: "2. Realize o pagamento",
+    description: "Pagamento 100% seguro via Pix ou Cartão de Crédito com confirmação rápida.",
+    iconName: "ShieldCheck"
   },
   {
     number: "03",
-    title: "ACESSE OS MATERIAIS",
-    description: "Encontre todos os arquivos em PDF e bônus organizados dentro da área de membros exclusiva.",
-    iconName: "FolderKanban"
+    title: "3. Receba as instruções de acesso",
+    description: "Você receberá imediatamente em seu e-mail o link para acessar o conteúdo.",
+    iconName: "MailCheck"
   },
   {
     number: "04",
-    title: "ESTUDE ONDE PREFERIR",
-    description: "Utilize celular, tablet ou computador e consulte seus materiais sempre que surgir uma dúvida.",
-    iconName: "MonitorCheck"
+    title: "4. Consulte os materiais digitais",
+    description: "Baixe os arquivos em PDF ou consulte direto pelo celular, tablet ou computador.",
+    iconName: "Download"
   }
 ];
 
 export const faqsData: FAQItem[] = [
   {
-    question: "Preciso ser contador para utilizar o material?",
-    answer: "Não. O conteúdo foi estruturado para estudantes, profissionais fiscais e contábeis e também para quem está começando a conhecer a Reforma Tributária."
+    question: "O material é digital?",
+    answer: "Sim. Todos os 16 materiais são disponibilizados no formato digital em PDF de alta qualidade para download e consulta em qualquer dispositivo (celular, tablet ou computador)."
   },
   {
-    question: "O acesso é liberado após a compra?",
-    answer: "Sim. O acesso é disponibilizado após a confirmação do pagamento, de acordo com o processamento realizado pela plataforma."
+    question: "Para quem os materiais são indicados?",
+    answer: "A coleção foi desenvolvida para contadores, profissionais fiscais, servidores públicos, profissionais de licitação, empreendedores, MEIs e estudantes que precisam entender a Reforma Tributária sem complicações."
   },
   {
-    question: "O conteúdo aborda IBS e CBS?",
-    answer: "Sim. IBS e CBS fazem parte dos temas centrais e aparecem em diferentes materiais da coleção."
+    question: "Quais assuntos estão incluídos?",
+    answer: "A coleção completa reúne 16 materiais visuais abrangendo IBS, CBS, Imposto Seletivo, Simples Nacional, MEI, Split Payment, SINTER/CIB, Municípios, Licitações Públicas, CNPJ Técnico, Pessoa Física, Nanoempreendedor, Cashback e Créditos Tributários."
   },
   {
-    question: "Os bônus fazem parte de qual plano?",
-    answer: "Os materiais adicionais indicados como bônus fazem parte do Plano Completo."
+    question: "Como recebo o acesso?",
+    answer: "Assim que o pagamento for confirmado pela plataforma de checkout, as instruções de acesso à área de membros exclusiva são enviadas automaticamente para o e-mail cadastrado."
   },
   {
-    question: "Os materiais podem receber atualizações?",
-    answer: "Materiais relacionados à Reforma poderão ser revisados quando alterações relevantes tornarem uma atualização necessária."
+    question: "Quais formas de pagamento estão disponíveis?",
+    answer: "O pagamento pode ser realizado por Pix (com liberação rápida) ou Cartão de Crédito diretamente na página oficial e segura do checkout."
   },
   {
-    question: "Por quanto tempo posso acessar?",
-    answer: "Você terá acesso contínuo aos materiais dentro da área de membros para consultar e baixar os PDFs sempre que desejar."
+    question: "Posso consultar pelo celular?",
+    answer: "Sim. Todos os PDFs foram formatados para proporcionar uma excelente leitura em smartphones, tablets e computadores."
   },
   {
-    question: "O material substitui uma consultoria?",
-    answer: "Não. O conteúdo possui finalidade educacional e informativa e não substitui orientação contábil, fiscal, tributária ou jurídica individualizada."
-  },
-  {
-    question: "Quais são as formas de pagamento?",
-    answer: "As opções disponíveis (como PIX, Cartão de Crédito e Boleto) serão exibidas diretamente na página oficial de checkout."
+    question: "Existe garantia?",
+    answer: "Sim! Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo você achar que o material não atendeu suas expectativas, basta solicitar o reembolso conforme as regras da plataforma."
   }
 ];

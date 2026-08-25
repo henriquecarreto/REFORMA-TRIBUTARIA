@@ -1,51 +1,61 @@
 import React from 'react';
 import { targetAudience } from '../data/landingData';
-import { Target, BookOpen, Layers, Eye, Compass, MessageSquare, Search } from 'lucide-react';
+import { Briefcase, Building2, FileText, Store, Users } from 'lucide-react';
 
 export const AudienceSection: React.FC = () => {
   const getAudienceIcon = (index: number) => {
     switch (index) {
-      case 0: return <BookOpen className="w-5 h-5 text-[#0A8FF0]" />;
-      case 1: return <Layers className="w-5 h-5 text-[#0A8FF0]" />;
-      case 2: return <Eye className="w-5 h-5 text-[#00A878]" />;
-      case 3: return <Compass className="w-5 h-5 text-[#F5B700]" />;
-      case 4: return <MessageSquare className="w-5 h-5 text-[#00A878]" />;
-      case 5: return <Search className="w-5 h-5 text-[#0A8FF0]" />;
-      default: return <Target className="w-5 h-5 text-[#0A8FF0]" />;
+      case 0: return <Briefcase className="w-6 h-6 text-[#0A8FF0]" />;
+      case 1: return <Building2 className="w-6 h-6 text-[#00A878]" />;
+      case 2: return <FileText className="w-6 h-6 text-[#D97706]" />;
+      case 3: return <Store className="w-6 h-6 text-[#8B5CF6]" />;
+      default: return <Users className="w-6 h-6 text-[#0A8FF0]" />;
     }
   };
 
   return (
-    <section className="py-16 md:py-24 bg-[#FFF5F5] border-b border-rose-100/80">
+    <section className="py-14 sm:py-20 bg-[#FAF7F2] border-b border-amber-200/60" id="para-quem-e">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
-        <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          <span className="text-[#0B1F3A] font-bold text-xs uppercase tracking-widest bg-white px-3.5 py-1.5 rounded-full border border-[#F5B700] inline-block mb-4 shadow-xs">
-            DIREÇÃO & ORGANIZAÇÃO
-          </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-tight tracking-tight">
-            COMO O MATERIAL ORGANIZA SEUS ESTUDOS
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-100/90 border border-amber-300 text-amber-900 text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-3">
+            <Users className="w-4 h-4 text-amber-700" />
+            <span>PÚBLICOS ATENDIDOS</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-tight tracking-tight mb-3">
+            Para Quem Esta Coleção Foi Desenvolvida?
           </h2>
+          <p className="text-sm sm:text-base text-slate-600 font-medium">
+            Materiais práticos e didáticos criados para atender diferentes realidades no mercado e no setor público.
+          </p>
         </div>
 
-        {/* 6 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        {/* 4 Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {targetAudience.map((item, index) => (
             <div
               key={item.id}
-              className="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200/90 hover:border-[#0A8FF0]/40 transition-all duration-300 shadow-xs hover:shadow-md flex flex-col justify-between h-full"
+              className="bg-white p-6 sm:p-8 rounded-2xl border border-amber-200/80 hover:border-[#0A8FF0] transition-all duration-300 shadow-md hover:shadow-xl flex flex-col justify-between"
             >
               <div>
-                <div className="p-3 rounded-xl bg-[#F7F9FC] border border-slate-100 mb-5 inline-block">
-                  {getAudienceIcon(index)}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200/80 shrink-0">
+                    {getAudienceIcon(index)}
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-extrabold text-[#0B1F3A] leading-snug">
+                    {item.title}
+                  </h3>
                 </div>
-                <h3 className="text-base sm:text-lg font-extrabold text-[#0B1F3A] mb-2.5 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-[#1F2937] leading-relaxed font-normal">
+                
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
                   {item.description}
                 </p>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                <span className="text-[#00A878] font-bold">✓ Foco Prático e Direto</span>
+                <span>Acervo Digital</span>
               </div>
             </div>
           ))}
@@ -55,3 +65,5 @@ export const AudienceSection: React.FC = () => {
     </section>
   );
 };
+
+export default AudienceSection;

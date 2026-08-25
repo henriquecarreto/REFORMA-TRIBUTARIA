@@ -7,6 +7,7 @@ import { ShowcaseGallery } from './components/ShowcaseGallery';
 import { ProblemBlock } from './components/ProblemBlock';
 import { AudienceSection } from './components/AudienceSection';
 import { ProductBundle } from './components/ProductBundle';
+import { AccessSteps } from './components/AccessSteps';
 import { BonusSection } from './components/BonusSection';
 import { PricingSection } from './components/PricingSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
@@ -26,7 +27,7 @@ export function App() {
         {/* SEÇÃO 02 — HERO PRINCIPAL */}
         <HeroSection />
 
-        {/* SEÇÃO 04 — NOVO CARROSSEL GRANDE DE AMOS TRAS (100% LARGURA CONTINUO) */}
+        {/* SEÇÃO 04 — PRÉVIAS REAIS (100% LARGURA CONTINUO) */}
         <MaterialCarousel />
 
         {/* SEÇÃO 05 — DIFERENCIAIS */}
@@ -35,22 +36,25 @@ export function App() {
         {/* SEÇÃO 06 — BENEFÍCIOS */}
         <BenefitsSection />
 
-        {/* SEÇÃO 07 — SEGUNDO CARROSSEL VISUAL */}
+        {/* SEÇÃO 07 — GALERIA VISUAL */}
         <ShowcaseGallery />
 
         {/* SEÇÃO 08 — BLOCO DE PROBLEMA */}
         <ProblemBlock />
 
-        {/* SEÇÃO 09 — 6 CARDS DE DIREÇÃO E ORGANIZAÇÃO */}
+        {/* SEÇÃO 09 — PÚBLICOS ATENDIDOS */}
         <AudienceSection />
 
-        {/* SEÇÃO 10 — TUDO QUE A PESSOA RECEBE */}
+        {/* SEÇÃO 10 — COLEÇÃO DOS 16 MATERIAIS */}
         <ProductBundle />
 
-        {/* SEÇÃO 11 — 4 BÔNUS INCLUSOS */}
+        {/* SEÇÃO 11 — PASSO A PASSO DE ACESSO */}
+        <AccessSteps />
+
+        {/* SEÇÃO 12 — BÔNUS INCLUSOS */}
         <BonusSection />
 
-        {/* SEÇÃO 12 — OFERTA */}
+        {/* SEÇÃO 13 — OFERTA E PREÇOS */}
         <PricingSection />
 
         {/* SEÇÃO 14 — DEPOIMENTOS */}
@@ -59,14 +63,14 @@ export function App() {
         {/* SEÇÃO 15 — GARANTIA */}
         <GuaranteeSection />
 
-        {/* SEÇÃO 17 — FAQ */}
+        {/* SEÇÃO 16 — FAQ */}
         <FAQSection />
       </main>
 
-      {/* SEÇÃO 18 — RODAPÉ */}
+      {/* SEÇÃO 17 — RODAPÉ */}
       <Footer />
 
-      {/* SEÇÃO 19 — CTA FLUTUANTE NO MOBILE */}
+      {/* SEÇÃO 18 — CTA FLUTUANTE NO MOBILE */}
       <MobileStickyCTA />
     </div>
   );

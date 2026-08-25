@@ -16,10 +16,16 @@ export const MaterialCarousel: React.FC = () => {
   return (
     <section className="py-10 sm:py-16 bg-[#FAF6F0] border-b border-amber-200/60 overflow-hidden">
       {/* SECTION HEADER & CONNECTED MAPS IMAGE */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-10 sm:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F172A] leading-tight tracking-tight uppercase mb-8">
-          ENTENDER A REFORMA TRIBUTÁRIA FICA MUITO MAIS SIMPLES QUANDO VOCÊ CONSEGUE VER COMO CADA PEÇA SE CONECTA.
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-8 sm:mb-10">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/80 border border-amber-300 text-amber-900 text-xs sm:text-sm font-bold uppercase tracking-wider mb-3">
+          <span>PRÉVIAS REAIS</span>
+        </div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-tight tracking-tight mb-3">
+          Veja exemplos reais do material que você recebe
         </h2>
+        <p className="text-sm sm:text-base text-slate-600 font-medium max-w-2xl mx-auto mb-6">
+          Exemplos visuais reais de páginas internas sobre IBS, CBS, Simples Nacional, Split Payment, Licitações e Municípios.
+        </p>
 
         {/* IMAGE SHOWCASING CONNECTED MAPS */}
         <div className="w-full max-w-3xl mx-auto relative group">

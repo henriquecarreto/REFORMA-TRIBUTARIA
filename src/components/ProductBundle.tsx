@@ -1,121 +1,91 @@
 import React from 'react';
-import { bundleItems } from '../data/landingData';
-import { CheckCircle2, Zap, Download, Layers } from 'lucide-react';
+import { collection16Materials } from '../data/landingData';
+import { CheckCircle2, Zap, Layers, Sparkles } from 'lucide-react';
 
 export const ProductBundle: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-[#1C3972] via-[#132A55] to-[#081426] text-white relative overflow-hidden border-b border-blue-900/60">
-      {/* Background Subtle Ambient Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+    <section className="py-14 sm:py-20 bg-gradient-to-br from-[#1C3972] via-[#132A55] to-[#081426] text-white relative overflow-hidden border-b border-blue-900/60" id="materiais">
+      {/* Ambient background glows */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* HEADER */}
-        <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
-          {/* 3. SELO */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00A878]/10 border border-[#00A878]/40 text-[#00A878] text-xs font-bold uppercase tracking-wider mb-5 shadow-xs">
-            <Zap className="w-3.5 h-3.5 text-[#00A878] fill-[#00A878]" />
-            <span>CONTEÚDO COMPLETO • ACESSO DIGITAL</span>
+        <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00A878]/15 border border-[#00A878]/40 text-[#00A878] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-4 shadow-xs">
+            <Layers className="w-4 h-4 text-[#00A878]" />
+            <span>COLEÇÃO COMPLETA DE MATERIAIS DIGITAIS</span>
           </div>
 
-          {/* 4. TÍTULO PRINCIPAL */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight mb-4">
-            TUDO O QUE VOCÊ PRECISA PARA ENTENDER A REFORMA <br className="hidden sm:inline" />
-            <span className="text-[#F5B700]">ORGANIZADO EM UM SÓ LUGAR.</span>
+            Conheça os <span className="text-[#F5B700]">16 Materiais Visuais</span> Incluídos na Coleção
           </h2>
 
-          {/* 5. SUBTÍTULO */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-200/90 font-normal leading-relaxed max-w-3xl mx-auto mb-6">
-            Em vez de procurar informações espalhadas, você recebe uma coleção visual estruturada para <strong className="font-bold text-white">estudar, revisar e consultar</strong> os principais pontos da Reforma Tributária com muito mais clareza.
+          <p className="text-sm sm:text-base md:text-lg text-slate-200/90 font-medium leading-relaxed max-w-3xl mx-auto">
+            Uma acervo digital organizado por temas essenciais para você consultar, estudar e aplicar o conhecimento sobre a Reforma Tributária com facilidade.
           </p>
-
-          {/* 15. MICRODESTAQUES DE VALOR */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 mt-4">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878]" />
-              <span>CONTEÚDO VISUAL</span>
-            </div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878]" />
-              <span>ACESSO DIGITAL</span>
-            </div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs text-slate-200 font-semibold">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878]" />
-              <span>CONSULTA SEMPRE QUE PRECISAR</span>
-            </div>
-          </div>
         </div>
 
-        {/* TWO COLUMN HORIZONTAL LAYOUT (Desktop: 60/40, Mobile: Mockup First, List Second) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* LEFT COLUMN: MATERIAL CHECKLIST (Order 2 on Mobile, Order 1 on Desktop) */}
-          <div className="lg:col-span-7 order-2 lg:order-1 bg-white/[0.06] backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-white/[0.12] shadow-2xl">
-            {/* 7. TITLE OF THE LEFT CARD */}
-            <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-              <div className="p-2 rounded-lg bg-blue-500/20 border border-blue-400/30">
-                <Layers className="w-5 h-5 text-[#0A8FF0]" />
-              </div>
-              <h3 className="text-base sm:text-lg font-extrabold text-white leading-snug">
-                UMA COLEÇÃO PENSADA PARA <br className="hidden sm:inline" />
-                <span className="text-[#F5B700]">TRANSFORMAR COMPLEXIDADE EM CLAREZA</span>
-              </h3>
-            </div>
-
-            {/* 9 & 10. LIST OF MATERIALS (2 columns on desktop) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
-              {bundleItems.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
-                    {item}
+        {/* 16 MATERIALS GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4 mb-12">
+          {collection16Materials.map((mat) => (
+            <div
+              key={mat.id}
+              className="bg-white/10 hover:bg-white/[0.14] backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/15 shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="w-7 h-7 rounded-lg bg-[#F5B700]/20 border border-[#F5B700]/40 text-[#F5B700] text-xs font-black flex items-center justify-center shrink-0">
+                    {mat.number < 10 ? `0${mat.number}` : mat.number}
+                  </span>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-300 bg-white/10 px-2 py-0.5 rounded-md truncate max-w-[170px]">
+                    {mat.category}
                   </span>
                 </div>
-              ))}
-            </div>
 
-            {/* 11. BOTTOM CARD INFO */}
-            <div className="mt-8 pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-slate-300">
-              <span className="flex items-center gap-1.5">
-                <Download className="w-4 h-4 text-[#0A8FF0]" />
-                ↓ PDF EM ALTA RESOLUÇÃO
-              </span>
-              <span className="flex items-center gap-1.5 text-[#00A878] font-bold">
-                <CheckCircle2 className="w-4 h-4 text-[#00A878]" />
-                IMPRESSÃO LIBERADA
-              </span>
-            </div>
-          </div>
+                <h3 className="text-sm sm:text-base font-extrabold text-white leading-snug mb-1.5 group-hover:text-amber-200 transition-colors">
+                  {mat.title}
+                </h3>
 
-          {/* RIGHT COLUMN: MOCKUP PRODUCT DISPLAY (Order 1 on Mobile, Order 2 on Desktop) */}
-          <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center">
-            <div className="relative w-full max-w-md">
-              {/* 13. HALO / GLOW BEHIND MOCKUP */}
-              <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl -z-10" />
+                <p className="text-xs text-slate-300 leading-relaxed font-normal">
+                  {mat.description}
+                </p>
+              </div>
 
-              <div className="bg-white/10 p-3 sm:p-4 rounded-2xl border border-white/20 shadow-2xl shadow-black/50 backdrop-blur-sm relative overflow-hidden">
-                <div className="rounded-xl overflow-hidden bg-slate-900/60 border border-white/10">
-                  <img
-                    src="/hero/hero-bundle-mockup.jpg"
-                    alt="Visão Geral da Coleção Digital do Fiscal Simplificado"
-                    className="w-full h-auto object-cover rounded-lg shadow-md"
-                    loading="lazy"
-                  />
-                </div>
-                
-                {/* 14. BOTTOM CARD BELOW MOCKUP */}
-                <div className="mt-3.5 p-3.5 bg-[#06101E] border border-white/10 text-white rounded-xl text-center shadow-inner">
-                  <span className="text-xs sm:text-sm font-extrabold text-[#F5B700] uppercase tracking-widest block mb-1">
-                    COLEÇÃO DIGITAL COMPLETA
-                  </span>
-                  <p className="text-xs text-slate-300 font-normal leading-relaxed">
-                    Seus materiais organizados e prontos para acessar após a confirmação da compra.
-                  </p>
-                </div>
+              <div className="mt-4 pt-2.5 border-t border-white/10 flex items-center justify-between text-[11px] font-semibold text-slate-400">
+                <span className="flex items-center gap-1 text-emerald-400">
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Incluído no PDF
+                </span>
+                <span className="text-amber-300">Formato Digital</span>
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* BOTTOM BANNER WITH MOCKUP & ACTION */}
+        <div className="bg-gradient-to-r from-amber-500/15 via-blue-600/20 to-emerald-500/15 p-6 sm:p-8 rounded-3xl border border-white/20 shadow-2xl backdrop-blur-md flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-400 text-slate-950 font-black text-xs uppercase mb-2">
+              <Sparkles className="w-3.5 h-3.5" /> ACERVO EM PDF PRONTO PARA DOWNLOAD
+            </div>
+            <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-2">
+              Acesse a Coleção Completa e consulte quando quiser
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              Todos os 16 materiais reunidos em um ambiente organizado com acesso liberado imediatamente após a confirmação do pagamento.
+            </p>
           </div>
 
+          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
+            <a
+              href="#precos"
+              className="w-full sm:w-auto bg-[#00A878] hover:bg-[#009368] text-white font-extrabold text-sm sm:text-base py-3.5 px-7 rounded-xl flex items-center justify-center gap-2 shadow-lg cursor-pointer transition-transform hover:scale-[1.02]"
+            >
+              <Zap className="w-4 h-4 text-amber-200 fill-amber-200" />
+              <span>QUERO ACESSAR OS 16 MATERIAIS</span>
+            </a>
+          </div>
         </div>
 
       </div>
