@@ -1,6 +1,6 @@
 import React from 'react';
-import { collection16Materials } from '../data/landingData';
-import { CheckCircle2, Zap, Layers, Sparkles, Gift } from 'lucide-react';
+import { main12Materials, bonus4Materials } from '../data/landingData';
+import { CheckCircle2, Layers, Sparkles, Gift, ArrowRight } from 'lucide-react';
 
 export const ProductBundle: React.FC = () => {
   const getCategoryStyle = (slug: string) => {
@@ -24,14 +24,14 @@ export const ProductBundle: React.FC = () => {
 
   return (
     <section className="py-16 sm:py-24 bg-[#F7F3EA] text-slate-900 relative overflow-hidden border-b border-amber-200/60" id="materiais">
-      {/* Elementos sutis de fundo */}
+      {/* Glows sutis de fundo */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50/40 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* CABEÇALHO DA SEÇÃO */}
-        <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
+        {/* 1. CABEÇALHO DA SEÇÃO */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#138A60]/40 text-[#138A60] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-4 shadow-xs">
             <Layers className="w-4 h-4 text-[#138A60]" />
             <span>COLEÇÃO COMPLETA</span>
@@ -41,81 +41,176 @@ export const ProductBundle: React.FC = () => {
             Conheça os <span className="text-[#138A60]">16 materiais</span> da sua coleção
           </h2>
 
-          <p className="text-sm sm:text-base md:text-lg text-[#526273] font-medium leading-relaxed max-w-3xl mx-auto">
-            Guias visuais organizados para ajudar você a entender a Reforma Tributária e consultar os principais assuntos sempre que precisar.
+          <p className="text-sm sm:text-base md:text-lg text-[#44566C] font-medium leading-relaxed max-w-2xl mx-auto mb-3">
+            Guias visuais organizados para ajudar você a entender e consultar os principais assuntos da Reforma Tributária.
           </p>
+
+          <span className="text-xs sm:text-sm font-bold text-[#176BAA] bg-blue-50 px-3 py-1 rounded-md border border-blue-200 inline-block">
+            12 guias principais e 4 bônus • Total de 16 materiais digitais
+          </span>
         </div>
 
-        {/* GRADE DOS 16 MATERIAIS (3 COLUNAS NO DESKTOP AMPLO PARA CONFORTO TIPOGRÁFICO) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-14">
-          {collection16Materials.map((mat) => (
-            <div
-              key={mat.id}
-              className="bg-white p-5 sm:p-6 rounded-2xl border border-[#E5E0D7] shadow-xs hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 flex flex-col justify-between group"
-            >
-              <div>
-                {/* CABEÇALHO DO CARD: NUMERAÇÃO + CATEGORIA + BÔNUS */}
-                <div className="flex items-center justify-between gap-2 mb-3.5 flex-wrap">
-                  <div className="flex items-center gap-2">
-                    <span className="w-8 h-8 rounded-lg bg-[#112A46] text-white text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
-                      {mat.number < 10 ? `0${mat.number}` : mat.number}
-                    </span>
-                    <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border ${getCategoryStyle(mat.categorySlug)}`}>
-                      {mat.category}
-                    </span>
+        {/* 2. GRUPO 1: 12 GUIAS PRINCIPAIS */}
+        <div className="mb-14">
+          <div className="flex items-center gap-2.5 mb-6 pb-2 border-b border-amber-200/80">
+            <div className="w-7 h-7 rounded-lg bg-[#112A46] text-white flex items-center justify-center text-xs font-bold shrink-0">
+              01
+            </div>
+            <h3 className="text-lg sm:text-xl font-extrabold text-[#112A46]">
+              12 guias principais
+            </h3>
+          </div>
+
+          {/* GRADE 3 COLUNAS NO DESKTOP (EXATAMENTE 4 LINHAS COMPLETAS DE 3 CARDS) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {main12Materials.map((mat) => (
+              <div
+                key={mat.id}
+                className="bg-white p-5 sm:p-6 rounded-2xl border border-[#E5E0D7] shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
+              >
+                <div>
+                  {/* CABEÇALHO DO CARD: NUMERAÇÃO + ETIQUETA + MINIATURA DA CAPA REAL */}
+                  <div className="flex items-start justify-between gap-3 mb-4">
+                    <div className="flex flex-col gap-2 items-start">
+                      <span className="w-8 h-8 rounded-lg bg-[#112A46] text-white text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
+                        {mat.number < 10 ? `0${mat.number}` : mat.number}
+                      </span>
+                      <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md border ${getCategoryStyle(mat.categorySlug)}`}>
+                        {mat.category}
+                      </span>
+                    </div>
+
+                    {/* MINIATURA DA CAPA REAL DO MATERIAL */}
+                    {mat.coverImage && (
+                      <div className="w-14 h-20 sm:w-16 sm:h-22 shrink-0 rounded-lg overflow-hidden border border-slate-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200">
+                        <img
+                          src={mat.coverImage}
+                          alt={mat.title}
+                          className="w-full h-full object-cover rounded-md"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                   </div>
 
-                  {mat.isBonus && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-extrabold text-[#138A60] bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
-                      <Gift className="w-3 h-3 text-[#138A60]" />
-                      Bônus incluído
-                    </span>
-                  )}
+                  {/* TÍTULO LIMPO DO MATERIAL (SEM TRAVESSÕES) */}
+                  <h4 className="text-base sm:text-lg font-extrabold text-[#112A46] leading-snug mb-2 group-hover:text-[#176BAA] transition-colors">
+                    {mat.title}
+                  </h4>
+
+                  {/* DESCRIÇÃO DE ALTO CONTRASTE (#44566C) */}
+                  <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed font-normal">
+                    {mat.description}
+                  </p>
                 </div>
 
-                {/* TÍTULO LIMPO DO MATERIAL */}
-                <h3 className="text-base sm:text-lg font-extrabold text-[#112A46] leading-snug mb-2 group-hover:text-[#176BAA] transition-colors">
-                  {mat.title}
-                </h3>
-
-                {/* DESCRIÇÃO CLARA */}
-                <p className="text-xs sm:text-sm text-[#526273] leading-relaxed font-normal">
-                  {mat.description}
-                </p>
+                {/* RODAPÉ DO CARD */}
+                <div className="mt-5 pt-3 border-t border-[#FAF5EE] flex items-center justify-between text-xs font-semibold text-[#138A60]">
+                  <span className="flex items-center gap-1.5 font-bold">
+                    <CheckCircle2 className="w-4 h-4" /> Material digital em PDF
+                  </span>
+                </div>
               </div>
-
-              {/* RODAPÉ DO CARD */}
-              <div className="mt-5 pt-3 border-t border-[#F0EBE1] flex items-center justify-between text-xs font-semibold text-[#526273]">
-                <span className="flex items-center gap-1.5 text-[#138A60] font-bold">
-                  <CheckCircle2 className="w-4 h-4" /> Material digital em PDF
-                </span>
-                <span className="text-slate-400 font-medium">Download imediato</span>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* CHAMADA COMERCIAL FINAL DA SEÇÃO */}
+        {/* 3. GRUPO 2: 4 BÔNUS INCLUÍDOS */}
+        <div className="mb-14">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-6 pb-2 border-b border-emerald-300/80">
+            <div className="flex items-center gap-2.5">
+              <div className="w-7 h-7 rounded-lg bg-[#138A60] text-white flex items-center justify-center text-xs font-bold shrink-0">
+                02
+              </div>
+              <h3 className="text-lg sm:text-xl font-extrabold text-[#112A46]">
+                4 bônus para complementar seus estudos
+              </h3>
+            </div>
+            <span className="text-xs font-bold text-[#138A60]">
+              Materiais adicionais que já fazem parte da sua coleção completa.
+            </span>
+          </div>
+
+          {/* GRADE 4 COLUNAS NO DESKTOP (EXATAMENTE 1 LINHA COMPLETA DE 4 CARDS) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            {bonus4Materials.map((mat) => (
+              <div
+                key={mat.id}
+                className="bg-white p-5 sm:p-6 rounded-2xl border-2 border-emerald-200/90 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group relative overflow-hidden"
+              >
+                {/* ETETA DE BÔNUS */}
+                <div className="absolute top-0 right-0 bg-[#138A60] text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-bl-lg flex items-center gap-1">
+                  <Gift className="w-3 h-3" /> BÔNUS INCLUÍDO
+                </div>
+
+                <div>
+                  {/* CABEÇALHO DO CARD DO BÔNUS */}
+                  <div className="flex items-start justify-between gap-3 mb-4 pt-1">
+                    <div className="flex flex-col gap-2 items-start">
+                      <span className="w-8 h-8 rounded-lg bg-[#138A60] text-white text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
+                        {mat.number}
+                      </span>
+                      <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md border ${getCategoryStyle('bonus')}`}>
+                        {mat.category}
+                      </span>
+                    </div>
+
+                    {/* MINIATURA DA CAPA DO BÔNUS */}
+                    {mat.coverImage && (
+                      <div className="w-14 h-20 shrink-0 rounded-lg overflow-hidden border border-emerald-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200">
+                        <img
+                          src={mat.coverImage}
+                          alt={mat.title}
+                          className="w-full h-full object-cover rounded-md"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                  </div>
+
+                  {/* TÍTULO DO BÔNUS */}
+                  <h4 className="text-base sm:text-lg font-extrabold text-[#112A46] leading-snug mb-2 group-hover:text-[#138A60] transition-colors">
+                    {mat.title}
+                  </h4>
+
+                  {/* DESCRIÇÃO DO BÔNUS */}
+                  <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed font-normal">
+                    {mat.description}
+                  </p>
+                </div>
+
+                {/* RODAPÉ DO BÔNUS */}
+                <div className="mt-5 pt-3 border-t border-emerald-100 flex items-center justify-between text-xs font-semibold text-[#138A60]">
+                  <span className="flex items-center gap-1.5 font-bold">
+                    <CheckCircle2 className="w-4 h-4" /> Material digital em PDF
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 4. BLOCO COMERCIAL FINAL REESTRUTURADO */}
         <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#E5E0D7] shadow-md flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-100 text-amber-900 font-extrabold text-xs uppercase mb-2 border border-amber-300">
               <Sparkles className="w-3.5 h-3.5 text-amber-700" /> ACERVO VISUAL ORGANIZADO
             </div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-[#112A46] mb-2">
-              Tenha os 16 materiais em uma coleção completa
+              Acesse os 16 materiais da coleção completa
             </h3>
-            <p className="text-xs sm:text-sm text-[#526273] leading-relaxed">
-              Estude, consulte e acompanhe os principais assuntos da Reforma Tributária em materiais visuais organizados.
+            <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed">
+              Receba 12 guias principais e 4 bônus para estudar a Reforma Tributária de forma visual e organizada.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
             <a
               href="#precos"
-              className="w-full sm:w-auto bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-sm sm:text-base py-3.5 px-7 rounded-xl flex items-center justify-center gap-2 shadow-md cursor-pointer transition-transform hover:scale-[1.01]"
+              className="w-full sm:w-auto bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-sm sm:text-base py-4 px-8 rounded-xl flex items-center justify-center gap-2 shadow-md cursor-pointer transition-transform hover:scale-[1.01]"
             >
-              <Zap className="w-4 h-4 text-amber-200 fill-amber-200" />
               <span>ACESSAR A COLEÇÃO COMPLETA</span>
+              <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
           </div>
         </div>

@@ -14,6 +14,7 @@ export interface DigitalMaterial {
   categorySlug: 'fundamentos' | 'tributos' | 'negocios' | 'municipios' | 'licitacoes' | 'bonus';
   description: string;
   iconName: string;
+  coverImage?: string;
   isBonus?: boolean;
 }
 
@@ -185,7 +186,7 @@ export const benefitsList: BenefitDetail[] = [
   }
 ];
 
-export const collection16Materials: DigitalMaterial[] = [
+export const main12Materials: DigitalMaterial[] = [
   { 
     id: "mat-1", 
     number: 1, 
@@ -193,7 +194,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Fundamentos", 
     categorySlug: "fundamentos",
     description: "Bases conceituais do sistema tributário e premissas da reforma.", 
-    iconName: "BookOpen" 
+    iconName: "BookOpen",
+    coverImage: "/hero/capas/capa-04-trilha-fiscal.jpg"
   },
   { 
     id: "mat-2", 
@@ -202,7 +204,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Fundamentos", 
     categorySlug: "fundamentos",
     description: "Visão geral completa e linha do tempo do novo modelo tributário.", 
-    iconName: "Map" 
+    iconName: "Map",
+    coverImage: "/hero/capas/capa-05-consumo.jpg"
   },
   { 
     id: "mat-3", 
@@ -211,7 +214,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Tributos", 
     categorySlug: "tributos",
     description: "Imposto sobre Bens e Serviços para estados e municípios detalhado.", 
-    iconName: "Layers" 
+    iconName: "Layers",
+    coverImage: "/hero/capas/capa-01-cbs-ibs.jpg"
   },
   { 
     id: "mat-4", 
@@ -220,7 +224,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Tributos", 
     categorySlug: "tributos",
     description: "Contribuição sobre Bens e Serviços no âmbito federal em mapa explicativo.", 
-    iconName: "PieChart" 
+    iconName: "PieChart",
+    coverImage: "/material/amostra-01.jpg"
   },
   { 
     id: "mat-5", 
@@ -229,7 +234,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Tributos", 
     categorySlug: "tributos",
     description: "Conheça a finalidade, a incidência e as principais regras do Imposto Seletivo.", 
-    iconName: "AlertTriangle" 
+    iconName: "AlertTriangle",
+    coverImage: "/material/amostra-07.jpg"
   },
   { 
     id: "mat-6", 
@@ -238,7 +244,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Pequenos negócios", 
     categorySlug: "negocios",
     description: "Regras de opção, aproveitamento de créditos e apuração no Simples.", 
-    iconName: "Store" 
+    iconName: "Store",
+    coverImage: "/material/amostra-04.jpg"
   },
   { 
     id: "mat-7", 
@@ -247,7 +254,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Pequenos negócios", 
     categorySlug: "negocios",
     description: "Impactos da reforma para o Microempreendedor Individual.", 
-    iconName: "UserCheck" 
+    iconName: "UserCheck",
+    coverImage: "/material/amostra-04.jpg"
   },
   { 
     id: "mat-8", 
@@ -256,7 +264,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Tributos", 
     categorySlug: "tributos",
     description: "Segregação e recolhimento automático no momento do pagamento.", 
-    iconName: "Zap" 
+    iconName: "Zap",
+    coverImage: "/material/amostra-02.jpg"
   },
   { 
     id: "mat-9", 
@@ -265,7 +274,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Municípios", 
     categorySlug: "municipios",
     description: "Cadastros nacionais, integração de dados e novos registros fiscais.", 
-    iconName: "Database" 
+    iconName: "Database",
+    coverImage: "/material/amostra-08.jpg"
   },
   { 
     id: "mat-10", 
@@ -274,7 +284,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Municípios", 
     categorySlug: "municipios",
     description: "Transição do ISS para o IBS, retenções e gestão de receitas.", 
-    iconName: "Building2" 
+    iconName: "Building2",
+    coverImage: "/hero/capas/capa-02-municipios.jpg"
   },
   { 
     id: "mat-11", 
@@ -283,7 +294,8 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Licitações", 
     categorySlug: "licitacoes",
     description: "Formação de preços, reequilíbrio econômico e contratos públicos.", 
-    iconName: "FileText" 
+    iconName: "FileText",
+    coverImage: "/hero/capas/capa-03-licitacoes.jpg"
   },
   { 
     id: "mat-12", 
@@ -292,8 +304,12 @@ export const collection16Materials: DigitalMaterial[] = [
     category: "Pequenos negócios", 
     categorySlug: "negocios",
     description: "Entenda a inscrição de pessoas físicas no CNPJ para fins cadastrais e fiscais.", 
-    iconName: "Briefcase" 
-  },
+    iconName: "Briefcase",
+    coverImage: "/material/amostra-05.jpg"
+  }
+];
+
+export const bonus4Materials: DigitalMaterial[] = [
   { 
     id: "mat-13", 
     number: 13, 
@@ -302,6 +318,7 @@ export const collection16Materials: DigitalMaterial[] = [
     categorySlug: "bonus",
     description: "Veja quando pessoas físicas podem ser alcançadas pelas regras do IBS e da CBS.", 
     iconName: "User",
+    coverImage: "/material/amostra-01.jpg",
     isBonus: true
   },
   { 
@@ -312,6 +329,7 @@ export const collection16Materials: DigitalMaterial[] = [
     categorySlug: "bonus",
     description: "Entenda a nova figura fiscal e seus critérios operacionais.", 
     iconName: "Sparkles",
+    coverImage: "/material/amostra-02.jpg",
     isBonus: true
   },
   { 
@@ -322,6 +340,7 @@ export const collection16Materials: DigitalMaterial[] = [
     categorySlug: "bonus",
     description: "Entenda a devolução de tributos para famílias de baixa renda.", 
     iconName: "RefreshCw",
+    coverImage: "/material/amostra-03.jpg",
     isBonus: true
   },
   { 
@@ -332,8 +351,14 @@ export const collection16Materials: DigitalMaterial[] = [
     categorySlug: "bonus",
     description: "Regras da não-cumulatividade plena e apropriação de créditos.", 
     iconName: "CreditCard",
+    coverImage: "/material/amostra-06.jpg",
     isBonus: true
   }
+];
+
+export const collection16Materials: DigitalMaterial[] = [
+  ...main12Materials,
+  ...bonus4Materials
 ];
 
 export const targetAudience: AudienceCard[] = [
