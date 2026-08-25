@@ -105,23 +105,23 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* LEGENDA REESCRITA COM SÍMBOLOS E DESTAQUES ESPECÍFICOS (#D72638 E #E87511) */}
+          {/* LEGENDA PADRONIZADA COM TEXTO EM PRETO (#0B1F3A), MANTENDO EMOJIS E SÍMBOLOS */}
           <div className="mt-3.5 text-center">
-            <span className="text-xs sm:text-sm font-extrabold text-[#14233B] tracking-wide">
-              📚 <strong className="text-[#D72638] font-black">12 GUIAS PRINCIPAIS</strong> + 🎁 <strong className="text-[#E87511] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR
+            <span className="text-xs sm:text-sm font-extrabold text-[#0B1F3A] tracking-wide">
+              📚 <strong className="text-[#0B1F3A] font-black">12 GUIAS PRINCIPAIS</strong> + 🎁 <strong className="text-[#0B1F3A] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR
             </span>
           </div>
         </div>
 
-        {/* 5. BENEFÍCIOS REORGANIZADOS COM ÍCONES E CORES ESPECÍFICAS (#1769D1 AZUL, #138A60 VERDE, #D72638 VERMELHO) */}
+        {/* 5. BENEFÍCIOS PADRONIZADOS EM TEXTO PRETO (#0B1F3A), MANTENDO OS ÍCONES E SÍMBOLOS */}
         <div className="w-full max-w-2xl mb-7 px-2">
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left">
             <li className="flex items-center gap-3">
               <div className="w-6 h-6 rounded-lg bg-[#1769D1]/15 text-[#1769D1] flex items-center justify-center shrink-0">
                 <BarChart3 className="w-4 h-4" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
-                <strong className="text-[#1769D1] font-extrabold">IBS e CBS</strong> explicados com clareza.
+              <span className="text-sm sm:text-base font-bold text-[#0B1F3A] leading-snug">
+                <strong className="text-[#0B1F3A] font-extrabold">IBS e CBS</strong> explicados com clareza.
               </span>
             </li>
 
@@ -129,8 +129,8 @@ export const HeroSection: React.FC = () => {
               <div className="w-6 h-6 rounded-lg bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
                 <Building className="w-4 h-4" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
-                Entenda o <strong className="text-[#138A60] font-extrabold">Simples Nacional e o MEI</strong>.
+              <span className="text-sm sm:text-base font-bold text-[#0B1F3A] leading-snug">
+                Entenda o <strong className="text-[#0B1F3A] font-extrabold">Simples Nacional e o MEI</strong>.
               </span>
             </li>
 
@@ -138,8 +138,8 @@ export const HeroSection: React.FC = () => {
               <div className="w-6 h-6 rounded-lg bg-[#D72638]/15 text-[#D72638] flex items-center justify-center shrink-0">
                 <Landmark className="w-4 h-4" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
-                Veja os impactos para <strong className="text-[#D72638] font-extrabold">municípios e licitações</strong>.
+              <span className="text-sm sm:text-base font-bold text-[#0B1F3A] leading-snug">
+                Veja os impactos para <strong className="text-[#0B1F3A] font-extrabold">municípios e licitações</strong>.
               </span>
             </li>
 
@@ -147,8 +147,8 @@ export const HeroSection: React.FC = () => {
               <div className="w-6 h-6 rounded-lg bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
                 <Eye className="w-4 h-4" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
-                Consulte os principais temas de <strong className="text-[#138A60] font-extrabold">forma visual</strong>.
+              <span className="text-sm sm:text-base font-bold text-[#0B1F3A] leading-snug">
+                Consulte os principais temas de <strong className="text-[#0B1F3A] font-extrabold">forma visual</strong>.
               </span>
             </li>
           </ul>
