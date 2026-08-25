@@ -106,48 +106,48 @@ export const HeroSection: React.FC = () => {
           </div>
 
           <div className="mt-3 text-center">
-            <span className="text-xs sm:text-sm font-extrabold text-amber-950 uppercase tracking-wide">
-              12 GUIA PRINCIPAIS E 4 BÔNUS PARA CONSULTAR QUANDO PRECISAR.
+            <span className="text-xs sm:text-sm font-extrabold text-[#14233B] tracking-wide">
+              <strong className="text-[#D72638] font-black">12 GUIAS PRINCIPAIS</strong> E <strong className="text-[#D72638] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR.
             </span>
           </div>
         </div>
 
-        {/* 5. BENEFÍCIOS INTEGRADOS DIRETO AO FUNDO BEGE */}
-        <div className="w-full max-w-2xl mb-6 px-2">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-            <li className="flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+        {/* 5. BENEFÍCIOS INTEGRADOS DIRETO AO FUNDO BEGE COM CORES SOLICITADAS */}
+        <div className="w-full max-w-2xl mb-7 px-2">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left">
+            <li className="flex items-center gap-3">
+              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
+                <Check className="w-4 h-4 stroke-[2.8]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                <strong className="text-[#0B1F3A]">IBS e CBS</strong> explicados com clareza.
+              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
+                <strong className="text-[#1465B0] font-extrabold">IBS e CBS</strong> explicados com clareza.
               </span>
             </li>
 
-            <li className="flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+            <li className="flex items-center gap-3">
+              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
+                <Check className="w-4 h-4 stroke-[2.8]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                Entenda o <strong className="text-[#138A60]">Simples Nacional e o MEI</strong>.
+              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
+                Entenda o <strong className="text-[#138A60] font-extrabold">Simples Nacional e o MEI</strong>.
               </span>
             </li>
 
-            <li className="flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+            <li className="flex items-center gap-3">
+              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
+                <Check className="w-4 h-4 stroke-[2.8]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                Veja os impactos para <strong className="text-[#0B1F3A]">municípios e licitações</strong>.
+              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
+                Veja os impactos para <strong className="text-[#D72638] font-extrabold">municípios e licitações</strong>.
               </span>
             </li>
 
-            <li className="flex items-center gap-2.5">
-              <div className="w-5 h-5 rounded-full bg-[#138A60]/15 text-[#138A60] flex items-center justify-center shrink-0">
-                <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+            <li className="flex items-center gap-3">
+              <div className="w-5.5 h-5.5 rounded-full bg-[#138A60]/20 text-[#138A60] flex items-center justify-center shrink-0">
+                <Check className="w-4 h-4 stroke-[2.8]" />
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                Consulte os principais temas de <strong className="text-[#138A60]">forma visual</strong>.
+              <span className="text-sm sm:text-base font-semibold text-[#14233B] leading-snug">
+                Consulte os principais temas de <strong className="text-[#138A60] font-extrabold">forma visual</strong>.
               </span>
             </li>
           </ul>
