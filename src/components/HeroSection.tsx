@@ -37,9 +37,9 @@ export const HeroSection: React.FC = () => {
           Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI, municípios e licitações</strong> de forma clara e organizada.
         </p>
 
-        {/* PÚBLICO ALVO EM VERMELHO INTENSO #D72638 */}
-        <p className="text-sm sm:text-base font-bold text-[#D72638] mb-6 text-center max-w-2xl">
-          Para profissionais fiscais, contadores, servidores públicos, estudantes e empreendedores.
+        {/* PÚBLICO ALVO EM TEXTO PRETO (#0B1F3A) COM EMOJI 👥 */}
+        <p className="text-sm sm:text-base font-bold text-[#0B1F3A] mb-6 text-center max-w-2xl">
+          👥 Para profissionais fiscais, contadores, servidores públicos, estudantes e empreendedores.
         </p>
 
         {/* 4. COMPOSIÇÃO ORIGINAL DE CAPAS */}
