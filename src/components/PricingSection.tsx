@@ -25,10 +25,10 @@ export const PricingSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 2 PLANOS LADO A LADO (DESKTOP) / EMPILHADOS (MOBILE) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-start max-w-5xl mx-auto">
+        {/* 2 PLANOS LADO A LADO */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
           
-          {/* 1. PLANO BÁSICO (COL 5) */}
+          {/* 1. PLANO BÁSICO */}
           <div className="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-[#0B1F3A]/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-start h-fit self-start">
             <div>
               {/* NOME E DESCRIÇÃO DO PLANO */}
@@ -46,15 +46,15 @@ export const PricingSection: React.FC = () => {
                 {!basicImgError ? (
                   <img
                     src="/plans/plano-basico.jpg"
-                    alt="Coleção de Materiais do Plano Básico - Guia Visual"
+                    alt="Coleção de Materiais do Plano Básico"
                     onError={() => setBasicImgError(true)}
-                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
+                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm"
                     loading="lazy"
                   />
                 ) : (
                   <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/40 w-full h-48">
                     <div className="p-3 rounded-full bg-white border border-slate-200 shadow-xs mb-2">
-                      <BookOpen className="w-6 h-6 text-[#0A8FF0]" />
+                      <BookOpen className="w-6 h-6 text-[#176BAA]" />
                     </div>
                     <span className="text-xs font-extrabold text-[#0B1F3A] uppercase tracking-wide">
                       PLANO BÁSICO
@@ -63,46 +63,50 @@ export const PricingSection: React.FC = () => {
                 )}
               </div>
 
-              {/* BLOCO DE PREÇO */}
+              {/* BLOCO DE PREÇO NÍTIDO */}
               <div className="mb-6 pb-6 border-b border-slate-100">
                 <span className="text-xs text-slate-400 line-through font-semibold block mb-0.5">
                   De R$ {siteConfig.basicOldPrice}
                 </span>
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR</span>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-[#00A878] tracking-tight">R$ {siteConfig.basicPrice}</span>
-                  <span className="text-xs text-[#475569] font-medium">/ pagamento único</span>
+                  <span className="text-4xl sm:text-5xl font-extrabold text-[#138A60] tracking-tight">R$ {siteConfig.basicPrice}</span>
+                </div>
+                <div className="mt-1">
+                  <span className="text-xs font-bold text-[#138A60] bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 inline-block">
+                    Pagamento único
+                  </span>
                 </div>
               </div>
 
-              {/* LISTA DE CONTEÚDOS DO PLANO BÁSICO */}
+              {/* LISTA DE CONTEÚDOS */}
               <div className="space-y-3 mb-2">
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
-                    Trilha Fiscal — Fundamentos da Área Fiscal
+                    Trilha Fiscal: Fundamentos da Área Fiscal
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     Guia Visual da Reforma Tributária
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     Guia Visual do IBS
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     Guia Visual da CBS
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#00A878] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     Guia Visual do Imposto Seletivo
                   </span>
@@ -115,21 +119,21 @@ export const PricingSection: React.FC = () => {
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
                 onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 17.90, 'Plano Básico')}
-                className="w-full bg-[#00A878] hover:bg-[#009368] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-2xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg transition-transform hover:scale-[1.01]"
+                className="w-full bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-md transition-transform hover:scale-[1.01]"
               >
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
               </a>
               <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#00A878]" />
-                <span>PAGAMENTO 100% SEGURO • PIX OU CARTÃO</span>
+                <ShieldCheck className="w-3.5 h-3.5 text-[#138A60]" />
+                <span>PAGAMENTO SEGURO • PIX OU CARTÃO</span>
               </div>
             </div>
           </div>
 
-          {/* 2. PLANO COMPLETO (COL 7 - MAIS ROBUSTO COM BORDA DOURADA) */}
+          {/* 2. PLANO COMPLETO */}
           <div className="lg:col-span-7 bg-white p-6 sm:p-9 rounded-2xl border-2 border-[#F5B700] shadow-xl shadow-amber-900/10 relative flex flex-col justify-between h-full">
             
-            {/* BADGE DE MAIOR VALOR DA OFERTA */}
+            {/* BADGE DE MAIOR VALOR */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F5B700] text-[#0B1F3A] font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full shadow-md flex items-center gap-1.5 whitespace-nowrap">
               <Star className="w-3.5 h-3.5 fill-[#0B1F3A]" />
               <span>12 GUIAS + 4 BÔNUS = 16 MATERIAIS DIGITAIS</span>
@@ -142,7 +146,7 @@ export const PricingSection: React.FC = () => {
                   COLEÇÃO COMPLETA
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  A coleção inteira reunindo os 12 guias principais e 4 bônus (total de 16 materiais digitais) abrangendo Simples Nacional, MEI, Split Payment, Municípios, Licitações e CNPJ Técnico.
+                  A coleção inteira reunindo os 12 guias principais e 4 bônus (total de 16 materiais digitais) abrangendo Simples Nacional, MEI, Split Payment, Municípios e Licitações.
                 </p>
               </div>
 
@@ -151,9 +155,9 @@ export const PricingSection: React.FC = () => {
                 {!completeImgError ? (
                   <img
                     src="/plans/plano-completo.jpg"
-                    alt="Coleção Completa de Materiais do Fiscal Simplificado"
+                    alt="Coleção Completa de Materiais"
                     onError={() => setCompleteImgError(true)}
-                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
+                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm"
                     loading="lazy"
                   />
                 ) : (
@@ -168,15 +172,22 @@ export const PricingSection: React.FC = () => {
                 )}
               </div>
 
-              {/* BLOCO DE PREÇO DO PLANO COMPLETO */}
+              {/* BLOCO DE PREÇO NÍTIDO */}
               <div className="mb-6 pb-6 border-b border-slate-100">
+                <span className="text-xs font-semibold text-slate-600 block mb-0.5">
+                  Coleção completa com 16 materiais
+                </span>
                 <span className="text-xs text-slate-400 line-through font-semibold block mb-0.5">
                   De R$ {siteConfig.completeOldPrice}
                 </span>
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR</span>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-[#00A878] tracking-tight">R$ {siteConfig.completePrice}</span>
-                  <span className="text-xs text-[#475569] font-medium">/ pagamento único</span>
+                  <span className="text-4xl sm:text-5xl font-extrabold text-[#0B1F3A] tracking-tight">R$ {siteConfig.completePrice}</span>
+                </div>
+                <div className="mt-1">
+                  <span className="text-xs font-bold text-[#138A60] bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200 inline-block">
+                    Pagamento único
+                  </span>
                 </div>
               </div>
 
@@ -189,68 +200,68 @@ export const PricingSection: React.FC = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-slate-800 pt-1">
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
-                    <span>1. Trilha Fiscal — Fundamentos</span>
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>1. Trilha Fiscal: Fundamentos</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>2. Guia Visual da Reforma</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>3. Guia Visual do IBS</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>4. Guia Visual da CBS</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>5. Imposto Seletivo</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>6. Simples Nacional</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>7. Guia Visual do MEI</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>8. Split Payment</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>9. SINTER, CIB, SINIR e CNM</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>10. Guia para Municípios</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>11. Licitações Públicas</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>12. CNPJ Técnico</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
-                    <span>13. Pessoa Física na Reforma</span>
+                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>13. Pessoa Física (Bônus)</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
-                    <span>14. Nanoempreendedor</span>
+                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>14. Nanoempreendedor (Bônus)</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
-                    <span>15. Cashback IBS / CBS</span>
+                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>15. Cashback IBS/CBS (Bônus)</span>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#00A878] shrink-0" />
-                    <span>16. Créditos IBS / CBS</span>
+                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>16. Créditos IBS/CBS (Bônus)</span>
                   </div>
                 </div>
               </div>
@@ -261,14 +272,14 @@ export const PricingSection: React.FC = () => {
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
                 onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo')}
-                className="w-full bg-[#00A878] hover:bg-[#009368] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-xl transition-transform hover:scale-[1.01]"
+                className="w-full bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-lg transition-transform hover:scale-[1.01]"
               >
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>
                 <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
               <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#00A878]" />
-                <span>PAGAMENTO 100% SEGURO • GARANTIA DE 7 DIAS</span>
+                <ShieldCheck className="w-3.5 h-3.5 text-[#138A60]" />
+                <span>PAGAMENTO SEGURO • GARANTIA DE 7 DIAS</span>
               </div>
             </div>
 
