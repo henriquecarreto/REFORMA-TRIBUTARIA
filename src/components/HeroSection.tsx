@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, BookOpen, BarChart3, Building, Landmark, Eye, FileText, Smartphone, Zap } from 'lucide-react';
+import { ArrowRight, BookOpen, BarChart3, Building, Landmark, Eye, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const scrollToMaterials = (e?: React.MouseEvent<Element>) => {
@@ -165,19 +165,11 @@ export const HeroSection: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />
           </a>
 
-          {/* INFORMAÇÃO COMPLEMENTAR REORGANIZADA ABAIXO DO BOTÃO */}
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs sm:text-sm font-semibold text-[#14233B] text-center pt-1">
-            <span className="flex items-center gap-1.5">
-              <FileText className="w-4 h-4 text-[#1769D1] shrink-0" />
-              Material digital
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Smartphone className="w-4 h-4 text-[#138A60] shrink-0" />
-              Consulta pelo celular
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Zap className="w-4 h-4 text-[#D72638] fill-[#D72638] shrink-0" />
-              <strong className="text-[#D72638] font-extrabold">Acesso imediato</strong>
+          {/* INFORMAÇÃO ABAIXO DO BOTÃO RESTAURADA COMO ANTES */}
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold text-slate-700 text-center pt-1">
+            <ShieldCheck className="w-4 h-4 text-[#00A859] shrink-0" />
+            <span className="uppercase tracking-wide font-extrabold text-[#0B1F3A]">
+              PAGAMENTO SEGURO • PIX OU CARTÃO
             </span>
           </div>
         </div>
