@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Eye, X } from 'lucide-react';
+import { Eye, X, Sparkles } from 'lucide-react';
 
 const lifestylePhotos = [
   {
@@ -34,27 +34,40 @@ export const ShowcaseGallery: React.FC = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-12 bg-[#FAF6F0] border-b border-amber-200/60 overflow-hidden">
-      {/* FULL VIEWPORT WIDTH CAROUSEL TRACK */}
+    <section className="py-12 sm:py-16 bg-[#FAF6F0] border-b border-amber-200/60 overflow-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-xs font-extrabold uppercase tracking-wider mb-3">
+          <Sparkles className="w-3.5 h-3.5 text-amber-700" />
+          <span>ROTI NA DE ESTUDOS</span>
+        </div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B1F3A] leading-tight tracking-tight mb-3">
+          Veja como os materiais podem fazer parte da sua rotina de estudos
+        </h2>
+        <p className="text-sm sm:text-base text-slate-700 font-medium leading-relaxed max-w-2xl mx-auto">
+          Uma forma prática de estudar, consultar e entender os principais pontos da Reforma Tributária.
+        </p>
+      </div>
+
+      {/* TRILHO DO CARROSSEL INFINITO */}
       <div className="w-full overflow-hidden relative">
         <div className="animate-marquee flex items-center gap-4 sm:gap-6 px-2">
           {infiniteLifestyle.map((photo, idx) => (
             <div
               key={`${photo.id}-${idx}`}
               onClick={() => setSelectedImage(photo.src)}
-              className="shrink-0 w-[280px] sm:w-[380px] md:w-[460px] lg:w-[520px] cursor-pointer group/item transition-transform duration-300 hover:scale-[1.015]"
+              className="shrink-0 w-[260px] sm:w-[360px] md:w-[440px] lg:w-[480px] cursor-pointer group/item transition-transform duration-300 hover:scale-[1.015]"
             >
-              <div className="relative rounded-2xl overflow-hidden bg-white border border-amber-200/80 shadow-lg group-hover/item:shadow-2xl transition-all">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-amber-200/80 shadow-md group-hover/item:shadow-xl transition-all">
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-auto max-h-[380px] sm:max-h-[440px] object-cover rounded-xl"
+                  className="w-full h-auto max-h-[340px] sm:max-h-[400px] object-cover rounded-xl"
                   loading="lazy"
                 />
 
-                {/* Hover Enlargement Overlay */}
+                {/* Overaly ao passar o mouse */}
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white font-bold text-sm sm:text-base p-4 text-center">
-                  <div className="p-3 rounded-full bg-amber-500 text-slate-950 shadow-lg">
+                  <div className="p-3 rounded-full bg-[#138A60] text-white shadow-lg">
                     <Eye className="w-6 h-6" />
                   </div>
                   <span>Ampliar Imagem</span>
@@ -65,13 +78,13 @@ export const ShowcaseGallery: React.FC = () => {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Modal de ampliação */}
       {selectedImage && (
         <div
           onClick={() => setSelectedImage(null)}
           className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 cursor-zoom-out animate-fade-in"
         >
-          <div className="relative max-w-5xl w-full bg-white rounded-2xl p-2.5 shadow-2xl">
+          <div className="relative max-w-5xl w-full bg-white rounded-2xl p-2 shadow-2xl">
             <img src={selectedImage} alt="Foto de Estudo Ampliada" className="w-full h-auto max-h-[88vh] object-contain rounded-xl" />
             <button
               onClick={() => setSelectedImage(null)}
@@ -85,3 +98,5 @@ export const ShowcaseGallery: React.FC = () => {
     </section>
   );
 };
+
+export default ShowcaseGallery;

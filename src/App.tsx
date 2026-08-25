@@ -2,6 +2,7 @@ import { AnnouncementBar } from './components/AnnouncementBar';
 import { HeroSection } from './components/HeroSection';
 import { MaterialCarousel } from './components/MaterialCarousel';
 import { BenefitsSection } from './components/BenefitsSection';
+import { ShowcaseGallery } from './components/ShowcaseGallery';
 import { AudienceSection } from './components/AudienceSection';
 import { ProductBundle } from './components/ProductBundle';
 import { PricingSection } from './components/PricingSection';
@@ -14,35 +15,38 @@ import { MobileStickyCTA } from './components/MobileStickyCTA';
 export function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900 selection:bg-amber-100 selection:text-amber-900">
-      {/* 1. BARRA SUPERIOR */}
+      {/* BARRA SUPERIOR */}
       <AnnouncementBar />
 
       <main>
-        {/* 1. PRIMEIRA DOBRA */}
+        {/* 1. PRIMEIRA DOBRA (SEM PREÇO, CAPAS INTEIRAS, BENEFÍCIOS NO FUNDO BEGE) */}
         <HeroSection />
 
-        {/* 2. PRÉVIAS REAIS */}
+        {/* 2. PRÉVIAS DAS PÁGINAS INTERNAS */}
         <MaterialCarousel />
 
-        {/* 3. BENEFÍCIOS */}
+        {/* 3. EXPLICAÇÃO DOS BENEFÍCIOS */}
         <BenefitsSection />
 
-        {/* 4. PÚBLICOS ATENDIDOS */}
+        {/* 4. CARROSSEL RESTAURADO: PESSOAS UTILIZANDO OS MATERIAIS */}
+        <ShowcaseGallery />
+
+        {/* 5. PÚBLICOS ATENDIDOS */}
         <AudienceSection />
 
-        {/* 5. MATERIAIS INCLUÍDOS (12 GUIAS + 4 BÔNUS = 16 MATERIAIS) */}
+        {/* 6. APRESENTAÇÃO DOS 16 MATERIAIS (VITRINE COMERCIAL EM 2 GRUPOS) */}
         <ProductBundle />
 
-        {/* 6. PLANOS E PREÇOS */}
+        {/* 7. PLANOS E PREÇOS (PREÇOS R$ 17,90 E R$ 27,90 AQUI!) */}
         <PricingSection />
 
-        {/* 7. DEPOIMENTOS */}
+        {/* 8. DEPOIMENTOS REAIS */}
         <TestimonialsSection />
 
-        {/* 8. GARANTIA */}
+        {/* 9. GARANTIA DE 7 DIAS */}
         <GuaranteeSection />
 
-        {/* 9. FAQ */}
+        {/* 10. PERGUNTAS FREQUENTES */}
         <FAQSection />
       </main>
 
