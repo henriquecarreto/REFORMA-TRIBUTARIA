@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, BookOpen, BarChart3, Building, Landmark, Eye, ShieldCheck } from 'lucide-react';
+import { ArrowRight, BookOpen, BarChart3, Building, Landmark, Eye, Lock, QrCode, CreditCard } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const scrollToMaterials = (e?: React.MouseEvent<Element>) => {
@@ -165,11 +165,21 @@ export const HeroSection: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />
           </a>
 
-          {/* INFORMAÇÃO ABAIXO DO BOTÃO RESTAURADA COMO ANTES */}
-          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold text-slate-700 text-center pt-1">
-            <ShieldCheck className="w-4 h-4 text-[#00A859] shrink-0" />
-            <span className="uppercase tracking-wide font-extrabold text-[#0B1F3A]">
-              PAGAMENTO SEGURO • PIX OU CARTÃO
+          {/* INFORMAÇÃO VISUAL DE PAGAMENTO SEGURO, PIX E CARTÃO */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-bold text-[#0B1F3A] text-center pt-2">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-950 shadow-2xs">
+              <Lock className="w-3.5 h-3.5 text-[#00A859] shrink-0" />
+              <span>Pagamento Seguro</span>
+            </span>
+
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-950 shadow-2xs">
+              <QrCode className="w-3.5 h-3.5 text-[#32BCAD] shrink-0" />
+              <span>Pix</span>
+            </span>
+
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-950 shadow-2xs">
+              <CreditCard className="w-3.5 h-3.5 text-[#1769D1] shrink-0" />
+              <span>Cartão de Crédito</span>
             </span>
           </div>
         </div>

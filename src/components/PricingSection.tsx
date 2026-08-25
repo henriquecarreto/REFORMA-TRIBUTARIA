@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { siteConfig } from '../config/siteConfig';
 import { trackInitiateCheckoutAndNavigate } from '../utils/pixel';
-import { CheckCircle2, Star, ArrowRight, ShieldCheck, Zap, BookOpen, Layers } from 'lucide-react';
+import { CheckCircle2, Star, ArrowRight, Zap, BookOpen, Layers, Lock, QrCode, CreditCard } from 'lucide-react';
 
 export const PricingSection: React.FC = () => {
   const [basicImgError, setBasicImgError] = useState(false);
@@ -70,7 +70,7 @@ export const PricingSection: React.FC = () => {
                 </span>
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR</span>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-[#138A60] tracking-tight">R$ {siteConfig.basicPrice}</span>
+                  <span className="text-4xl sm:text-5xl font-extrabold text-[#00A859] tracking-tight">R$ {siteConfig.basicPrice}</span>
                 </div>
                 <div className="mt-1">
                   <span className="text-xs font-bold text-[#138A60] bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200 inline-block">
@@ -123,9 +123,18 @@ export const PricingSection: React.FC = () => {
               >
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
               </a>
-              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#138A60]" />
-                <span>PAGAMENTO SEGURO • PIX OU CARTÃO</span>
+              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-3">
+                <span className="inline-flex items-center gap-1">
+                  <Lock className="w-3.5 h-3.5 text-[#00A859]" /> Pagamento Seguro
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 text-teal-900 font-extrabold">
+                  <QrCode className="w-3.5 h-3.5 text-[#32BCAD]" /> Pix
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 text-blue-900 font-extrabold">
+                  <CreditCard className="w-3.5 h-3.5 text-[#1769D1]" /> Cartão de Crédito
+                </span>
               </div>
             </div>
           </div>
@@ -182,7 +191,7 @@ export const PricingSection: React.FC = () => {
                 </span>
                 <div className="flex items-baseline gap-1.5">
                   <span className="text-xs font-bold text-[#0B1F3A] uppercase">POR</span>
-                  <span className="text-4xl sm:text-5xl font-extrabold text-[#0B1F3A] tracking-tight">R$ {siteConfig.completePrice}</span>
+                  <span className="text-4xl sm:text-5xl font-extrabold text-[#00A859] tracking-tight">R$ {siteConfig.completePrice}</span>
                 </div>
                 <div className="mt-1">
                   <span className="text-xs font-bold text-[#138A60] bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200 inline-block">
@@ -277,9 +286,18 @@ export const PricingSection: React.FC = () => {
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>
                 <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
-              <div className="flex items-center justify-center gap-1.5 text-[11px] font-bold text-slate-500 mt-2.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#138A60]" />
-                <span>PAGAMENTO SEGURO • GARANTIA DE 7 DIAS</span>
+              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-3">
+                <span className="inline-flex items-center gap-1">
+                  <Lock className="w-3.5 h-3.5 text-[#00A859]" /> Pagamento Seguro
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 text-teal-900 font-extrabold">
+                  <QrCode className="w-3.5 h-3.5 text-[#32BCAD]" /> Pix
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 text-blue-900 font-extrabold">
+                  <CreditCard className="w-3.5 h-3.5 text-[#1769D1]" /> Cartão
+                </span>
               </div>
             </div>
 
