@@ -65,7 +65,7 @@ export const PricingSection: React.FC = () => {
 
               {/* BLOCO DE PREÇO NÍTIDO */}
               <div className="mb-6 pb-6 border-b border-slate-100">
-                <span className="text-xs text-slate-400 line-through font-semibold block mb-0.5">
+                <span className="text-xs sm:text-sm font-bold text-[#D72638] line-through decoration-[#D72638] decoration-2 block mb-0.5">
                   De R$ {siteConfig.basicOldPrice}
                 </span>
                 <div className="flex items-baseline gap-1.5">
@@ -119,7 +119,7 @@ export const PricingSection: React.FC = () => {
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
                 onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 17.90, 'Plano Básico')}
-                className="w-full bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-md transition-transform hover:scale-[1.01]"
+                className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
               </a>
@@ -177,7 +177,7 @@ export const PricingSection: React.FC = () => {
                 <span className="text-xs font-semibold text-slate-600 block mb-0.5">
                   Coleção completa com 16 materiais
                 </span>
-                <span className="text-xs text-slate-400 line-through font-semibold block mb-0.5">
+                <span className="text-xs sm:text-sm font-bold text-[#D72638] line-through decoration-[#D72638] decoration-2 block mb-0.5">
                   De R$ {siteConfig.completeOldPrice}
                 </span>
                 <div className="flex items-baseline gap-1.5">
@@ -272,7 +272,7 @@ export const PricingSection: React.FC = () => {
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
                 onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo')}
-                className="w-full bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-lg transition-transform hover:scale-[1.01]"
+                className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>
                 <ArrowRight className="w-5 h-5 shrink-0" />

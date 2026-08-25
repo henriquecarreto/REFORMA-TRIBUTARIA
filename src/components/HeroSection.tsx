@@ -159,7 +159,7 @@ export const HeroSection: React.FC = () => {
           <a
             href="#materiais"
             onClick={scrollToMaterials}
-            className="w-full bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-[16px] sm:text-lg min-h-[56px] sm:min-h-[62px] py-3.5 px-6 rounded-xl flex items-center justify-center gap-2.5 cursor-pointer group shadow-md hover:scale-[1.01] active:scale-[0.99] transition-all text-center border border-emerald-500/20"
+            className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-[16px] sm:text-lg min-h-[56px] sm:min-h-[62px] py-3.5 px-6 rounded-xl flex items-center justify-center gap-2.5 cursor-pointer group shadow-lg shadow-emerald-700/20 hover:scale-[1.01] active:scale-[0.99] transition-all text-center border border-emerald-400/30"
           >
             <span>CONHECER OS 16 MATERIAIS</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />

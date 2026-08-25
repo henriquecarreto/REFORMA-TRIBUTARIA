@@ -207,7 +207,7 @@ export const ProductBundle: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
             <a
               href="#precos"
-              className="w-full sm:w-auto bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-sm sm:text-base py-4 px-8 rounded-xl flex items-center justify-center gap-2 shadow-md cursor-pointer transition-transform hover:scale-[1.01]"
+              className="w-full sm:w-auto bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-sm sm:text-base py-4 px-8 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-700/20 cursor-pointer transition-transform hover:scale-[1.01] border border-emerald-400/30"
             >
               <span>ACESSAR A COLEÇÃO COMPLETA</span>
               <ArrowRight className="w-5 h-5 shrink-0" />

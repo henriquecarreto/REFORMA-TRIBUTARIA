@@ -49,7 +49,7 @@ export const MobileStickyCTA: React.FC = () => {
     <div className="fixed bottom-0 left-0 right-0 z-40 p-3 bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 shadow-2xl sm:hidden animate-fade-in flex items-center gap-2">
       <button
         onClick={scrollToPricing}
-        className="flex-1 bg-[#00A878] hover:bg-[#009368] text-white font-extrabold text-xs min-[375px]:text-sm py-3.5 px-4 rounded-xl flex items-center justify-between shadow-lg cursor-pointer transition-transform border border-emerald-400/30"
+        className="flex-1 bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-xs min-[375px]:text-sm py-3.5 px-4 rounded-xl flex items-center justify-between shadow-lg cursor-pointer transition-transform border border-emerald-400/30"
       >
         <span>ACESSAR COLEÇÃO COMPLETA</span>
         <div className="flex items-center gap-1.5 shrink-0">

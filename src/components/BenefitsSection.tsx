@@ -58,7 +58,7 @@ export const BenefitsSection: React.FC = () => {
           <a
             href="#precos"
             onClick={scrollToPricing}
-            className="w-full sm:w-auto bg-[#138A60] hover:bg-[#0F704E] text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer group shadow-lg hover:scale-[1.01] transition-all text-center border border-emerald-500/20"
+            className="w-full sm:w-auto bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer group shadow-lg shadow-emerald-700/20 hover:scale-[1.01] transition-all text-center border border-emerald-400/30"
           >
             <span>CONHECER A COLEÇÃO COMPLETA</span>
             <ArrowRight className="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform" />
