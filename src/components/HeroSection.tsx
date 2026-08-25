@@ -27,7 +27,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* 2. TÍTULO PRINCIPAL */}
-        <h1 className="text-[30px] min-[375px]:text-[34px] min-[430px]:text-[36px] sm:text-[44px] lg:text-[50px] font-extrabold text-[#0B1F3A] leading-[1.12] tracking-tight mb-3.5 max-w-3xl">
+        <h1 className="text-[30px] min-[375px]:text-[34px] min-[430px]:text-[38px] sm:text-[44px] lg:text-[50px] font-extrabold text-[#0B1F3A] leading-[1.12] tracking-tight mb-3.5 max-w-3xl">
           A Reforma Tributária ficou <br className="hidden sm:inline" />
           <span className="text-[#138A60]">mais fácil de entender.</span>
         </h1>
@@ -37,78 +37,82 @@ export const HeroSection: React.FC = () => {
           Descubra uma coleção com 16 materiais visuais que explicam IBS, CBS, Simples Nacional, MEI, municípios e licitações de forma clara e organizada.
         </p>
 
-        {/* PÚBLICO ALVO EM TEXTO DIRETO (SEM CAIXA AMARELA/BORDA) */}
+        {/* PÚBLICO ALVO EM TEXTO DIRETO */}
         <p className="text-xs sm:text-sm font-semibold text-amber-900/90 mb-6 text-center max-w-xl">
           Para profissionais fiscais, contadores, servidores públicos, estudantes e empreendedores.
         </p>
 
-        {/* 4. COMPOSIÇÃO DAS CAPAS COMPLETAS (OBJECT-FIT: CONTAIN - ZERO CORTES) */}
-        <div className="w-full max-w-2xl sm:max-w-3xl mb-6 relative">
-          
-          {/* LAYOUT COMPACTO DE CAPAS COM PROPORÇÃO PRESERVADA (OBJECT-FIT CONTAIN) */}
-          <div className="flex items-center justify-center gap-2 sm:gap-4 py-2 px-1">
-            
-            {/* COLUNA ESQUERDA - CAPAS SECUNDÁRIAS */}
-            <div className="w-[28%] sm:w-[26%] flex flex-col gap-2 shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-              <div className="shadow-sm rounded-lg overflow-hidden bg-white p-1 border border-amber-200/70">
-                <img
-                  src="/hero/capas/capa-01-cbs-ibs.jpg"
-                  alt="Guia Visual CBS e IBS"
-                  className="w-full h-auto object-contain max-h-[120px] sm:max-h-[170px] rounded-xs"
-                  loading="eager"
-                />
-              </div>
-              <div className="shadow-sm rounded-lg overflow-hidden bg-white p-1 border border-amber-200/70">
-                <img
-                  src="/hero/capas/capa-03-licitacoes.jpg"
-                  alt="Reforma Tributária nas Licitações Públicas"
-                  className="w-full h-auto object-contain max-h-[120px] sm:max-h-[170px] rounded-xs"
-                  loading="eager"
-                />
-              </div>
-            </div>
+        {/* 4. COMPOSIÇÃO ORIGINAL DE CAPAS RESTAURADA IGUAL AO PADRÃO INICIAL */}
+        <div className="w-full max-w-2xl sm:max-w-3xl mb-8">
+          <div className="relative w-full bg-white p-2.5 sm:p-4 rounded-3xl border border-amber-200/90 shadow-2xl shadow-amber-900/10 transition-transform duration-300 hover:scale-[1.01]">
+            <div className="rounded-2xl overflow-hidden bg-[#FAF5E8] p-3 sm:p-5 border border-amber-200/60 relative">
+              
+              {/* DISPOSIÇÃO DE 3 COLUNAS PADRÃO */}
+              <div className="flex items-center justify-between gap-2.5 sm:gap-4">
+                
+                {/* COLUNA ESQUERDA: 2 CAPAS */}
+                <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                    <img
+                      src="/hero/capas/capa-01-cbs-ibs.jpg"
+                      alt="Guia Visual CBS e IBS"
+                      className="w-full h-auto object-cover rounded-md"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                    <img
+                      src="/hero/capas/capa-03-licitacoes.jpg"
+                      alt="Reforma Tributária nas Licitações Públicas"
+                      className="w-full h-auto object-cover rounded-md"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
 
-            {/* COLUNA CENTRAL - CAPA PRINCIPAL EM DESTAQUE */}
-            <div className="w-[38%] sm:w-[36%] shrink-0 shadow-lg rounded-xl overflow-hidden bg-white p-1.5 border-2 border-amber-400 z-10 transition-transform duration-300 hover:scale-[1.02]">
-              <img
-                src="/hero/capas/capa-05-consumo.jpg"
-                alt="Reforma Tributária do Consumo - Guia Principal"
-                className="w-full h-auto object-contain max-h-[240px] sm:max-h-[340px] rounded-md"
-                loading="eager"
-              />
-            </div>
+                {/* COLUNA CENTRAL: CAPA REFORMA TRIBUTÁRIA DO CONSUMO COM BORDA DOURADA */}
+                <div className="w-[36%] shrink-0 shadow-xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 bg-white p-0.5 sm:p-1 z-10 my-auto transition-transform hover:scale-[1.03]">
+                  <img
+                    src="/hero/capas/capa-05-consumo.jpg"
+                    alt="Reforma Tributária do Consumo - Guia Principal"
+                    className="w-full h-auto object-cover rounded-lg sm:rounded-xl"
+                    loading="eager"
+                  />
+                </div>
 
-            {/* COLUNA DIREITA - CAPAS SECUNDÁRIAS */}
-            <div className="w-[28%] sm:w-[26%] flex flex-col gap-2 shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-              <div className="shadow-sm rounded-lg overflow-hidden bg-white p-1 border border-amber-200/70">
-                <img
-                  src="/hero/capas/capa-02-municipios.jpg"
-                  alt="Reforma Tributária para Municípios"
-                  className="w-full h-auto object-contain max-h-[120px] sm:max-h-[170px] rounded-xs"
-                  loading="eager"
-                />
-              </div>
-              <div className="shadow-sm rounded-lg overflow-hidden bg-white p-1 border border-amber-200/70">
-                <img
-                  src="/hero/capas/capa-04-trilha-fiscal.jpg"
-                  alt="Trilha Fiscal"
-                  className="w-full h-auto object-contain max-h-[120px] sm:max-h-[170px] rounded-xs"
-                  loading="eager"
-                />
-              </div>
-            </div>
+                {/* COLUNA DIREITA: 2 CAPAS */}
+                <div className="w-[31%] flex flex-col gap-2.5 sm:gap-4 shrink-0">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                    <img
+                      src="/hero/capas/capa-02-municipios.jpg"
+                      alt="Reforma Tributária para Municípios"
+                      className="w-full h-auto object-cover rounded-md"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                    <img
+                      src="/hero/capas/capa-04-trilha-fiscal.jpg"
+                      alt="Trilha Fiscal"
+                      className="w-full h-auto object-cover rounded-md"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
 
+              </div>
+
+            </div>
           </div>
 
-          {/* MENSAGEM DA COLEÇÃO DIRETA SOBRE O FUNDO BEGE */}
           <div className="mt-3 text-center">
-            <span className="text-xs sm:text-sm font-bold text-amber-950 uppercase tracking-wide">
-              12 guias principais e 4 bônus para consultar quando precisar.
+            <span className="text-xs sm:text-sm font-extrabold text-amber-950 uppercase tracking-wide">
+              12 GUIA PRINCIPAIS E 4 BÔNUS PARA CONSULTAR QUANDO PRECISAR.
             </span>
           </div>
         </div>
 
-        {/* 5. BENEFÍCIOS INTEGRADOS DIRETO AO FUNDO BEGE (SEM CAIXA BRANCA E SEM BORDAS) */}
+        {/* 5. BENEFÍCIOS INTEGRADOS DIRETO AO FUNDO BEGE */}
         <div className="w-full max-w-2xl mb-6 px-2">
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
             <li className="flex items-center gap-2.5">
@@ -149,7 +153,7 @@ export const HeroSection: React.FC = () => {
           </ul>
         </div>
 
-        {/* 6. BOTÃO PRINCIPAL "CONHECER OS 16 MATERIAIS" -> #materiais (ZERO PREÇO NA 1ª DOBRA!) */}
+        {/* 6. BOTÃO PRINCIPAL "CONHECER OS 16 MATERIAIS" */}
         <div className="flex flex-col items-center gap-2.5 w-full max-w-md">
           <a
             href="#materiais"
