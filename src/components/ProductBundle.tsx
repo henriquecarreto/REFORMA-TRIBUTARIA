@@ -23,7 +23,7 @@ export const ProductBundle: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F7F3EA] text-slate-900 relative overflow-hidden border-b border-amber-200/60" id="materiais">
+    <section className="py-12 sm:py-24 bg-[#F7F3EA] text-slate-900 relative overflow-hidden border-b border-amber-200/60" id="materiais">
       {/* Glows sutis de fundo */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50/40 rounded-full blur-3xl pointer-events-none" />
@@ -31,14 +31,14 @@ export const ProductBundle: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* 1. CABEÇALHO DA SEÇÃO */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#138A60]/40 text-[#138A60] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-4 shadow-xs">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#138A60]/40 text-[#138A60] text-xs sm:text-sm font-extrabold uppercase tracking-wider mb-3.5 shadow-xs">
             <Layers className="w-4 h-4 text-[#138A60]" />
             <span>COLEÇÃO COMPLETA</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#112A46] leading-tight tracking-tight mb-4">
-            Conheça os <span className="text-[#138A60]">16 materiais</span> da sua coleção
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#112A46] leading-tight tracking-tight mb-3">
+            Conheça os <span className="text-[#00A859]">16 materiais</span> da sua coleção
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-[#44566C] font-medium leading-relaxed max-w-2xl mx-auto mb-3">
@@ -51,8 +51,8 @@ export const ProductBundle: React.FC = () => {
         </div>
 
         {/* 2. GRUPO 1: 12 GUIAS PRINCIPAIS */}
-        <div className="mb-14">
-          <div className="flex items-center gap-2.5 mb-6 pb-2 border-b border-amber-200/80">
+        <div className="mb-10 sm:mb-14">
+          <div className="flex items-center gap-2.5 mb-5 sm:mb-6 pb-2 border-b border-amber-200/80">
             <div className="w-7 h-7 rounded-lg bg-[#112A46] text-white flex items-center justify-center text-xs font-bold shrink-0">
               01
             </div>
@@ -61,18 +61,32 @@ export const ProductBundle: React.FC = () => {
             </h3>
           </div>
 
-          {/* GRADE 3 COLUNAS NO DESKTOP (EXATAMENTE 4 LINHAS COMPLETAS DE 3 CARDS) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {/* GRADE DOS 12 GUIAS: CARDS HORIZONTAIS COMPACTOS NO CELULAR (< 640PX) E 3 COLUNAS NO DESKTOP */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {main12Materials.map((mat) => (
               <div
                 key={mat.id}
-                className="bg-white p-5 sm:p-6 rounded-2xl border border-[#E5E0D7] shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
+                className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E5E0D7] shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
               >
-                <div>
-                  {/* CABEÇALHO DO CARD: NUMERAÇÃO + ETIQUETA + MINIATURA DA CAPA REAL */}
-                  <div className="flex items-start justify-between gap-3 mb-4">
-                    <div className="flex flex-col gap-2 items-start">
-                      <span className="w-8 h-8 rounded-lg bg-[#112A46] text-white text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
+                {/* ESTRUTURA HORIZONTAL COMPACTA NO MOBILE (< 640PX) */}
+                <div className="flex sm:flex-col items-start gap-3.5 sm:gap-0">
+                  
+                  {/* MINIATURA DA CAPA REAL COM OBJECT-FIT CONTAIN (68 x 102 PX NO MOBILE) */}
+                  {mat.coverImage && (
+                    <div className="w-[68px] h-[102px] sm:w-16 sm:h-22 shrink-0 rounded-lg overflow-hidden border border-slate-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200 sm:order-2 sm:self-end sm:mb-4">
+                      <img
+                        src={mat.coverImage}
+                        alt={mat.title}
+                        className="w-full h-full object-contain rounded-md"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
+
+                  <div className="flex-1 sm:order-1 sm:w-full">
+                    {/* CABEÇALHO DESKTOP: NUMERAÇÃO + ETIQUETA */}
+                    <div className="flex items-center gap-2 mb-1.5 sm:mb-4">
+                      <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#112A46] text-white text-[11px] sm:text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
                         {mat.number < 10 ? `0${mat.number}` : mat.number}
                       </span>
                       <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md border ${getCategoryStyle(mat.categorySlug)}`}>
@@ -80,32 +94,21 @@ export const ProductBundle: React.FC = () => {
                       </span>
                     </div>
 
-                    {/* MINIATURA DA CAPA REAL DO MATERIAL */}
-                    {mat.coverImage && (
-                      <div className="w-14 h-20 sm:w-16 sm:h-22 shrink-0 rounded-lg overflow-hidden border border-slate-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200">
-                        <img
-                          src={mat.coverImage}
-                          alt={mat.title}
-                          className="w-full h-full object-cover rounded-md"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
+                    {/* TÍTULO (16-18PX) */}
+                    <h4 className="text-[16px] sm:text-lg font-extrabold text-[#112A46] leading-snug mb-1.5 group-hover:text-[#176BAA] transition-colors">
+                      {mat.title}
+                    </h4>
+
+                    {/* DESCRIÇÃO (MÍNIMO 14PX) */}
+                    <p className="text-sm text-[#44566C] leading-relaxed font-normal">
+                      {mat.description}
+                    </p>
                   </div>
 
-                  {/* TÍTULO LIMPO DO MATERIAL (SEM TRAVESSÕES) */}
-                  <h4 className="text-base sm:text-lg font-extrabold text-[#112A46] leading-snug mb-2 group-hover:text-[#176BAA] transition-colors">
-                    {mat.title}
-                  </h4>
-
-                  {/* DESCRIÇÃO DE ALTO CONTRASTE (#44566C) */}
-                  <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed font-normal">
-                    {mat.description}
-                  </p>
                 </div>
 
                 {/* RODAPÉ DO CARD */}
-                <div className="mt-5 pt-3 border-t border-[#FAF5EE] flex items-center justify-between text-xs font-semibold text-[#138A60]">
+                <div className="mt-3.5 sm:mt-5 pt-2.5 sm:pt-3 border-t border-[#FAF5EE] flex items-center justify-between text-xs font-semibold text-[#00A859]">
                   <span className="flex items-center gap-1.5 font-bold">
                     <CheckCircle2 className="w-4 h-4" /> Material digital em PDF
                   </span>
@@ -116,38 +119,51 @@ export const ProductBundle: React.FC = () => {
         </div>
 
         {/* 3. GRUPO 2: 4 BÔNUS INCLUÍDOS */}
-        <div className="mb-14">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-6 pb-2 border-b border-emerald-300/80">
+        <div className="mb-10 sm:mb-14">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-5 sm:mb-6 pb-2 border-b border-emerald-300/80">
             <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-lg bg-[#138A60] text-white flex items-center justify-center text-xs font-bold shrink-0">
+              <div className="w-7 h-7 rounded-lg bg-[#00A859] text-white flex items-center justify-center text-xs font-bold shrink-0">
                 02
               </div>
               <h3 className="text-lg sm:text-xl font-extrabold text-[#112A46]">
                 4 bônus para complementar seus estudos
               </h3>
             </div>
-            <span className="text-xs font-bold text-[#138A60]">
+            <span className="text-xs font-bold text-[#00A859]">
               Materiais adicionais que já fazem parte da sua coleção completa.
             </span>
           </div>
 
-          {/* GRADE 4 COLUNAS NO DESKTOP (EXATAMENTE 1 LINHA COMPLETA DE 4 CARDS) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          {/* GRADE DOS 4 BÔNUS: CARDS COMPACTOS NO MOBILE E 4 COLUNAS NO DESKTOP */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {bonus4Materials.map((mat) => (
               <div
                 key={mat.id}
-                className="bg-white p-5 sm:p-6 rounded-2xl border-2 border-emerald-200/90 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group relative overflow-hidden"
+                className="bg-white p-4 sm:p-6 rounded-2xl border-2 border-emerald-200/90 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group relative overflow-hidden"
               >
-                {/* ETETA DE BÔNUS */}
-                <div className="absolute top-0 right-0 bg-[#138A60] text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-bl-lg flex items-center gap-1">
+                {/* ETIQUETA DE BÔNUS */}
+                <div className="absolute top-0 right-0 bg-[#00A859] text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-bl-lg flex items-center gap-1">
                   <Gift className="w-3 h-3" /> BÔNUS INCLUÍDO
                 </div>
 
-                <div>
-                  {/* CABEÇALHO DO CARD DO BÔNUS */}
-                  <div className="flex items-start justify-between gap-3 mb-4 pt-1">
-                    <div className="flex flex-col gap-2 items-start">
-                      <span className="w-8 h-8 rounded-lg bg-[#138A60] text-white text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
+                <div className="flex sm:flex-col items-start gap-3.5 sm:gap-0 pt-1 sm:pt-0">
+                  
+                  {/* MINIATURA DA CAPA DO BÔNUS (68 x 102 PX NO MOBILE) */}
+                  {mat.coverImage && (
+                    <div className="w-[68px] h-[102px] sm:w-14 sm:h-20 shrink-0 rounded-lg overflow-hidden border border-emerald-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200 sm:order-2 sm:self-end sm:mb-4">
+                      <img
+                        src={mat.coverImage}
+                        alt={mat.title}
+                        className="w-full h-full object-contain rounded-md"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
+
+                  <div className="flex-1 sm:order-1 sm:w-full">
+                    {/* CABEÇALHO DO CARD DO BÔNUS */}
+                    <div className="flex items-center gap-2 mb-1.5 sm:mb-4">
+                      <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#00A859] text-white text-[11px] sm:text-xs font-black flex items-center justify-center shrink-0 shadow-xs">
                         {mat.number}
                       </span>
                       <span className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md border ${getCategoryStyle('bonus')}`}>
@@ -155,32 +171,21 @@ export const ProductBundle: React.FC = () => {
                       </span>
                     </div>
 
-                    {/* MINIATURA DA CAPA DO BÔNUS */}
-                    {mat.coverImage && (
-                      <div className="w-14 h-20 shrink-0 rounded-lg overflow-hidden border border-emerald-200 shadow-xs bg-slate-50 p-0.5 group-hover:scale-105 transition-transform duration-200">
-                        <img
-                          src={mat.coverImage}
-                          alt={mat.title}
-                          className="w-full h-full object-cover rounded-md"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
+                    {/* TÍTULO DO BÔNUS (16-18PX) */}
+                    <h4 className="text-[16px] sm:text-lg font-extrabold text-[#112A46] leading-snug mb-1.5 group-hover:text-[#00A859] transition-colors">
+                      {mat.title}
+                    </h4>
+
+                    {/* DESCRIÇÃO DO BÔNUS (MÍNIMO 14PX) */}
+                    <p className="text-sm text-[#44566C] leading-relaxed font-normal">
+                      {mat.description}
+                    </p>
                   </div>
 
-                  {/* TÍTULO DO BÔNUS */}
-                  <h4 className="text-base sm:text-lg font-extrabold text-[#112A46] leading-snug mb-2 group-hover:text-[#138A60] transition-colors">
-                    {mat.title}
-                  </h4>
-
-                  {/* DESCRIÇÃO DO BÔNUS */}
-                  <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed font-normal">
-                    {mat.description}
-                  </p>
                 </div>
 
                 {/* RODAPÉ DO BÔNUS */}
-                <div className="mt-5 pt-3 border-t border-emerald-100 flex items-center justify-between text-xs font-semibold text-[#138A60]">
+                <div className="mt-3.5 sm:mt-5 pt-2.5 sm:pt-3 border-t border-emerald-100 flex items-center justify-between text-xs font-semibold text-[#00A859]">
                   <span className="flex items-center gap-1.5 font-bold">
                     <CheckCircle2 className="w-4 h-4" /> Material digital em PDF
                   </span>
