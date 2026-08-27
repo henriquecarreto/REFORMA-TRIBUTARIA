@@ -52,49 +52,49 @@ export const HeroSection: React.FC = () => {
                 
                 {/* COLUNA ESQUERDA: CAPA SUPERIOR VISÍVEL / CAPA INFERIOR OCULTA NO MOBILE */}
                 <div className="w-[25%] sm:w-[26%] flex flex-col gap-2 sm:gap-4 shrink-0">
-                  <div className="shadow-md rounded-md sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-amber-300/40 transition-transform hover:scale-[1.02]">
                     <img
                       src="/hero/capas/capa-01-cbs-ibs.jpg"
                       alt="Guia Visual CBS e IBS"
-                      className="w-full h-auto object-contain rounded-xs sm:rounded-md max-h-[135px] sm:max-h-[170px]"
+                      className="w-full h-auto object-cover rounded-lg"
                       loading="eager"
                     />
                   </div>
-                  <div className="hidden sm:block shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                  <div className="hidden sm:block shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-amber-300/40 transition-transform hover:scale-[1.02]">
                     <img
                       src="/hero/capas/capa-03-licitacoes.jpg"
                       alt="Reforma Tributária nas Licitações Públicas"
-                      className="w-full h-auto object-contain rounded-md max-h-[170px]"
+                      className="w-full h-auto object-cover rounded-lg"
                       loading="eager"
                     />
                   </div>
                 </div>
 
                 {/* COLUNA CENTRAL: CAPA PRINCIPAL DA REFORMA TRIBUTÁRIA DO CONSUMO (45% LARGURA) */}
-                <div className="w-[45%] sm:w-[36%] shrink-0 shadow-xl rounded-lg sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 bg-white p-0.5 sm:p-1 z-10 my-auto transition-transform hover:scale-[1.03]">
+                <div className="w-[45%] sm:w-[36%] shrink-0 shadow-2xl rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-400/90 z-10 my-auto transition-transform hover:scale-[1.03]">
                   <img
                     src="/hero/capas/capa-05-consumo.jpg"
                     alt="Reforma Tributária do Consumo - Guia Principal"
-                    className="w-full h-auto object-contain rounded-md sm:rounded-xl max-h-[230px] sm:max-h-[340px]"
+                    className="w-full h-auto object-cover rounded-xl sm:rounded-2xl"
                     loading="eager"
                   />
                 </div>
 
                 {/* COLUNA DIREITA: CAPA SUPERIOR VISÍVEL / CAPA INFERIOR OCULTA NO MOBILE */}
                 <div className="w-[25%] sm:w-[26%] flex flex-col gap-2 sm:gap-4 shrink-0">
-                  <div className="shadow-md rounded-md sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                  <div className="shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-amber-300/40 transition-transform hover:scale-[1.02]">
                     <img
                       src="/hero/capas/capa-02-municipios.jpg"
                       alt="Reforma Tributária para Municípios"
-                      className="w-full h-auto object-contain rounded-xs sm:rounded-md max-h-[135px] sm:max-h-[170px]"
+                      className="w-full h-auto object-cover rounded-lg"
                       loading="eager"
                     />
                   </div>
-                  <div className="hidden sm:block shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-slate-200/90 bg-white p-0.5 sm:p-1 transition-transform hover:scale-[1.02]">
+                  <div className="hidden sm:block shadow-md rounded-lg sm:rounded-xl overflow-hidden border border-amber-300/40 transition-transform hover:scale-[1.02]">
                     <img
                       src="/hero/capas/capa-04-trilha-fiscal.jpg"
                       alt="Trilha Fiscal"
-                      className="w-full h-auto object-contain rounded-md max-h-[170px]"
+                      className="w-full h-auto object-cover rounded-lg"
                       loading="eager"
                     />
                   </div>
