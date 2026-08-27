@@ -8,6 +8,7 @@ import { ProductBundle } from './components/ProductBundle';
 import { PricingSection } from './components/PricingSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { GuaranteeSection } from './components/GuaranteeSection';
+import { AccessSteps } from './components/AccessSteps';
 import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 import { MobileStickyCTA } from './components/MobileStickyCTA';
@@ -46,7 +47,10 @@ export function App() {
         {/* 9. GARANTIA DE 7 DIAS */}
         <GuaranteeSection />
 
-        {/* 10. PERGUNTAS FREQUENTES */}
+        {/* 10. COMO VOCÊ RECEBE OS MATERIAIS (PASSO A PASSO WIAPY) */}
+        <AccessSteps />
+
+        {/* 11. PERGUNTAS FREQUENTES */}
         <FAQSection />
       </main>
 
