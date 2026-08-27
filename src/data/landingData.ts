@@ -78,60 +78,39 @@ export const trustItems = [
 
 export const carouselImages: CarouselImage[] = [
   {
-    id: "amostra-01",
-    title: "1. O Que É a Reforma Tributária?",
-    category: "Visão Geral",
-    src: "/material/amostra-01.jpg",
-    alt: "Mapa mental resumindo a reforma tributária no Brasil"
+    id: "carrossel-01",
+    title: "1. Trilha Fiscal - Fundamentos da Área Fiscal",
+    category: "Fundamentos Fiscais",
+    src: "/material/carrossel-01-trilha-fiscal.jpg",
+    alt: "Guia Visual Trilha Fiscal - Fundamentos da Área Fiscal"
   },
   {
-    id: "amostra-08",
-    title: "2. Transição Tributária",
-    category: "Comparativo de Transição",
-    src: "/material/amostra-08.jpg",
-    alt: "Infográfico comparando a transição de tributos"
+    id: "carrossel-02",
+    title: "2. Reforma Tributária para Municípios",
+    category: "Gestão Municipal",
+    src: "/material/carrossel-02-municipios.jpg",
+    alt: "Guia Visual Reforma Tributária para Municípios"
   },
   {
-    id: "amostra-03",
-    title: "3. Diagnóstico Fiscal",
-    category: "Diagnóstico Fiscal",
-    src: "/material/amostra-03.jpg",
-    alt: "Infográfico dos problemas atuais do sistema tributário"
+    id: "carrossel-03",
+    title: "3. Reforma Tributária nas Licitações Públicas",
+    category: "Licitações Públicas",
+    src: "/material/carrossel-03-licitacoes.jpg",
+    alt: "Guia Visual Reforma Tributária nas Licitações Públicas"
   },
   {
-    id: "amostra-02",
-    title: "4. Split Payment",
-    category: "Mecanismo Financeiro",
-    src: "/material/amostra-02.jpg",
-    alt: "Infográfico explicativo sobre Split Payment"
+    id: "carrossel-04",
+    title: "4. SINTER, CIB, CNIR e CNM",
+    category: "Cadastro Imobiliário",
+    src: "/material/carrossel-04-sinter-cib.jpg",
+    alt: "Guia Visual SINTER, CIB, CNIR e CNM"
   },
   {
-    id: "amostra-07",
-    title: "5. Imposto Seletivo",
-    category: "Tributo Específico",
-    src: "/material/amostra-07.jpg",
-    alt: "Infográfico detalhando o Imposto Seletivo"
-  },
-  {
-    id: "amostra-06",
-    title: "6. Regra dos Créditos",
-    category: "Não-Cumulatividade",
-    src: "/material/amostra-06.jpg",
-    alt: "Infográfico explicando o aproveitamento de créditos"
-  },
-  {
-    id: "amostra-04",
-    title: "7. Regimes e Formalização",
-    category: "Regimes e Formalização",
-    src: "/material/amostra-04.jpg",
-    alt: "Mapa comparativo de regras para MEI e autônomos"
-  },
-  {
-    id: "amostra-05",
-    title: "8. Estratégia Fiscal",
-    category: "Estratégia Fiscal",
-    src: "/material/amostra-05.jpg",
-    alt: "Quadro comparativo de planejamento tributário"
+    id: "carrossel-05",
+    title: "5. CBS & IBS - O Novo IVA Dual Brasileiro",
+    category: "Tributação do Consumo",
+    src: "/material/carrossel-05-cbs-ibs.jpg",
+    alt: "Guia Visual CBS & IBS - O Novo IVA Dual Brasileiro"
   }
 ];
 
