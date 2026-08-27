@@ -110,18 +110,6 @@ export const AccessSteps: React.FC = () => {
           </div>
         </div>
 
-        {/* AVISO DESTACADO DA WIAPY */}
-        <div className="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-emerald-200 shadow-xs mb-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-50 text-[#00A859] font-extrabold text-xs sm:text-sm uppercase mb-3 border border-emerald-200">
-            <CheckCircle2 className="w-4 h-4 text-[#00A859]" />
-            <span>TUDO EM UM SÓ LUGAR, NA WIAPY</span>
-          </div>
-
-          <p className="text-base sm:text-lg text-[#14233B] font-semibold leading-relaxed">
-            Você não precisa procurar uma área de membros em outro site. Após a confirmação do pagamento, basta seguir as orientações enviadas para o seu e-mail e acessar os materiais diretamente pela plataforma Wiapy.
-          </p>
-        </div>
-
         {/* BOTÃO DA SEÇÃO */}
         <div className="flex flex-col items-center">
           <a
