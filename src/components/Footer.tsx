@@ -9,6 +9,12 @@ const InstagramIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4"
   </svg>
 );
 
+const FacebookIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+  </svg>
+);
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-slate-400 pt-12 pb-10 border-t border-zinc-900">
@@ -46,11 +52,13 @@ export const Footer: React.FC = () => {
               </a>
             </p>
 
-            {/* REDES SOCIAIS / INSTAGRAM */}
-            <div className="mt-2 flex flex-col items-start md:items-end gap-1.5">
+            {/* REDES SOCIAIS / INSTAGRAM E FACEBOOK */}
+            <div className="mt-2 flex flex-col items-start md:items-end gap-2">
               <span className="text-xs font-extrabold text-white uppercase tracking-wider">
                 REDES SOCIAIS
               </span>
+
+              {/* INSTAGRAM */}
               <a
                 href={siteConfig.instagramUrl}
                 target="_blank"
@@ -63,6 +71,19 @@ export const Footer: React.FC = () => {
                   </div>
                 </div>
                 <span>{siteConfig.instagramHandle}</span>
+              </a>
+
+              {/* FACEBOOK */}
+              <a
+                href={siteConfig.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm sm:text-base font-extrabold text-slate-100 hover:text-[#F5B700] transition-colors group"
+              >
+                <div className="w-7 h-7 rounded-lg bg-[#1877F2] p-0.5 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
+                  <FacebookIcon className="w-4 h-4 text-white" />
+                </div>
+                <span>{siteConfig.facebookHandle}</span>
               </a>
             </div>
           </div>
