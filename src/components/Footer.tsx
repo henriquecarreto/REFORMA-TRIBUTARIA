@@ -1,6 +1,14 @@
 import React from 'react';
 import { siteConfig } from '../config/siteConfig';
 
+const InstagramIcon: React.FC<{ className?: string }> = ({ className = "w-4 h-4" }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+  </svg>
+);
+
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-slate-400 pt-12 pb-10 border-t border-zinc-900">
@@ -23,9 +31,9 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* LADO DIREITO — SUPORTE AO CLIENTE */}
-          <div className="flex flex-col items-start md:items-end text-left md:text-right">
-            <h4 className="text-sm font-extrabold text-white uppercase tracking-wider mb-2">
+          {/* LADO DIREITO — SUPORTE AO CLIENTE E REDES SOCIAIS */}
+          <div className="flex flex-col items-start md:items-end text-left md:text-right gap-2">
+            <h4 className="text-sm font-extrabold text-white uppercase tracking-wider mb-0.5">
               SUPORTE AO CLIENTE
             </h4>
             <p className="text-sm text-slate-300 font-medium">
@@ -37,6 +45,26 @@ export const Footer: React.FC = () => {
                 {siteConfig.supportEmail}
               </a>
             </p>
+
+            {/* REDES SOCIAIS / INSTAGRAM */}
+            <div className="mt-2 flex flex-col items-start md:items-end gap-1.5">
+              <span className="text-xs font-extrabold text-white uppercase tracking-wider">
+                REDES SOCIAIS
+              </span>
+              <a
+                href={siteConfig.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-bold text-slate-200 hover:text-[#F5B700] transition-colors group"
+              >
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
+                  <div className="w-full h-full bg-black rounded-[6px] flex items-center justify-center">
+                    <InstagramIcon className="w-4 h-4 text-white" />
+                  </div>
+                </div>
+                <span>{siteConfig.instagramHandle}</span>
+              </a>
+            </div>
           </div>
 
         </div>

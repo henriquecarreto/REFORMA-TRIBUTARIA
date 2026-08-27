@@ -22,6 +22,8 @@ export const siteConfig = {
   // Support & Contact
   supportEmail: "contatofiscalsimplificado@gmail.com",
   contactEmail: "contatofiscalsimplificado@gmail.com",
+  instagramUrl: "https://www.instagram.com/ofiscalsimplificado/",
+  instagramHandle: "@ofiscalsimplificado",
   guaranteeDays: 7,
 
   // Legal
