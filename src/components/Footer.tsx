@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
                 className="h-14 sm:h-16 w-auto object-contain bg-white px-3.5 py-2 rounded-xl shadow-md"
               />
             </div>
-            <p className="text-sm text-slate-400 font-normal leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-100 font-semibold leading-relaxed">
               {siteConfig.tagline}
             </p>
           </div>
@@ -36,11 +36,11 @@ export const Footer: React.FC = () => {
             <h4 className="text-sm font-extrabold text-white uppercase tracking-wider mb-0.5">
               SUPORTE AO CLIENTE
             </h4>
-            <p className="text-sm text-slate-300 font-medium">
+            <p className="text-sm sm:text-base text-slate-100 font-bold">
               E-mail de suporte:{' '}
               <a 
                 href={`mailto:${siteConfig.supportEmail}`} 
-                className="text-[#F5B700] hover:text-amber-300 font-bold transition-colors"
+                className="text-[#F5B700] hover:text-amber-300 font-extrabold transition-colors underline decoration-amber-500/50 decoration-2"
               >
                 {siteConfig.supportEmail}
               </a>
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
                 href={siteConfig.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-slate-200 hover:text-[#F5B700] transition-colors group"
+                className="inline-flex items-center gap-2 text-sm sm:text-base font-extrabold text-slate-100 hover:text-[#F5B700] transition-colors group"
               >
                 <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 p-0.5 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
                   <div className="w-full h-full bg-black rounded-[6px] flex items-center justify-center">
@@ -70,14 +70,14 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* LINHA DIVISÓRIA */}
-        <div className="w-full border-t border-zinc-900 mb-8" />
+        <div className="w-full border-t border-zinc-800 mb-8" />
 
         {/* PARTE INFERIOR (CENTRALIZADA) — COPYRIGHT E AVISO LEGAL */}
         <div className="flex flex-col items-center justify-center text-center gap-3">
-          <p className="text-xs text-slate-400 font-medium">
+          <p className="text-xs sm:text-sm text-slate-100 font-bold">
             {siteConfig.copyright}
           </p>
-          <p className="text-[11px] sm:text-xs text-slate-500 max-w-4xl leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-200 font-medium max-w-4xl leading-relaxed">
             {siteConfig.disclaimer}
           </p>
         </div>
