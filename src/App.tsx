@@ -38,7 +38,7 @@ export function App() {
         {/* 6. APRESENTAÇÃO DOS 16 MATERIAIS (VITRINE COMERCIAL EM 2 GRUPOS) */}
         <ProductBundle />
 
-        {/* 7. PLANOS E PREÇOS (PREÇOS R$ 17,90 E R$ 27,90 AQUI!) */}
+        {/* 7. PLANOS E PREÇOS (PREÇOS R$ 19,90 E R$ 29,90 AQUI!) */}
         <PricingSection />
 
         {/* 8. DEPOIMENTOS REAIS */}

@@ -7,7 +7,7 @@ declare global {
 /**
  * Dispara o evento padrão InitiateCheckout no Meta Pixel (Pixel ID: 904141958942511).
  * 
- * @param value Valor numérico da oferta (ex: 17.90 ou 27.90)
+ * @param value Valor numérico da oferta (ex: 19.90 ou 29.90)
  * @param contentName Nome do produto (ex: 'Plano Básico' ou 'Plano Completo')
  */
 export const trackInitiateCheckout = (value: number, contentName: string) => {
@@ -31,7 +31,7 @@ export const trackInitiateCheckout = (value: number, contentName: string) => {
  * 
  * @param e Evento de clique do React (opcional)
  * @param url URL de destino padrão no checkout da Wiapy
- * @param value Valor numérico da oferta (17.90 ou 27.90)
+ * @param value Valor numérico da oferta (19.90 ou 29.90)
  * @param contentName Nome da oferta ('Plano Básico' ou 'Plano Completo')
  */
 export const trackInitiateCheckoutAndNavigate = (

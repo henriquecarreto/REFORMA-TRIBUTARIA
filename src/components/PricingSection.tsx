@@ -118,7 +118,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-6 pt-2">
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
-                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 17.90, 'Plano Básico')}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 19.90, 'Plano Básico')}
                 className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
@@ -280,7 +280,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-auto pt-4">
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
-                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo')}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 29.90, 'Plano Completo')}
                 className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>

@@ -9,7 +9,7 @@ export const ProblemBlock: React.FC = () => {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      trackInitiateCheckoutAndNavigate(e || null, siteConfig.COMPLETE_CHECKOUT_URL, 27.90, 'Plano Completo');
+      trackInitiateCheckoutAndNavigate(e || null, siteConfig.COMPLETE_CHECKOUT_URL, 29.90, 'Plano Completo');
     }
   };
 
