@@ -288,9 +288,9 @@ export const PricingSection: React.FC = () => {
                 <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
 
-              <div className="text-center mt-3">
-                <span className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full bg-emerald-50/80 border-2 border-[#D72638] text-[#00A859] text-sm sm:text-base font-black shadow-xs">
-                  Você economiza R$20,00
+              <div className="text-center mt-3.5">
+                <span className="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-full bg-red-50 border-2 border-[#D72638] text-[#0B1F3A] text-base sm:text-lg md:text-xl font-black tracking-tight shadow-sm">
+                  VOCÊ ECONOMIZA R$ 20,00
                 </span>
               </div>
 
