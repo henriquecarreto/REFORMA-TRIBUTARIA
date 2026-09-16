@@ -35,7 +35,7 @@ export function App() {
         {/* 5. PÚBLICOS ATENDIDOS */}
         <AudienceSection />
 
-        {/* 6. APRESENTAÇÃO DOS 16 MATERIAIS (VITRINE COMERCIAL EM 2 GRUPOS) */}
+        {/* 6. APRESENTAÇÃO DOS 19 MATERIAIS (VITRINE COMERCIAL EM 2 GRUPOS) */}
         <ProductBundle />
 
         {/* 7. PLANOS E PREÇOS (PREÇOS R$ 19,90 E R$ 29,90 AQUI!) */}

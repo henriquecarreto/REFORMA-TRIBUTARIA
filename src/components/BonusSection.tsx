@@ -115,7 +115,7 @@ export const BonusSection: React.FC = () => {
 
           {/* MICROCOPY INDICADOR */}
           <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0A8FF0] tracking-wider uppercase pt-1">
-            <span>(OS 4 BÔNUS FAZEM PARTE DOS 16 MATERIAIS DIGITAIS DA COLEÇÃO COMPLETA)</span>
+            <span>(OS 4 BÔNUS FAZEM PARTE DOS 19 MATERIAIS DIGITAIS DA COLEÇÃO COMPLETA)</span>
             <ArrowDown className="w-3.5 h-3.5" />
           </div>
         </div>

@@ -1,12 +1,12 @@
 export const siteConfig = {
   brandName: "Fiscal Simplificado",
   productName: "Coleção Completa da Reforma Tributária",
-  tagline: "Coleção digital educativa de 16 materiais visuais sobre a Reforma Tributária. Desenvolvido para consulta rápida, estudo e aplicação prática.",
+  tagline: "Coleção digital educativa de 19 materiais visuais sobre a Reforma Tributária. Desenvolvido para consulta rápida, estudo e aplicação prática.",
   heroBadge: "COLEÇÃO COMPLETA PARA ENTENDER A REFORMA TRIBUTÁRIA",
   heroTitle: "Entenda a Reforma Tributária sem se perder em leis e explicações complicadas",
   heroSubtitle: "Receba uma coleção completa com materiais visuais sobre IBS, CBS, Simples Nacional, MEI, municípios, licitações e outras mudanças essenciais. Ideal para contadores, profissionais fiscais, servidores públicos, estudantes e empreendedores.",
   
-  announcementText: "COLEÇÃO COMPLETA DE 16 MATERIAIS VISUAIS SOBRE A REFORMA TRIBUTÁRIA",
+  announcementText: "COLEÇÃO COMPLETA DE 19 MATERIAIS VISUAIS SOBRE A REFORMA TRIBUTÁRIA",
 
   // Centralized Checkout URLs (Seção 18 & 30) - EXACT AND PRESERVED
   BASIC_CHECKOUT_URL: "https://pay.wiapy.com/T38NZG2QVKLs",

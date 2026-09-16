@@ -34,7 +34,7 @@ export const HeroSection: React.FC = () => {
 
         {/* 3. SUBTÍTULO OTIMIZADO */}
         <p className="text-[15px] min-[375px]:text-[16px] sm:text-[19px] lg:text-[21px] text-[#14233B] leading-[1.55] mb-3 font-semibold max-w-3xl text-center">
-          Descubra uma coleção com <strong className="text-[#D72638] font-black">16 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI e os impactos nos municípios e licitações</strong> de forma clara e organizada.
+          Descubra uma coleção com <strong className="text-[#D72638] font-black">19 materiais visuais</strong> que explicam <strong className="text-[#1769D1] font-extrabold">IBS, CBS, Simples Nacional, MEI e os impactos nos municípios e licitações</strong> de forma clara e organizada.
         </p>
 
         {/* PÚBLICO ALVO EM TEXTO PRETO (#0B1F3A) COM EMOJI 👥 */}
@@ -108,7 +108,7 @@ export const HeroSection: React.FC = () => {
           {/* LEGENDA PADRONIZADA */}
           <div className="mt-3 text-center">
             <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-extrabold text-[#0B1F3A] tracking-wide">
-              📚 <strong className="text-[#0B1F3A] font-black">12 GUIAS PRINCIPAIS</strong> + 🎁 <strong className="text-[#0B1F3A] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR
+              📚 <strong className="text-[#0B1F3A] font-black">15 GUIAS PRINCIPAIS</strong> + 🎁 <strong className="text-[#0B1F3A] font-black">4 BÔNUS</strong> PARA CONSULTAR QUANDO PRECISAR
             </span>
           </div>
         </div>
@@ -154,14 +154,14 @@ export const HeroSection: React.FC = () => {
           </ul>
         </div>
 
-        {/* 6. BOTÃO PRINCIPAL "CONHECER OS 16 MATERIAIS" */}
+        {/* 6. BOTÃO PRINCIPAL "CONHECER OS 19 MATERIAIS" */}
         <div className="flex flex-col items-center gap-3 w-full max-w-md">
           <a
             href="#materiais"
             onClick={scrollToMaterials}
             className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-[15px] sm:text-lg min-h-[52px] sm:min-h-[62px] py-3.5 px-6 rounded-xl flex items-center justify-center gap-2.5 cursor-pointer group shadow-lg shadow-emerald-700/20 hover:scale-[1.01] active:scale-[0.99] transition-all text-center border border-emerald-400/30"
           >
-            <span>CONHECER OS 16 MATERIAIS</span>
+            <span>CONHECER OS 19 MATERIAIS</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" />
           </a>
 

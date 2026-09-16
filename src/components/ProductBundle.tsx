@@ -1,5 +1,5 @@
 import React from 'react';
-import { main12Materials, bonus4Materials } from '../data/landingData';
+import { main15Materials, bonus4Materials } from '../data/landingData';
 import { CheckCircle2, Layers, Sparkles, Gift, ArrowRight } from 'lucide-react';
 
 export const ProductBundle: React.FC = () => {
@@ -38,7 +38,7 @@ export const ProductBundle: React.FC = () => {
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#112A46] leading-tight tracking-tight mb-3">
-            Conheça os <span className="text-[#00A859]">16 materiais</span> da sua coleção
+            Conheça os <span className="text-[#00A859]">19 materiais</span> da sua coleção
           </h2>
 
           <p className="text-sm sm:text-base md:text-lg text-[#44566C] font-medium leading-relaxed max-w-2xl mx-auto mb-3">
@@ -46,24 +46,24 @@ export const ProductBundle: React.FC = () => {
           </p>
 
           <span className="text-xs sm:text-sm font-bold text-[#176BAA] bg-blue-50 px-3 py-1 rounded-md border border-blue-200 inline-block">
-            12 guias principais e 4 bônus • Total de 16 materiais digitais
+            15 guias principais e 4 bônus • Total de 19 materiais digitais
           </span>
         </div>
 
-        {/* 2. GRUPO 1: 12 GUIAS PRINCIPAIS */}
+        {/* 2. GRUPO 1: 15 GUIAS PRINCIPAIS */}
         <div className="mb-10 sm:mb-14">
           <div className="flex items-center gap-2.5 mb-5 sm:mb-6 pb-2 border-b border-amber-200/80">
             <div className="w-7 h-7 rounded-lg bg-[#112A46] text-white flex items-center justify-center text-xs font-bold shrink-0">
               01
             </div>
             <h3 className="text-lg sm:text-xl font-extrabold text-[#112A46]">
-              12 guias principais
+              15 guias principais
             </h3>
           </div>
 
-          {/* GRADE DOS 12 GUIAS: CARDS HORIZONTAIS COMPACTOS NO CELULAR (< 640PX) E 3 COLUNAS NO DESKTOP */}
+          {/* GRADE DOS 15 GUIAS: CARDS HORIZONTAIS COMPACTOS NO CELULAR (< 640PX) E 3 COLUNAS NO DESKTOP */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {main12Materials.map((mat) => (
+            {main15Materials.map((mat) => (
               <div
                 key={mat.id}
                 className="bg-white p-4 sm:p-6 rounded-2xl border border-[#E5E0D7] shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
@@ -202,10 +202,10 @@ export const ProductBundle: React.FC = () => {
               <Sparkles className="w-3.5 h-3.5 text-amber-700" /> ACERVO VISUAL ORGANIZADO
             </div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-[#112A46] mb-2">
-              Acesse os 16 materiais da coleção completa
+              Acesse os 19 materiais da coleção completa
             </h3>
             <p className="text-xs sm:text-sm text-[#44566C] leading-relaxed">
-              Receba 12 guias principais e 4 bônus para estudar a Reforma Tributária de forma visual e organizada.
+              Receba 15 guias principais e 4 bônus para estudar a Reforma Tributária de forma visual e organizada.
             </p>
           </div>
 

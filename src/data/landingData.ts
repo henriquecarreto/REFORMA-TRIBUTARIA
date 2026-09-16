@@ -165,7 +165,7 @@ export const benefitsList: BenefitDetail[] = [
   }
 ];
 
-export const main12Materials: DigitalMaterial[] = [
+export const main15Materials: DigitalMaterial[] = [
   { 
     id: "mat-1", 
     number: 1, 
@@ -285,13 +285,45 @@ export const main12Materials: DigitalMaterial[] = [
     description: "Entenda a inscrição de pessoas físicas no CNPJ para fins cadastrais e fiscais.", 
     iconName: "Briefcase",
     coverImage: "/material/amostra-05.jpg"
+  },
+  {
+    id: "mat-13",
+    number: 13,
+    title: "Guia Visual — Orçamento 2027",
+    category: "Municípios",
+    categorySlug: "municipios",
+    description: "Planejamento orçamentário municipal diante da transição da Reforma Tributária.",
+    iconName: "Building2",
+    coverImage: "/hero/capas/capa-02-municipios.jpg"
+  },
+  {
+    id: "mat-14",
+    number: 14,
+    title: "Guia Visual — Fiscalização do IBS",
+    category: "Municípios",
+    categorySlug: "municipios",
+    description: "Fiscalização municipal no contexto do IBS, controles e novos pontos de atenção.",
+    iconName: "Building2",
+    coverImage: "/material/amostra-08.jpg"
+  },
+  {
+    id: "mat-15",
+    number: 15,
+    title: "Guia Visual — Código Tributário Municipal",
+    category: "Municípios",
+    categorySlug: "municipios",
+    description: "Revisão e adequação do Código Tributário Municipal diante da Reforma Tributária.",
+    iconName: "Building2",
+    coverImage: "/material/amostra-02.jpg"
   }
 ];
 
+export const main12Materials = main15Materials;
+
 export const bonus4Materials: DigitalMaterial[] = [
   { 
-    id: "mat-13", 
-    number: 13, 
+    id: "mat-16", 
+    number: 16, 
     title: "Pessoa Física na Reforma", 
     category: "Bônus", 
     categorySlug: "bonus",
@@ -301,8 +333,8 @@ export const bonus4Materials: DigitalMaterial[] = [
     isBonus: true
   },
   { 
-    id: "mat-14", 
-    number: 14, 
+    id: "mat-17", 
+    number: 17, 
     title: "Nanoempreendedor", 
     category: "Bônus", 
     categorySlug: "bonus",
@@ -312,8 +344,8 @@ export const bonus4Materials: DigitalMaterial[] = [
     isBonus: true
   },
   { 
-    id: "mat-15", 
-    number: 15, 
+    id: "mat-18", 
+    number: 18, 
     title: "Cashback do IBS e da CBS", 
     category: "Bônus", 
     categorySlug: "bonus",
@@ -323,8 +355,8 @@ export const bonus4Materials: DigitalMaterial[] = [
     isBonus: true
   },
   { 
-    id: "mat-16", 
-    number: 16, 
+    id: "mat-19", 
+    number: 19, 
     title: "Créditos do IBS e da CBS", 
     category: "Bônus", 
     categorySlug: "bonus",
@@ -335,10 +367,12 @@ export const bonus4Materials: DigitalMaterial[] = [
   }
 ];
 
-export const collection16Materials: DigitalMaterial[] = [
-  ...main12Materials,
+export const collection19Materials: DigitalMaterial[] = [
+  ...main15Materials,
   ...bonus4Materials
 ];
+
+export const collection16Materials = collection19Materials;
 
 export const targetAudience: AudienceCard[] = [
   {
@@ -376,6 +410,9 @@ export const bundleItems = [
   "Guia Visual para Municípios",
   "Guia Visual das Licitações Públicas",
   "Guia Visual do CNPJ Técnico",
+  "Guia Visual — Orçamento 2027",
+  "Guia Visual — Fiscalização do IBS",
+  "Guia Visual — Código Tributário Municipal",
   "Pessoa Física na Reforma (Bônus)",
   "Nanoempreendedor (Bônus)",
   "Cashback do IBS e da CBS (Bônus)",
@@ -478,7 +515,7 @@ export const accessSteps: AccessStepItem[] = [
 export const faqsData: FAQItem[] = [
   {
     question: "O material é digital?",
-    answer: "Sim. Todos os 16 materiais são disponibilizados no formato digital em PDF de alta qualidade para download e consulta em qualquer dispositivo."
+    answer: "Sim. Todos os 19 materiais são disponibilizados no formato digital em PDF de alta qualidade para download e consulta em qualquer dispositivo."
   },
   {
     question: "Para quem os materiais são indicados?",
@@ -486,7 +523,7 @@ export const faqsData: FAQItem[] = [
   },
   {
     question: "Quais assuntos estão incluídos?",
-    answer: "A coleção completa reúne 16 materiais visuais abrangendo IBS, CBS, Imposto Seletivo, Simples Nacional, MEI, Split Payment, SINTER/CIB, Municípios, Licitações Públicas, CNPJ Técnico, Pessoa Física, Nanoempreendedor, Cashback e Créditos Tributários."
+    answer: "A coleção completa reúne 19 materiais visuais abrangendo IBS, CBS, Imposto Seletivo, Simples Nacional, MEI, Split Payment, SINTER/CIB, Municípios, Licitações Públicas, CNPJ Técnico, Orçamento 2027, Fiscalização do IBS, Código Tributário Municipal, Pessoa Física, Nanoempreendedor, Cashback e Créditos Tributários."
   },
   {
     question: "Como recebo o acesso?",
@@ -505,3 +542,4 @@ export const faqsData: FAQItem[] = [
     answer: "Sim. Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo você considerar que o material não atendeu suas expectativas, basta solicitar o reembolso."
   }
 ];
+

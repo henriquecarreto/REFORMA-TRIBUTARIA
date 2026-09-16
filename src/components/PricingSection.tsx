@@ -21,7 +21,7 @@ export const PricingSection: React.FC = () => {
             Escolha o Plano Ideal para Você
           </h2>
           <p className="text-[#475569] text-base sm:text-lg font-normal leading-relaxed">
-            Selecione entre a versão de introdução ou a coleção completa com todos os 16 materiais visuais.
+            Selecione entre a versão de introdução ou a coleção completa com todos os 19 materiais visuais.
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export const PricingSection: React.FC = () => {
             {/* BADGE DE MAIOR VALOR */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F5B700] text-[#0B1F3A] font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full shadow-md flex items-center gap-1.5 whitespace-nowrap">
               <Star className="w-3.5 h-3.5 fill-[#0B1F3A]" />
-              <span>12 GUIAS + 4 BÔNUS = 16 MATERIAIS DIGITAIS</span>
+              <span>15 GUIAS + 4 BÔNUS = 19 MATERIAIS DIGITAIS</span>
             </div>
 
             <div>
@@ -156,7 +156,7 @@ export const PricingSection: React.FC = () => {
                   COLEÇÃO COMPLETA
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  A coleção inteira reunindo os 12 guias principais e 4 bônus (total de 16 materiais digitais) abrangendo Simples Nacional, MEI, Split Payment, Municípios e Licitações.
+                  A coleção inteira reunindo os 15 guias principais e 4 bônus (total de 19 materiais digitais) abrangendo Simples Nacional, MEI, Split Payment, Municípios, Licitações, Orçamento 2027 e Fiscalização.
                 </p>
               </div>
 
@@ -176,7 +176,7 @@ export const PricingSection: React.FC = () => {
                       <Star className="w-7 h-7 text-[#F5B700] fill-[#F5B700]" />
                     </div>
                     <span className="text-xs font-extrabold text-[#0B1F3A] uppercase tracking-wide">
-                      COLEÇÃO COMPLETA (16 MATERIAIS DIGITAIS)
+                      COLEÇÃO COMPLETA (19 MATERIAIS DIGITAIS)
                     </span>
                   </div>
                 )}
@@ -185,7 +185,7 @@ export const PricingSection: React.FC = () => {
               {/* BLOCO DE PREÇO NÍTIDO */}
               <div className="mb-6 pb-6 border-b border-slate-100">
                 <span className="text-xs font-semibold text-slate-600 block mb-0.5">
-                  Coleção completa com 16 materiais
+                  Coleção completa com 19 materiais
                 </span>
                 <span className="text-xs sm:text-sm font-bold text-[#D72638] line-through decoration-[#D72638] decoration-2 block mb-0.5">
                   De R$ {siteConfig.completeOldPrice}
@@ -205,7 +205,7 @@ export const PricingSection: React.FC = () => {
               <div className="space-y-2.5 mb-6">
                 <div className="flex items-center gap-2 text-xs font-extrabold text-amber-900 bg-amber-50 p-2 rounded-lg border border-amber-200">
                   <Layers className="w-4 h-4 text-amber-700 shrink-0" />
-                  <span>12 GUIAS PRINCIPAIS + 4 BÔNUS = 16 MATERIAIS DIGITAIS:</span>
+                  <span>15 GUIAS PRINCIPAIS + 4 BÔNUS = 19 MATERIAIS DIGITAIS:</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-slate-800 pt-1">
@@ -257,21 +257,33 @@ export const PricingSection: React.FC = () => {
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
                     <span>12. CNPJ Técnico</span>
                   </div>
-                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                  <div className="flex items-center gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
-                    <span>13. Pessoa Física (Bônus)</span>
+                    <span>13. Orçamento 2027</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>14. Fiscalização do IBS</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>15. Código Tributário Municipal</span>
                   </div>
                   <div className="flex items-center gap-1.5 font-bold text-teal-800">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
-                    <span>14. Nanoempreendedor (Bônus)</span>
+                    <span>16. Pessoa Física (Bônus)</span>
                   </div>
                   <div className="flex items-center gap-1.5 font-bold text-teal-800">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
-                    <span>15. Cashback IBS/CBS (Bônus)</span>
+                    <span>17. Nanoempreendedor (Bônus)</span>
                   </div>
                   <div className="flex items-center gap-1.5 font-bold text-teal-800">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
-                    <span>16. Créditos IBS/CBS (Bônus)</span>
+                    <span>18. Cashback IBS/CBS (Bônus)</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 font-bold text-teal-800">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#138A60] shrink-0" />
+                    <span>19. Créditos IBS/CBS (Bônus)</span>
                   </div>
                 </div>
               </div>
