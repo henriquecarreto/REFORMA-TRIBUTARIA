@@ -124,8 +124,8 @@ export const PricingSection: React.FC = () => {
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
               </a>
 
-              <div className="text-center mt-2.5">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#00A859] text-xs sm:text-sm font-extrabold shadow-2xs">
+              <div className="text-center mt-3">
+                <span className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full bg-red-50 border-2 border-[#D72638] text-[#D72638] text-sm sm:text-base font-black shadow-xs">
                   Você economiza R$10,00
                 </span>
               </div>
@@ -294,8 +294,8 @@ export const PricingSection: React.FC = () => {
                 <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
 
-              <div className="text-center mt-2.5">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#00A859] text-xs sm:text-sm font-extrabold shadow-2xs">
+              <div className="text-center mt-3">
+                <span className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full bg-red-50 border-2 border-[#D72638] text-[#D72638] text-sm sm:text-base font-black shadow-xs">
                   Você economiza R$20,00
                 </span>
               </div>
