@@ -111,6 +111,27 @@ export const carouselImages: CarouselImage[] = [
     category: "Tributação do Consumo",
     src: "/material/carrossel-05-cbs-ibs.jpg",
     alt: "Guia Visual CBS & IBS - O Novo IVA Dual Brasileiro"
+  },
+  {
+    id: "carrossel-06",
+    title: "6. Guia Visual do Orçamento Municipal 2027",
+    category: "Gestão Municipal",
+    src: "/material/guia-orcamento-2027.jpg",
+    alt: "Guia Visual do Orçamento Municipal 2027"
+  },
+  {
+    id: "carrossel-07",
+    title: "7. Guia Visual da Fiscalização Municipal no IBS",
+    category: "Gestão Municipal",
+    src: "/material/guia-fiscalizacao-ibs.jpg",
+    alt: "Guia Visual da Fiscalização Municipal no IBS"
+  },
+  {
+    id: "carrossel-08",
+    title: "8. Guia Visual do Código Tributário Municipal",
+    category: "Gestão Municipal",
+    src: "/material/guia-codigo-tributario-municipal.jpg",
+    alt: "Guia Visual do Código Tributário Municipal"
   }
 ];
 
@@ -294,7 +315,7 @@ export const main15Materials: DigitalMaterial[] = [
     categorySlug: "municipios",
     description: "Planejamento orçamentário municipal diante da transição da Reforma Tributária.",
     iconName: "Building2",
-    coverImage: "/hero/capas/capa-02-municipios.jpg"
+    coverImage: "/material/guia-orcamento-2027.jpg"
   },
   {
     id: "mat-14",
@@ -304,7 +325,7 @@ export const main15Materials: DigitalMaterial[] = [
     categorySlug: "municipios",
     description: "Fiscalização municipal no contexto do IBS, controles e novos pontos de atenção.",
     iconName: "Building2",
-    coverImage: "/material/amostra-08.jpg"
+    coverImage: "/material/guia-fiscalizacao-ibs.jpg"
   },
   {
     id: "mat-15",
@@ -314,7 +335,7 @@ export const main15Materials: DigitalMaterial[] = [
     categorySlug: "municipios",
     description: "Revisão e adequação do Código Tributário Municipal diante da Reforma Tributária.",
     iconName: "Building2",
-    coverImage: "/material/amostra-02.jpg"
+    coverImage: "/material/guia-codigo-tributario-municipal.jpg"
   }
 ];
 
