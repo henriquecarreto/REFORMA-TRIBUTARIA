@@ -123,7 +123,14 @@ export const PricingSection: React.FC = () => {
               >
                 <span>QUERO ACESSAR O PLANO BÁSICO</span>
               </a>
-              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-3">
+
+              <div className="text-center mt-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#00A859] text-xs sm:text-sm font-extrabold shadow-2xs">
+                  Você economiza R$10,00
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-2.5">
                 <span className="inline-flex items-center gap-1">
                   <Lock className="w-3.5 h-3.5 text-[#00A859]" /> Pagamento Seguro
                 </span>
@@ -286,7 +293,14 @@ export const PricingSection: React.FC = () => {
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>
                 <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
-              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-3">
+
+              <div className="text-center mt-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-[#00A859] text-xs sm:text-sm font-extrabold shadow-2xs">
+                  Você economiza R$20,00
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-2.5">
                 <span className="inline-flex items-center gap-1">
                   <Lock className="w-3.5 h-3.5 text-[#00A859]" /> Pagamento Seguro
                 </span>

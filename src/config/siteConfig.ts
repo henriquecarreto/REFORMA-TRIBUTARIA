@@ -16,7 +16,7 @@ export const siteConfig = {
   basicPrice: "19,90",
   basicOldPrice: "29,90",
   completePrice: "29,90",
-  completeOldPrice: "37,90",
+  completeOldPrice: "49,90",
   currency: "R$",
 
   // Support & Contact
