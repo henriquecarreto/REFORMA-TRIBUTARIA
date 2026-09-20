@@ -482,26 +482,26 @@ export const bonusList: BonusItem[] = [
 export const testimonialsData: TestimonialItem[] = [
   {
     id: "test-1",
-    name: "Ana Paula Silva",
+    name: "Camila Rocha",
     role: "Analista Fiscal Sênior",
-    text: "Tentava ler a lei pura e ficava com a cabeça cheia de dúvidas. Quando abri os guias visuais e vi a transição do IBS e CBS tudo organizado, deu aquele alívio imediato. Salvou meu tempo de estudo!",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150",
+    text: "Trabalho na área fiscal de uma prefeitura e precisava entender melhor a transição do ISS para o IBS. Os guias colocaram os assuntos em ordem e facilitaram minhas consultas durante o estudo.",
+    avatar: "/testimonials/camila-rocha.jpg",
     rating: 5
   },
   {
     id: "test-2",
-    name: "Henrique Santos",
-    role: "Contador e Consultor Tributário",
-    text: "Eu perdia horas tentando juntar informações soltas na internet para entender a Reforma. O material entregou tudo estruturado e visual. Ficou muito mais fácil de consultar.",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150",
+    name: "Roberto Almeida",
+    role: "Supervisor de Licitação",
+    text: "Eu acompanhava as mudanças por informações espalhadas e acabava voltando às mesmas dúvidas. Com os guias, ficou mais fácil revisar IBS, CBS e Simples Nacional, um assunto de cada vez.",
+    avatar: "/testimonials/roberto-almeida.jpg",
     rating: 5
   },
   {
     id: "test-3",
-    name: "Edson Ferreira",
-    role: "Auxiliar Fiscal e Estudante",
-    text: "Tinha receio de ficar desatualizado com as mudanças da Reforma. Os resumos e a linha do tempo me deram uma clareza excelente. Hoje consigo acompanhar os assuntos com tranquilidade.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+    name: "André Martins",
+    role: "Servidor Público Municipal",
+    text: "Trabalho no setor de tributos da prefeitura e ainda estou estudando as mudanças. A linha do tempo e os resumos visuais me ajudaram a entender as etapas antes de aprofundar a leitura da legislação.",
+    avatar: "/testimonials/andre-martins.jpg",
     rating: 5
   }
 ];
