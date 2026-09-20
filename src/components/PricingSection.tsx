@@ -34,7 +34,7 @@ export const PricingSection: React.FC = () => {
               {/* NOME E DESCRIÇÃO DO PLANO */}
               <div className="mb-4">
                 <h3 className="text-xl sm:text-2xl font-extrabold text-[#0B1F3A] mb-1.5">
-                  PLANO BÁSICO
+                  COLEÇÃO BÁSICA
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                   Materiais essenciais para iniciar a compreensão dos conceitos fundamentais da Reforma Tributária.
@@ -42,22 +42,22 @@ export const PricingSection: React.FC = () => {
               </div>
 
               {/* IMAGEM DO PLANO BÁSICO */}
-              <div className="w-full bg-[#FAF7F2] rounded-xl border border-slate-200/90 overflow-hidden mb-6 p-1.5 sm:p-2 flex items-center justify-center shadow-xs">
+              <div className="w-full mb-6">
                 {!basicImgError ? (
                   <img
-                    src="/plans/plano-basico.jpg"
-                    alt="Coleção de Materiais do Plano Básico"
+                    src="/plans/plano-basico-nova.jpg"
+                    alt="Coleção Básica de Materiais"
                     onError={() => setBasicImgError(true)}
-                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm"
+                    className="w-full h-auto rounded-xl drop-shadow-md"
                     loading="lazy"
                   />
                 ) : (
-                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/40 w-full h-48">
+                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/40 w-full h-48 rounded-xl border border-slate-200">
                     <div className="p-3 rounded-full bg-white border border-slate-200 shadow-xs mb-2">
                       <BookOpen className="w-6 h-6 text-[#176BAA]" />
                     </div>
                     <span className="text-xs font-extrabold text-[#0B1F3A] uppercase tracking-wide">
-                      PLANO BÁSICO
+                      COLEÇÃO BÁSICA
                     </span>
                   </div>
                 )}
@@ -105,10 +105,34 @@ export const PricingSection: React.FC = () => {
                     Guia Visual da CBS
                   </span>
                 </div>
-                <div className="flex items-start gap-2.5">
+                <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
                   <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
                     Guia Visual do Imposto Seletivo
+                  </span>
+                </div>
+                <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                    Guia Visual do Simples Nacional
+                  </span>
+                </div>
+                <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                    Guia Visual do MEI
+                  </span>
+                </div>
+                <div className="flex items-start gap-2.5 pb-2 border-b border-slate-100/80">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                    Guia Visual do Split Payment
+                  </span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#138A60] shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                    Guia Visual do CNPJ Técnico
                   </span>
                 </div>
               </div>
@@ -118,10 +142,10 @@ export const PricingSection: React.FC = () => {
             <div className="mt-6 pt-2">
               <a
                 href={siteConfig.BASIC_CHECKOUT_URL}
-                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 19.90, 'Plano Básico')}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.BASIC_CHECKOUT_URL, 27.90, 'Coleção Básica')}
                 className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-sm sm:text-base py-4 px-6 rounded-xl flex items-center justify-center gap-2 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
-                <span>QUERO ACESSAR O PLANO BÁSICO</span>
+                <span>QUERO ACESSAR A COLEÇÃO BÁSICA</span>
               </a>
 
               <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] font-bold text-[#0B1F3A] mt-3">
@@ -161,17 +185,17 @@ export const PricingSection: React.FC = () => {
               </div>
 
               {/* IMAGEM DO PLANO COMPLETO */}
-              <div className="w-full bg-[#FAF7F2] rounded-xl border border-slate-200/90 overflow-hidden mb-6 p-1.5 sm:p-2 flex items-center justify-center shadow-xs">
+              <div className="w-full mb-6">
                 {!completeImgError ? (
                   <img
                     src="/plans/plano-completo.jpg"
                     alt="Coleção Completa de Materiais"
                     onError={() => setCompleteImgError(true)}
-                    className="w-full h-auto object-contain rounded-lg drop-shadow-sm"
+                    className="w-full h-auto rounded-xl drop-shadow-md"
                     loading="lazy"
                   />
                 ) : (
-                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/50 w-full h-48">
+                  <div className="flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-50 to-amber-50/50 w-full h-48 rounded-xl border border-amber-200">
                     <div className="p-3.5 rounded-full bg-white border border-amber-200 shadow-xs mb-2">
                       <Star className="w-7 h-7 text-[#F5B700] fill-[#F5B700]" />
                     </div>
@@ -293,7 +317,7 @@ export const PricingSection: React.FC = () => {
             <div className="mt-auto pt-4">
               <a
                 href={siteConfig.COMPLETE_CHECKOUT_URL}
-                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 29.90, 'Plano Completo')}
+                onClick={(e) => trackInitiateCheckoutAndNavigate(e, siteConfig.COMPLETE_CHECKOUT_URL, 37.90, 'Plano Completo')}
                 className="w-full bg-[#00A859] hover:bg-[#008C4A] text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-xl flex items-center justify-center gap-3 cursor-pointer text-center shadow-lg shadow-emerald-700/20 transition-transform hover:scale-[1.01] border border-emerald-400/30"
               >
                 <span>ACESSAR A COLEÇÃO COMPLETA</span>

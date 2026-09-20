@@ -13,10 +13,10 @@ export const siteConfig = {
   COMPLETE_CHECKOUT_URL: "https://pay.wiapy.com/OtY4nyjOAQNN",
 
   // Pricing - EXACT AND PRESERVED
-  basicPrice: "19,90",
-  basicOldPrice: "29,90",
-  completePrice: "29,90",
-  completeOldPrice: "49,90",
+  basicPrice: "27,90",
+  basicOldPrice: "37,90",
+  completePrice: "37,90",
+  completeOldPrice: "57,90",
   currency: "R$",
 
   // Support & Contact
