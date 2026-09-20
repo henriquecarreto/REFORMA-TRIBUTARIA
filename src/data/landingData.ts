@@ -481,28 +481,28 @@ export const bonusList: BonusItem[] = [
 
 export const testimonialsData: TestimonialItem[] = [
   {
-    id: "test-1",
-    name: "Ana Paula Silva",
-    role: "Analista Fiscal Sênior",
-    text: "Tentava ler a lei pura e ficava com a cabeça cheia de dúvidas. Quando abri os guias visuais e vi a transição do IBS e CBS tudo organizado, deu aquele alívio imediato. Salvou meu tempo de estudo!",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150",
-    rating: 5
+    id: "ex-1",
+    name: "Mariana Costa",
+    role: "Servidora Pública Municipal",
+    text: "Na prefeitura, há vários assuntos da Reforma para acompanhar. Os guias sobre municípios e orçamento ajudam a organizar o estudo e a encontrar cada tema quando preciso revisar.",
+    avatar: "/testimonials/mariana-costa.jpg",
+    rating: 0
   },
   {
-    id: "test-2",
-    name: "Henrique Santos",
-    role: "Contador e Consultor Tributário",
-    text: "Eu perdia horas tentando juntar informações soltas na internet para entender a Reforma. O material entregou tudo estruturado e visual. Ficou muito mais fácil de consultar.",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150",
-    rating: 5
+    id: "ex-2",
+    name: "Paulo Nogueira",
+    role: "Contador",
+    text: "IBS, CBS e Simples Nacional trazem dúvidas diferentes. Com os assuntos separados por guia, fica mais fácil estudar um ponto de cada vez e voltar a ele depois.",
+    avatar: "/testimonials/paulo-nogueira.jpg",
+    rating: 0
   },
   {
-    id: "test-3",
-    name: "Edson Ferreira",
-    role: "Auxiliar Fiscal e Estudante",
-    text: "Tinha receio de ficar desatualizado com as mudanças da Reforma. Os resumos e a linha do tempo me deram uma clareza excelente. Hoje consigo acompanhar os assuntos com tranquilidade.",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
-    rating: 5
+    id: "ex-3",
+    name: "Rafael Lima",
+    role: "Fiscal Tributário",
+    text: "Para estudar a fiscalização do IBS, preciso entender como os conceitos se conectam. O guia visual ajuda a localizar os pontos que quero aprofundar na legislação.",
+    avatar: "/testimonials/rafael-lima.jpg",
+    rating: 0
   }
 ];
 
