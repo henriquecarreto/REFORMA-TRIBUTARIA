@@ -74,9 +74,6 @@ export const ShowcaseGallery: React.FC = () => {
                   <span>Toque / Clique para Ampliar</span>
                 </div>
               </div>
-              <div className="p-2 text-center">
-                <span className="text-xs font-semibold text-slate-700 block truncate">{photo.alt}</span>
-              </div>
             </div>
           ))}
         </div>
