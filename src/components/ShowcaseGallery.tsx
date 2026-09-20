@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Eye, X, Sparkles } from 'lucide-react';
 
 const lifestylePhotos = [
@@ -26,34 +26,14 @@ const lifestylePhotos = [
 
 export const ShowcaseGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [activeMobileIndex, setActiveMobileIndex] = useState(0);
-  const mobileScrollRef = useRef<HTMLDivElement>(null);
 
+  // Quadruplicado para garantir fluxo contínuo e infinito no marquee em telas de qualquer tamanho
   const infiniteLifestyle = [
+    ...lifestylePhotos,
+    ...lifestylePhotos,
     ...lifestylePhotos,
     ...lifestylePhotos
   ];
-
-  const handleMobileScroll = () => {
-    if (!mobileScrollRef.current) return;
-    const container = mobileScrollRef.current;
-    const itemWidth = container.clientWidth * 0.86;
-    const index = Math.round(container.scrollLeft / itemWidth);
-    if (index >= 0 && index < lifestylePhotos.length) {
-      setActiveMobileIndex(index);
-    }
-  };
-
-  const scrollToMobileIndex = (index: number) => {
-    if (!mobileScrollRef.current) return;
-    const container = mobileScrollRef.current;
-    const itemWidth = container.clientWidth * 0.86;
-    container.scrollTo({
-      left: index * itemWidth,
-      behavior: 'smooth'
-    });
-    setActiveMobileIndex(index);
-  };
 
   return (
     <section className="py-10 sm:py-16 bg-[#FAF6F0] border-b border-amber-200/60 overflow-hidden">
@@ -70,75 +50,32 @@ export const ShowcaseGallery: React.FC = () => {
         </p>
       </div>
 
-      {/* 1. CARROSSEL MOBILE REAL (TOUCH DRAG SNAP, 1 IMAGEM POR VEZ, SEM HOVER) */}
-      <div className="block md:hidden w-full relative px-2">
-        <div
-          ref={mobileScrollRef}
-          onScroll={handleMobileScroll}
-          className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-3.5 px-3 pb-3 no-scrollbar"
-        >
-          {lifestylePhotos.map((photo) => (
-            <div
-              key={photo.id}
-              onClick={() => setSelectedImage(photo.src)}
-              className="shrink-0 w-[86vw] snap-center cursor-pointer"
-            >
-              <div className="relative rounded-2xl overflow-hidden bg-white border border-amber-200/80 shadow-md">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-auto max-h-[360px] object-cover rounded-xl"
-                  loading="lazy"
-                />
-                <div className="p-3 bg-white border-t border-amber-100 flex items-center justify-between text-xs font-bold text-[#0B1F3A]">
-                  <span className="truncate pr-2">{photo.alt}</span>
-                  <span className="text-[#00A859] shrink-0 flex items-center gap-1">
-                    <Eye className="w-3.5 h-3.5" /> Ampliar
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* INDICADORES VISUAIS DISCRETOS MOBILE */}
-        <div className="flex justify-center items-center gap-1.5 mt-3">
-          {lifestylePhotos.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => scrollToMobileIndex(idx)}
-              className={`h-2 rounded-full transition-all duration-200 ${
-                idx === activeMobileIndex ? 'w-5 bg-[#00A859]' : 'w-2 bg-amber-300/80'
-              }`}
-              aria-label={`Ir para foto ${idx + 1}`}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* 2. TRILHO DO CARROSSEL DESKTOP (MARQUEE INFINITO) */}
-      <div className="hidden md:block w-full overflow-hidden relative">
-        <div className="animate-marquee flex items-center gap-4 sm:gap-6 px-2">
+      {/* CARROSSEL DE FOTOS EM MOVIMENTO AUTOMÁTICO (MOBILE E DESKTOP) */}
+      <div className="w-full overflow-hidden relative py-2">
+        <div className="animate-marquee flex items-center gap-3.5 sm:gap-6 px-2">
           {infiniteLifestyle.map((photo, idx) => (
             <div
               key={`${photo.id}-${idx}`}
               onClick={() => setSelectedImage(photo.src)}
-              className="shrink-0 w-[360px] md:w-[440px] lg:w-[480px] cursor-pointer group/item transition-transform duration-300 hover:scale-[1.015]"
+              className="shrink-0 w-[260px] min-[380px]:w-[290px] sm:w-[350px] md:w-[440px] lg:w-[480px] cursor-pointer group/item transition-transform duration-300 hover:scale-[1.015]"
             >
               <div className="relative rounded-2xl overflow-hidden bg-white border border-amber-200/80 shadow-md group-hover/item:shadow-xl transition-all">
                 <img
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-auto max-h-[380px] lg:max-h-[420px] object-cover rounded-xl"
+                  className="w-full h-auto max-h-[240px] sm:max-h-[300px] md:max-h-[380px] lg:max-h-[420px] object-cover rounded-xl"
                   loading="lazy"
                 />
 
-                <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white font-bold text-sm sm:text-base p-4 text-center">
-                  <div className="p-3 rounded-full bg-[#00A859] text-white shadow-lg">
-                    <Eye className="w-6 h-6" />
+                <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2 text-white font-bold text-xs sm:text-base p-4 text-center">
+                  <div className="p-2.5 sm:p-3 rounded-full bg-[#00A859] text-white shadow-lg">
+                    <Eye className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span>Ampliar Imagem</span>
+                  <span>Toque / Clique para Ampliar</span>
                 </div>
+              </div>
+              <div className="p-2 text-center">
+                <span className="text-xs font-semibold text-slate-700 block truncate">{photo.alt}</span>
               </div>
             </div>
           ))}
