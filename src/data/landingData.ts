@@ -483,7 +483,7 @@ export const testimonialsData: TestimonialItem[] = [
   {
     id: "test-1",
     name: "Camila Rocha",
-    role: "Analista Fiscal Sênior",
+    role: "Fiscal/Tesoureira",
     text: "Trabalho na área fiscal de uma prefeitura e precisava entender melhor a transição do ISS para o IBS. Os guias colocaram os assuntos em ordem e facilitaram minhas consultas durante o estudo.",
     avatar: "/testimonials/camila-rocha.jpg",
     rating: 5
